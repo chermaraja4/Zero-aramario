@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)https://codepen.io/anon/embed/XgegoO?height=700&theme-id=1&slug-hash=XgegoO&default-tab=result -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width">
+<title>CodePen Embed - jQuery | Custom Radio Buttons Survey</title>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="89PEiqU6SCndpH8yaHqh4MGM/49z367uRY7GIwP2Vps4BFpQGGXLjKQQFoCj7rP8igRJa2omKvgvkEPb+2ym+A==">
+<link rel="stylesheet" media="all" href="./embed-5c9d0df4194479e72f3f4195cb70bfc2217587bcd5b1acda570c7aadbea18f9c.css">
+<style>
+    .hide {
+      display: none !important;
+    }
+
+    #result-box {
+      background: #28282a;
+      color: #ffffff;
+    }
+    .embed-footer,
+    .embed-nav {
+      background: #28282a;
+      
+    }
+    .embed-nav .code-types a,
+    .embed-nav .result-button-list a,
+    .action-button {
+      color: #ffffff;
+      background-color: #424242;
+    }
+    .embed-nav .code-types a.active,
+    .embed-nav .result-button-list a.active,
+    .action-button.active {
+      background: #212121;
+      color: #ffffff;
+      box-shadow: inset 0px 3px #ff8a00;
+    }
+    .embed-nav .logo-wrap .edit-on-codepen {
+      color: #a9a9a9;
+    }
+
+    .embed-nav svg {
+      stroke: #a9a9a9 !important;
+    }
+  </style>
+<link rel="stylesheet" media="all" href="./highcontrast-dark-c9f58c52f642f276610867eb0652eb22d9d88af6dddef0874efd8d911a7938ff.css">
+<link rel="stylesheet" href="./maVRwd.css">
+<meta name="monetization" content="$ilp.uphold.com/biyqg2MkQKbe">
+</head>
+<body id="the-body" style="border: 1px solid #39231b; --borderWidth: 1px;" class="codepen-embed-body static results-active">
+<nav class="embed-nav group" id="embed-nav">
+<ul class="code-types">
+<li class="code-type">
+<a id="html-link" href="https://codepen.io/anon/embed/XgegoO?height=700&amp;theme-id=1&amp;slug-hash=XgegoO&amp;default-tab=result#html-box" role="button" aria-pressed="false">
+HTML
+</a>
+</li>
+<li class="code-type">
+<a id="css-link" href="https://codepen.io/anon/embed/XgegoO?height=700&amp;theme-id=1&amp;slug-hash=XgegoO&amp;default-tab=result#css-box" role="button" aria-pressed="false">
+CSS
+</a>
+</li>
+<li class="code-type">
+<a id="js-link" href="https://codepen.io/anon/embed/XgegoO?height=700&amp;theme-id=1&amp;slug-hash=XgegoO&amp;default-tab=result#js-box" role="button" aria-pressed="false">
+JS
+</a>
+</li>
+</ul>
+<ul class="result-button-list">
+<li class="results results-type">
+<a id="result-link" href="https://codepen.io/anon/embed/XgegoO?height=700&amp;theme-id=1&amp;slug-hash=XgegoO&amp;default-tab=result#result-box" class="active" aria-pressed="true" role="button">
+Result
+</a>
+</li>
+<li>
+<a href="https://codepen.io/anon/embed/XgegoO?height=700&amp;theme-id=1&amp;slug-hash=XgegoO&amp;default-tab=result#resources-link" id="skip-results-iframe-link">Skip Results Iframe</a>
+</li>
+</ul>
+<div class="logo-wrap" id="edit-area">
+<a class="edit-on-codepen" target="_blank" rel="noopener" href="https://codepen.io/tobiasdev/pen/XgegoO" title="Edit on CodePen">
+<div class="large-logo">
+<span id="edit-on-text" class="open-on">EDIT ON</span>
+<svg id="embed-codepen-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 26" fill="none" stroke="#000" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="CodePen">
+<path d="M80 6h-9v14h9m34-14h-9v14h9m-3-7h-6m-28 0h-6m51 7V6l11 14V6M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24m55-10h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-6v14M15 8c-1.3-1.3-3-2-5-2-4 0-7 3-7 7s3 7 7 7c2 0 3.7-.8 5-2m49-5c0 4-3 7-7 7h-5V6h5c4 0 7 3 7 7z"></path>
+</svg>
+</div>
+<div class="box-logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 0 26 26" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" role="img" aria-label="Edit on CodePen">
+<path id="icon-codepen-box" d="M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24"></path>
+</svg>
+</div>
+</a>
+</div>
+</nav>
+<div id="output" data-border-style="thin" data-header="true">
+<div id="html-box" class="code-wrap code-box box " role="region" aria-label="HTML">
+<pre tabindex="0"><code data-lang="htmlmixed" id="actual-html-code" class=" cm-s-default"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-box"</span><span class="cm-tag cm-bracket">&gt;</span>
+
+  <span class="cm-comment">&lt;!-- Radio Button Module --&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>1. On a scale of 1 to 5 how cubic are you?<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"rb-1"</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb"</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-tab rb-tab-active"</span> <span class="cm-attribute">data-value</span>=<span class="cm-string">"1"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-spot"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-txt"</span><span class="cm-tag cm-bracket">&gt;</span>1<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-tab"</span> <span class="cm-attribute">data-value</span>=<span class="cm-string">"2"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-spot"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-txt"</span><span class="cm-tag cm-bracket">&gt;</span>2<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-tab"</span> <span class="cm-attribute">data-value</span>=<span class="cm-string">"3"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-spot"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-txt"</span><span class="cm-tag cm-bracket">&gt;</span>3<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-tab"</span> <span class="cm-attribute">data-value</span>=<span class="cm-string">"4"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-spot"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-txt"</span><span class="cm-tag cm-bracket">&gt;</span>4<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-tab"</span> <span class="cm-attribute">data-value</span>=<span class="cm-string">"5"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-spot"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-txt"</span><span class="cm-tag cm-bracket">&gt;</span>5<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+
+  <span class="cm-comment">&lt;!-- Radio Button Module --&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>2. On a scale of 1 to 5 how would you rate the universe?<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"rb-2"</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb"</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-tab"</span> <span class="cm-attribute">data-value</span>=<span class="cm-string">"1"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-spot"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-txt"</span><span class="cm-tag cm-bracket">&gt;</span>1<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-tab rb-tab-active"</span> <span class="cm-attribute">data-value</span>=<span class="cm-string">"2"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-spot"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-txt"</span><span class="cm-tag cm-bracket">&gt;</span>2<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-tab"</span> <span class="cm-attribute">data-value</span>=<span class="cm-string">"3"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-spot"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-txt"</span><span class="cm-tag cm-bracket">&gt;</span>3<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-tab"</span> <span class="cm-attribute">data-value</span>=<span class="cm-string">"4"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-spot"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-txt"</span><span class="cm-tag cm-bracket">&gt;</span>4<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-tab"</span> <span class="cm-attribute">data-value</span>=<span class="cm-string">"5"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-spot"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-txt"</span><span class="cm-tag cm-bracket">&gt;</span>5<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+
+  <span class="cm-comment">&lt;!-- Radio Button Module --&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>3. On a scale of 1 to 5 how much do you like stalactites?<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"rb-3"</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb"</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-tab"</span> <span class="cm-attribute">data-value</span>=<span class="cm-string">"1"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-spot"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-txt"</span><span class="cm-tag cm-bracket">&gt;</span>1<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-tab"</span> <span class="cm-attribute">data-value</span>=<span class="cm-string">"2"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-spot"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-txt"</span><span class="cm-tag cm-bracket">&gt;</span>2<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-tab rb-tab-active"</span> <span class="cm-attribute">data-value</span>=<span class="cm-string">"3"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-spot"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-txt"</span><span class="cm-tag cm-bracket">&gt;</span>3<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-tab"</span> <span class="cm-attribute">data-value</span>=<span class="cm-string">"4"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-spot"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-txt"</span><span class="cm-tag cm-bracket">&gt;</span>4<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-tab"</span> <span class="cm-attribute">data-value</span>=<span class="cm-string">"5"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-spot"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-txt"</span><span class="cm-tag cm-bracket">&gt;</span>5<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+
+  <span class="cm-comment">&lt;!-- Radio Button Module --&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>4. On a scale of 1 to 5 what is your favorite color in the alphabet?<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"rb-4"</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb"</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-tab"</span> <span class="cm-attribute">data-value</span>=<span class="cm-string">"1"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-spot"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-txt"</span><span class="cm-tag cm-bracket">&gt;</span>1<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-tab"</span> <span class="cm-attribute">data-value</span>=<span class="cm-string">"2"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-spot"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-txt"</span><span class="cm-tag cm-bracket">&gt;</span>2<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-tab"</span> <span class="cm-attribute">data-value</span>=<span class="cm-string">"3"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-spot"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-txt"</span><span class="cm-tag cm-bracket">&gt;</span>3<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-tab rb-tab-active"</span> <span class="cm-attribute">data-value</span>=<span class="cm-string">"4"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-spot"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-txt"</span><span class="cm-tag cm-bracket">&gt;</span>4<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-tab"</span> <span class="cm-attribute">data-value</span>=<span class="cm-string">"5"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-spot"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-txt"</span><span class="cm-tag cm-bracket">&gt;</span>5<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+
+  <span class="cm-comment">&lt;!-- Radio Button Module --&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>5. On a scale of one to shrimp, how random are you?<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"rb-5"</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb"</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-tab"</span> <span class="cm-attribute">data-value</span>=<span class="cm-string">"4"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-spot"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-txt"</span><span class="cm-tag cm-bracket">&gt;</span>4<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-tab"</span> <span class="cm-attribute">data-value</span>=<span class="cm-string">"2"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-spot"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-txt"</span><span class="cm-tag cm-bracket">&gt;</span>2<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-tab"</span> <span class="cm-attribute">data-value</span>=<span class="cm-string">"5"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-spot"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-txt"</span><span class="cm-tag cm-bracket">&gt;</span>5<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-tab"</span> <span class="cm-attribute">data-value</span>=<span class="cm-string">"1"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-spot"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-txt"</span><span class="cm-tag cm-bracket">&gt;</span>1<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-tab rb-tab-active"</span> <span class="cm-attribute">data-value</span>=<span class="cm-string">"3"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-spot"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rb-txt"</span><span class="cm-tag cm-bracket">&gt;</span>3<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+
+  <span class="cm-comment">&lt;!-- Button --&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"button-box"</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">button</span> <span class="cm-attribute">class</span>=<span class="cm-string">"button trigger"</span><span class="cm-tag cm-bracket">&gt;</span>Submit!<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">button</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+
+<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></code></pre>
+</div>
+<div id="css-box" class="code-wrap code-box box " role="region" aria-label="CSS">
+<pre tabindex="0"><code data-lang="css" id="actual-css-code" class=" cm-s-default"><span class="cm-comment">/* Containers */</span>
+<span class="cm-tag">html</span>, <span class="cm-tag">body</span> {
+  <span class="cm-property">min-height</span>: <span class="cm-number">100%</span>;
+}
+
+<span class="cm-tag">body</span> {
+  <span class="cm-property">font-family</span>: <span class="cm-atom">sans-serif</span>;
+  <span class="cm-property">background</span>: <span class="cm-atom">#42426b</span>;
+  <span class="cm-property">background-image</span>: <span class="cm-meta">-webkit-</span><span class="cm-variable cm-callee">linear-gradient</span>(<span class="cm-number">135deg</span>, <span class="cm-atom">#8067B7</span>, <span class="cm-atom">#EC87C0</span>);
+  <span class="cm-property">background-image</span>: <span class="cm-variable cm-callee">linear-gradient</span>(<span class="cm-number">-45deg</span>, <span class="cm-atom">#8067B7</span>, <span class="cm-atom">#EC87C0</span>);
+  <span class="cm-property">color</span>: <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">255</span>,<span class="cm-number">255</span>,<span class="cm-number">255</span>,<span class="cm-number">.5</span>);
+}
+
+<span class="cm-qualifier">.rb-box</span> {
+  <span class="cm-property">width</span>: <span class="cm-number">80%</span>;
+  <span class="cm-property">max-width</span>: <span class="cm-number">420px</span>;
+  <span class="cm-property">margin</span>: <span class="cm-number">50px</span> <span class="cm-atom">auto</span>;
+  <span class="cm-property">padding</span>: <span class="cm-number">1.3em</span>;
+  <span class="cm-property">background</span>: <span class="cm-atom">#292942</span>;
+  <span class="cm-property">border-radius</span>: <span class="cm-number">.75em</span>;
+  <span class="cm-meta">-webkit-</span><span class="cm-property">filter</span>: <span class="cm-variable cm-callee">drop-shadow</span>(<span class="cm-number">1px</span> <span class="cm-number">2px</span> <span class="cm-number">5px</span> <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">0</span>,<span class="cm-number">0</span>,<span class="cm-number">0</span>,<span class="cm-number">.3</span>));
+  <span class="cm-property">filter</span>: <span class="cm-variable cm-callee">drop-shadow</span>(<span class="cm-number">1px</span> <span class="cm-number">2px</span> <span class="cm-number">5px</span> <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">0</span>,<span class="cm-number">0</span>,<span class="cm-number">0</span>,<span class="cm-number">.3</span>));
+  <span class="cm-property">box-shadow</span>: 
+    <span class="cm-number">0</span> <span class="cm-number">2px</span> <span class="cm-number">2px</span> <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">243</span>,<span class="cm-number">49</span>,<span class="cm-number">128</span>,<span class="cm-number">.5</span>),
+    <span class="cm-number">0</span> <span class="cm-number">0px</span> <span class="cm-number">5px</span> <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">243</span>,<span class="cm-number">49</span>,<span class="cm-number">128</span>,<span class="cm-number">.15</span>),
+    <span class="cm-number">0</span> <span class="cm-number">0px</span> <span class="cm-number">4px</span> <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">0</span>,<span class="cm-number">0</span>,<span class="cm-number">0</span>,<span class="cm-number">.35</span>),
+    <span class="cm-number">0</span> <span class="cm-number">5px</span> <span class="cm-number">20px</span> <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">243</span>,<span class="cm-number">49</span>,<span class="cm-number">128</span>,<span class="cm-number">.25</span>),
+    <span class="cm-number">0</span> <span class="cm-number">15px</span> <span class="cm-number">50px</span> <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">243</span>,<span class="cm-number">49</span>,<span class="cm-number">128</span>,<span class="cm-number">.75</span>),
+    <span class="cm-atom">inset</span> <span class="cm-number">0</span> <span class="cm-number">0</span> <span class="cm-number">15px</span> <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">255</span>,<span class="cm-number">255</span>,<span class="cm-number">255</span>,<span class="cm-number">.05</span>);
+}
+
+<span class="cm-comment">/* Custom Radio Button */</span>
+<span class="cm-tag">p</span> {
+  <span class="cm-property">font-size</span>: <span class="cm-number">.9em</span>;
+}
+
+<span class="cm-qualifier">.rb</span> {
+  <span class="cm-property">padding</span>: <span class="cm-number">16px</span> <span class="cm-number">0</span>;
+  <span class="cm-property">text-align</span>: <span class="cm-atom">center</span>;
+  <span class="cm-property">background</span>: <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">255</span>,<span class="cm-number">255</span>,<span class="cm-number">255</span>,<span class="cm-number">.03</span>);
+  <span class="cm-property">border-radius</span>: <span class="cm-number">.3em</span>;
+}
+
+<span class="cm-qualifier">.rb-tab</span> {
+  <span class="cm-property">display</span>: <span class="cm-atom">inline-block</span>;
+  <span class="cm-property">position</span>: <span class="cm-atom">relative</span>;
+  <span class="cm-property">width</span>: <span class="cm-number">20%</span>;
+}
+
+<span class="cm-qualifier">.rb-txt</span> {
+  <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+  <span class="cm-property">top</span>: <span class="cm-number">50%</span>;
+  <span class="cm-property">left</span>: <span class="cm-number">50%</span>;
+  <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translate</span>(<span class="cm-number">-50%</span>, <span class="cm-number">-50%</span>);
+  <span class="cm-property">font-size</span>: <span class="cm-number">.5em</span>;
+  <span class="cm-property">color</span>: <span class="cm-atom">#FFFFFF</span>;
+}
+
+<span class="cm-qualifier">.rb-spot</span> {
+  <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+  <span class="cm-property">width</span>: <span class="cm-number">18px</span>;
+  <span class="cm-property">height</span>: <span class="cm-number">18px</span>;
+  <span class="cm-property">top</span>: <span class="cm-number">50%</span>;
+  <span class="cm-property">left</span>: <span class="cm-number">50%</span>;
+  <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translate</span>(<span class="cm-number">-50%</span>, <span class="cm-number">-50%</span>);
+  <span class="cm-property">background</span>: <span class="cm-atom">transparent</span>;
+  <span class="cm-property">border</span>: <span class="cm-number">2px</span> <span class="cm-atom">solid</span> <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">255</span>,<span class="cm-number">255</span>,<span class="cm-number">255</span>,<span class="cm-number">.3</span>);
+  <span class="cm-property">border-radius</span>: <span class="cm-number">100%</span>;
+  <span class="cm-property">cursor</span>: <span class="cm-atom">pointer</span>;
+  <span class="cm-property">transition</span>: <span class="cm-atom">ease</span> <span class="cm-number">.5s</span>;
+}
+
+<span class="cm-qualifier">.rb-tab-active</span> <span class="cm-qualifier">.rb-spot</span> {
+  <span class="cm-property">background</span>: <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">0</span>,<span class="cm-number">0</span>,<span class="cm-number">0</span>,<span class="cm-number">.35</span>);
+  <span class="cm-property">border</span>: <span class="cm-number">2px</span> <span class="cm-atom">solid</span> <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">243</span>,<span class="cm-number">49</span>,<span class="cm-number">128</span>,<span class="cm-number">.6</span>);
+}
+
+<span class="cm-comment">/* Submit Button */</span>
+<span class="cm-qualifier">.button-box</span> {
+  <span class="cm-property">padding</span>: <span class="cm-number">10px</span> <span class="cm-number">0</span>;
+  <span class="cm-property">text-align</span>: <span class="cm-atom">center</span>;
+}
+
+<span class="cm-tag">button</span> {
+  <span class="cm-property">display</span>: <span class="cm-atom">inline-block</span>;
+  <span class="cm-property">width</span>: <span class="cm-number">80%</span>;
+  <span class="cm-property">margin-top</span>: <span class="cm-number">1.2em</span>;
+  <span class="cm-property">padding</span>: <span class="cm-number">1em</span>;
+  <span class="cm-property">max-width</span>: <span class="cm-number">220px</span>;
+  <span class="cm-property">font-size</span>: <span class="cm-number">.9em</span>;
+  <span class="cm-property">color</span>: <span class="cm-atom">#D42D78</span>;
+  <span class="cm-property">text-transform</span>: <span class="cm-atom">uppercase</span>;
+  <span class="cm-property">text-decoration</span>: <span class="cm-atom">none</span>;
+  <span class="cm-property">letter-spacing</span>: <span class="cm-number">.15em</span>;
+  <span class="cm-property">background</span>: <span class="cm-keyword">white</span>;
+  <span class="cm-property">border</span>: <span class="cm-atom">none</span>;
+  <span class="cm-property">outline</span>: <span class="cm-atom">none</span>;
+  <span class="cm-property">border-radius</span>: <span class="cm-number">5em</span>;
+  <span class="cm-property">box-shadow</span>: <span class="cm-number">0</span> <span class="cm-number">15px</span> <span class="cm-number">20px</span> <span class="cm-number">-10px</span> <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">0</span>, <span class="cm-number">0</span>, <span class="cm-number">0</span>, <span class="cm-number">0.3</span>);
+  <span class="cm-property">transition</span>: 
+    <span class="cm-atom">color</span> <span class="cm-number">0.6s</span>, 
+    <span class="cm-variable">box-shadow</span> <span class="cm-number">0.3s</span>, 
+    <span class="cm-atom">transform</span> <span class="cm-number">0.3s</span>;
+  <span class="cm-property">cursor</span>: <span class="cm-atom">pointer</span>;
+}
+
+<span class="cm-tag">button</span>:<span class="cm-variable-3">hover</span> {
+  <span class="cm-property">box-shadow</span>: <span class="cm-number">0</span> <span class="cm-number">3px</span> <span class="cm-number">5px</span> <span class="cm-number">-5px</span> <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">0</span>, <span class="cm-number">0</span>, <span class="cm-number">0</span>, <span class="cm-number">0.3</span>);
+  <span class="cm-property">color</span>: <span class="cm-atom">#6f6f6f</span>;
+}</code></pre>
+</div>
+<div id="js-box" class="code-wrap code-box box " role="region" aria-label="JS">
+<pre tabindex="0"><code data-lang="javascript" id="actual-js-code" class=" cm-s-default"><span class="cm-comment">/*</span>
+<span class="cm-comment">===============================================================</span>
+
+<span class="cm-comment">Hi! Welcome to my little playground!</span>
+
+<span class="cm-comment">My name is Tobias Bogliolo. 'Open source' by default and always 'responsive',</span>
+<span class="cm-comment">I'm a publicist, visual designer and frontend developer based in Barcelona. </span>
+
+<span class="cm-comment">Here you will find some of my personal experiments. Sometimes usefull,</span>
+<span class="cm-comment">sometimes simply for fun. You are free to use them for whatever you want </span>
+<span class="cm-comment">but I would appreciate an attribution from my work. I hope you enjoy it.</span>
+
+<span class="cm-comment">===============================================================</span>
+<span class="cm-comment">*/</span>
+<span class="cm-comment">//Global:</span>
+<span class="cm-keyword">var</span> <span class="cm-def">survey</span> <span class="cm-operator">=</span> []; <span class="cm-comment">//Bidimensional array: [ [1,3], [2,4] ]</span>
+
+<span class="cm-comment">//Switcher function:</span>
+<span class="cm-variable">$</span>(<span class="cm-string">".rb-tab"</span>).<span class="cm-property">click</span>(<span class="cm-keyword">function</span>(){
+  <span class="cm-comment">//Spot switcher:</span>
+  <span class="cm-variable">$</span>(<span class="cm-keyword">this</span>).<span class="cm-property">parent</span>().<span class="cm-property">find</span>(<span class="cm-string">".rb-tab"</span>).<span class="cm-property">removeClass</span>(<span class="cm-string">"rb-tab-active"</span>);
+  <span class="cm-variable">$</span>(<span class="cm-keyword">this</span>).<span class="cm-property">addClass</span>(<span class="cm-string">"rb-tab-active"</span>);
+});
+
+<span class="cm-comment">//Save data:</span>
+<span class="cm-variable">$</span>(<span class="cm-string">".trigger"</span>).<span class="cm-property">click</span>(<span class="cm-keyword">function</span>(){
+  <span class="cm-comment">//Empty array:</span>
+  <span class="cm-variable">survey</span> <span class="cm-operator">=</span> [];
+  <span class="cm-comment">//Push data:</span>
+  <span class="cm-keyword">for</span> (<span class="cm-variable">i</span><span class="cm-operator">=</span><span class="cm-number">1</span>; <span class="cm-variable">i</span><span class="cm-operator">&lt;=</span><span class="cm-variable">$</span>(<span class="cm-string">".rb"</span>).<span class="cm-property">length</span>; <span class="cm-variable">i</span><span class="cm-operator">++</span>) {
+    <span class="cm-keyword">var</span> <span class="cm-def">rb</span> <span class="cm-operator">=</span> <span class="cm-string">"rb"</span> <span class="cm-operator">+</span> <span class="cm-variable">i</span>;
+    <span class="cm-keyword">var</span> <span class="cm-def">rbValue</span> <span class="cm-operator">=</span> <span class="cm-variable">parseInt</span>(<span class="cm-variable">$</span>(<span class="cm-string">"#rb-"</span><span class="cm-operator">+</span><span class="cm-variable">i</span>).<span class="cm-property">find</span>(<span class="cm-string">".rb-tab-active"</span>).<span class="cm-property">attr</span>(<span class="cm-string">"data-value"</span>));
+    <span class="cm-comment">//Bidimensional array push:</span>
+    <span class="cm-variable">survey</span>.<span class="cm-property">push</span>([<span class="cm-variable">i</span>, <span class="cm-variable-2">rbValue</span>]); <span class="cm-comment">//Bidimensional array: [ [1,3], [2,4] ]</span>
+  };
+  <span class="cm-comment">//Debug:</span>
+  <span class="cm-variable">debug</span>();
+});
+
+<span class="cm-comment">//Debug:</span>
+<span class="cm-keyword">function</span> <span class="cm-def">debug</span>(){
+  <span class="cm-keyword">var</span> <span class="cm-def">debug</span> <span class="cm-operator">=</span> <span class="cm-string">""</span>;
+  <span class="cm-keyword">for</span> (<span class="cm-variable">i</span><span class="cm-operator">=</span><span class="cm-number">0</span>; <span class="cm-variable">i</span><span class="cm-operator">&lt;</span><span class="cm-variable">survey</span>.<span class="cm-property">length</span>; <span class="cm-variable">i</span><span class="cm-operator">++</span>) {
+    <span class="cm-variable-2">debug</span> <span class="cm-operator">+=</span> <span class="cm-string">"Nº "</span> <span class="cm-operator">+</span> <span class="cm-variable">survey</span>[<span class="cm-variable">i</span>][<span class="cm-number">0</span>] <span class="cm-operator">+</span> <span class="cm-string">" = "</span> <span class="cm-operator">+</span> <span class="cm-variable">survey</span>[<span class="cm-variable">i</span>][<span class="cm-number">1</span>] <span class="cm-operator">+</span> <span class="cm-string">"\n"</span>;
+  };
+  <span class="cm-variable">alert</span>(<span class="cm-variable-2">debug</span>);
+};</code></pre>
+</div>
+<div id="result-box" class="code-box active zoom-1" role="region" aria-label="Result">
+<iframe allow="accelerometer; camera; encrypted-media; display-capture; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write; web-share" allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="result-iframe  " frameborder="0" id="result-iframe" loading="lazy" name="CodePen Preview for jQuery | Custom Radio Buttons Survey" sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-downloads allow-presentation" scrolling="yes" title="CodePen Preview for jQuery | Custom Radio Buttons Survey" data-src="https://cdpn.io/tobiasdev/fullembedgrid/XgegoO?animations=run&amp;type=embed" src="./XgegoO(1).html">
+  </iframe>
+</div>
+<div id="about-box">
+<div class="about-container">
+<div class="about-user">
+<a href="https://codepen.io/tobiasdev" target="_blank" rel="noopener"><img src="./default(16).png" loading="lazy" alt="" class="about-image"></a>
+<div class="about-user-info">
+<p>
+This Pen is owned by <a href="https://codepen.io/tobiasdev" target="_blank" rel="noopener"> Tobias Bogliolo </a> on <a href="https://codepen.io/" target="_blank" rel="noopener">CodePen</a>.
+</p>
+<p>
+<a href="https://codepen.io/tobiasdev" target="_blank" rel="noopener" class="about-user-more">
+See more by @tobiasdev on CodePen
+</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="resources-box" class="resources-box">
+<h3>External CSS</h3>
+<p>
+This Pen doesn't use any external CSS resources.
+</p>
+<h3>External JavaScript</h3>
+<ol class="list-of-resources">
+<li>
+<a href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" target="_blank">https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js</a>
+</li>
+</ol>
+</div>
+</div>
+<footer class="embed-footer" id="embed-footer">
+<button id="resources-link" class="resources-link action-button bottom left" href="#resources-box" aria-pressed="false" role="button">
+Resources
+</button>
+<ul class="scaling-choices bottom right">
+<li><button class="action-button" id="zoom-button-1">1×</button></li>
+<li><button class="action-button" id="zoom-button-05">0.5×</button></li>
+<li><button class="action-button" id="zoom-button-025">0.25×</button></li>
+</ul>
+<button id="rerun-button" class="action-button rerun-button bottom right">
+Rerun
+</button>
+</footer>
+<script nonce="">
+    __processedPen = {"html":"&lt;div class=&quot;rb-box&quot;&gt;\n\n  &lt;!-- Radio Button Module --&gt;\n  &lt;p&gt;1. On a scale of 1 to 5 how cubic are you?&lt;/p&gt;\n  &lt;div id=&quot;rb-1&quot; class=&quot;rb&quot;&gt;\n    &lt;div class=&quot;rb-tab rb-tab-active&quot; data-value=&quot;1&quot;&gt;\n      &lt;div class=&quot;rb-spot&quot;&gt;\n        &lt;span class=&quot;rb-txt&quot;&gt;1&lt;/span&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;&lt;div class=&quot;rb-tab&quot; data-value=&quot;2&quot;&gt;\n      &lt;div class=&quot;rb-spot&quot;&gt;\n        &lt;span class=&quot;rb-txt&quot;&gt;2&lt;/span&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;&lt;div class=&quot;rb-tab&quot; data-value=&quot;3&quot;&gt;\n      &lt;div class=&quot;rb-spot&quot;&gt;\n        &lt;span class=&quot;rb-txt&quot;&gt;3&lt;/span&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;&lt;div class=&quot;rb-tab&quot; data-value=&quot;4&quot;&gt;\n      &lt;div class=&quot;rb-spot&quot;&gt;\n        &lt;span class=&quot;rb-txt&quot;&gt;4&lt;/span&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;&lt;div class=&quot;rb-tab&quot; data-value=&quot;5&quot;&gt;\n      &lt;div class=&quot;rb-spot&quot;&gt;\n        &lt;span class=&quot;rb-txt&quot;&gt;5&lt;/span&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n\n  &lt;!-- Radio Button Module --&gt;\n  &lt;p&gt;2. On a scale of 1 to 5 how would you rate the universe?&lt;/p&gt;\n  &lt;div id=&quot;rb-2&quot; class=&quot;rb&quot;&gt;\n    &lt;div class=&quot;rb-tab&quot; data-value=&quot;1&quot;&gt;\n      &lt;div class=&quot;rb-spot&quot;&gt;\n        &lt;span class=&quot;rb-txt&quot;&gt;1&lt;/span&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;&lt;div class=&quot;rb-tab rb-tab-active&quot; data-value=&quot;2&quot;&gt;\n      &lt;div class=&quot;rb-spot&quot;&gt;\n        &lt;span class=&quot;rb-txt&quot;&gt;2&lt;/span&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;&lt;div class=&quot;rb-tab&quot; data-value=&quot;3&quot;&gt;\n      &lt;div class=&quot;rb-spot&quot;&gt;\n        &lt;span class=&quot;rb-txt&quot;&gt;3&lt;/span&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;&lt;div class=&quot;rb-tab&quot; data-value=&quot;4&quot;&gt;\n      &lt;div class=&quot;rb-spot&quot;&gt;\n        &lt;span class=&quot;rb-txt&quot;&gt;4&lt;/span&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;&lt;div class=&quot;rb-tab&quot; data-value=&quot;5&quot;&gt;\n      &lt;div class=&quot;rb-spot&quot;&gt;\n        &lt;span class=&quot;rb-txt&quot;&gt;5&lt;/span&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n\n  &lt;!-- Radio Button Module --&gt;\n  &lt;p&gt;3. On a scale of 1 to 5 how much do you like stalactites?&lt;/p&gt;\n  &lt;div id=&quot;rb-3&quot; class=&quot;rb&quot;&gt;\n    &lt;div class=&quot;rb-tab&quot; data-value=&quot;1&quot;&gt;\n      &lt;div class=&quot;rb-spot&quot;&gt;\n        &lt;span class=&quot;rb-txt&quot;&gt;1&lt;/span&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;&lt;div class=&quot;rb-tab&quot; data-value=&quot;2&quot;&gt;\n      &lt;div class=&quot;rb-spot&quot;&gt;\n        &lt;span class=&quot;rb-txt&quot;&gt;2&lt;/span&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;&lt;div class=&quot;rb-tab rb-tab-active&quot; data-value=&quot;3&quot;&gt;\n      &lt;div class=&quot;rb-spot&quot;&gt;\n        &lt;span class=&quot;rb-txt&quot;&gt;3&lt;/span&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;&lt;div class=&quot;rb-tab&quot; data-value=&quot;4&quot;&gt;\n      &lt;div class=&quot;rb-spot&quot;&gt;\n        &lt;span class=&quot;rb-txt&quot;&gt;4&lt;/span&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;&lt;div class=&quot;rb-tab&quot; data-value=&quot;5&quot;&gt;\n      &lt;div class=&quot;rb-spot&quot;&gt;\n        &lt;span class=&quot;rb-txt&quot;&gt;5&lt;/span&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n\n  &lt;!-- Radio Button Module --&gt;\n  &lt;p&gt;4. On a scale of 1 to 5 what is your favorite color in the alphabet?&lt;/p&gt;\n  &lt;div id=&quot;rb-4&quot; class=&quot;rb&quot;&gt;\n    &lt;div class=&quot;rb-tab&quot; data-value=&quot;1&quot;&gt;\n      &lt;div class=&quot;rb-spot&quot;&gt;\n        &lt;span class=&quot;rb-txt&quot;&gt;1&lt;/span&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;&lt;div class=&quot;rb-tab&quot; data-value=&quot;2&quot;&gt;\n      &lt;div class=&quot;rb-spot&quot;&gt;\n        &lt;span class=&quot;rb-txt&quot;&gt;2&lt;/span&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;&lt;div class=&quot;rb-tab&quot; data-value=&quot;3&quot;&gt;\n      &lt;div class=&quot;rb-spot&quot;&gt;\n        &lt;span class=&quot;rb-txt&quot;&gt;3&lt;/span&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;&lt;div class=&quot;rb-tab rb-tab-active&quot; data-value=&quot;4&quot;&gt;\n      &lt;div class=&quot;rb-spot&quot;&gt;\n        &lt;span class=&quot;rb-txt&quot;&gt;4&lt;/span&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;&lt;div class=&quot;rb-tab&quot; data-value=&quot;5&quot;&gt;\n      &lt;div class=&quot;rb-spot&quot;&gt;\n        &lt;span class=&quot;rb-txt&quot;&gt;5&lt;/span&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n\n  &lt;!-- Radio Button Module --&gt;\n  &lt;p&gt;5. On a scale of one to shrimp, how random are you?&lt;/p&gt;\n  &lt;div id=&quot;rb-5&quot; class=&quot;rb&quot;&gt;\n    &lt;div class=&quot;rb-tab&quot; data-value=&quot;4&quot;&gt;\n      &lt;div class=&quot;rb-spot&quot;&gt;\n        &lt;span class=&quot;rb-txt&quot;&gt;4&lt;/span&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;&lt;div class=&quot;rb-tab&quot; data-value=&quot;2&quot;&gt;\n      &lt;div class=&quot;rb-spot&quot;&gt;\n        &lt;span class=&quot;rb-txt&quot;&gt;2&lt;/span&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;&lt;div class=&quot;rb-tab&quot; data-value=&quot;5&quot;&gt;\n      &lt;div class=&quot;rb-spot&quot;&gt;\n        &lt;span class=&quot;rb-txt&quot;&gt;5&lt;/span&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;&lt;div class=&quot;rb-tab&quot; data-value=&quot;1&quot;&gt;\n      &lt;div class=&quot;rb-spot&quot;&gt;\n        &lt;span class=&quot;rb-txt&quot;&gt;1&lt;/span&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;&lt;div class=&quot;rb-tab rb-tab-active&quot; data-value=&quot;3&quot;&gt;\n      &lt;div class=&quot;rb-spot&quot;&gt;\n        &lt;span class=&quot;rb-txt&quot;&gt;3&lt;/span&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n\n  &lt;!-- Button --&gt;\n  &lt;div class=&quot;button-box&quot;&gt;\n    &lt;button class=&quot;button trigger&quot;&gt;Submit!&lt;/button&gt;\n  &lt;/div&gt;\n\n&lt;/div&gt;","css":"/* Containers */\nhtml, body {\n  min-height: 100%;\n}\n\nbody {\n  font-family: sans-serif;\n  background: #42426b;\n  background-image: -webkit-linear-gradient(135deg, #8067B7, #EC87C0);\n  background-image: linear-gradient(-45deg, #8067B7, #EC87C0);\n  color: rgba(255,255,255,.5);\n}\n\n.rb-box {\n  width: 80%;\n  max-width: 420px;\n  margin: 50px auto;\n  padding: 1.3em;\n  background: #292942;\n  border-radius: .75em;\n  -webkit-filter: drop-shadow(1px 2px 5px rgba(0,0,0,.3));\n  filter: drop-shadow(1px 2px 5px rgba(0,0,0,.3));\n  box-shadow: \n    0 2px 2px rgba(243,49,128,.5),\n    0 0px 5px rgba(243,49,128,.15),\n    0 0px 4px rgba(0,0,0,.35),\n    0 5px 20px rgba(243,49,128,.25),\n    0 15px 50px rgba(243,49,128,.75),\n    inset 0 0 15px rgba(255,255,255,.05);\n}\n\n/* Custom Radio Button */\np {\n  font-size: .9em;\n}\n\n.rb {\n  padding: 16px 0;\n  text-align: center;\n  background: rgba(255,255,255,.03);\n  border-radius: .3em;\n}\n\n.rb-tab {\n  display: inline-block;\n  position: relative;\n  width: 20%;\n}\n\n.rb-txt {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  font-size: .5em;\n  color: #FFFFFF;\n}\n\n.rb-spot {\n  position: absolute;\n  width: 18px;\n  height: 18px;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  background: transparent;\n  border: 2px solid rgba(255,255,255,.3);\n  border-radius: 100%;\n  cursor: pointer;\n  transition: ease .5s;\n}\n\n.rb-tab-active .rb-spot {\n  background: rgba(0,0,0,.35);\n  border: 2px solid rgba(243,49,128,.6);\n}\n\n/* Submit Button */\n.button-box {\n  padding: 10px 0;\n  text-align: center;\n}\n\nbutton {\n  display: inline-block;\n  width: 80%;\n  margin-top: 1.2em;\n  padding: 1em;\n  max-width: 220px;\n  font-size: .9em;\n  color: #D42D78;\n  text-transform: uppercase;\n  text-decoration: none;\n  letter-spacing: .15em;\n  background: white;\n  border: none;\n  outline: none;\n  border-radius: 5em;\n  box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.3);\n  transition: \n    color 0.6s, \n    box-shadow 0.3s, \n    transform 0.3s;\n  cursor: pointer;\n}\n\nbutton:hover {\n  box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.3);\n  color: #6f6f6f;\n}","js":"/*\n===============================================================\n\nHi! Welcome to my little playground!\n\nMy name is Tobias Bogliolo. &#39;Open source&#39; by default and always &#39;responsive&#39;,\nI&#39;m a publicist, visual designer and frontend developer based in Barcelona. \n\nHere you will find some of my personal experiments. Sometimes usefull,\nsometimes simply for fun. You are free to use them for whatever you want \nbut I would appreciate an attribution from my work. I hope you enjoy it.\n\n===============================================================\n*/\n//Global:\nvar survey = []; //Bidimensional array: [ [1,3], [2,4] ]\n\n//Switcher function:\n$(&quot;.rb-tab&quot;).click(function () {\n  //Spot switcher:\n  $(this).parent().find(&quot;.rb-tab&quot;).removeClass(&quot;rb-tab-active&quot;);\n  $(this).addClass(&quot;rb-tab-active&quot;);\n});\n\n//Save data:\n$(&quot;.trigger&quot;).click(function () {\n  //Empty array:\n  survey = [];\n  //Push data:\n  for (i = 1; i &lt;= $(&quot;.rb&quot;).length; i++) {if (window.CP.shouldStopExecution(0)) break;\n    var rb = &quot;rb&quot; + i;\n    var rbValue = parseInt($(&quot;#rb-&quot; + i).find(&quot;.rb-tab-active&quot;).attr(&quot;data-value&quot;));\n    //Bidimensional array push:\n    survey.push([i, rbValue]); //Bidimensional array: [ [1,3], [2,4] ]\n  }window.CP.exitedLoop(0);;\n  //Debug:\n  debug();\n});\n\n//Debug:\nfunction debug() {\n  var debug = &quot;&quot;;\n  for (i = 0; i &lt; survey.length; i++) {if (window.CP.shouldStopExecution(1)) break;\n    debug += &quot;Nº &quot; + survey[i][0] + &quot; = &quot; + survey[i][1] + &quot;\\n&quot;;\n  }window.CP.exitedLoop(1);;\n  alert(debug);\n};"};
+    __preprocessors = {
+      "html": "none",
+      "css": "none",
+      "js": "none"
+    };
+    __preprocessorNames = {
+      "html": "HTML",
+      "css": "CSS",
+      "js": "JS"
+    };
+    __editable = false;
+    __embed_prefill = false;
+  </script>
+<script src="./embed-59842fbf0495f2c0b079a7f4ce7544fb0912f3535856bf4dc5c205acbb621c54.js.download"></script>
+<script nonce="">(function(){var js = "window['__CF$cv$params']={r:'793419d36b111d3d',m:'hYvPmc.wC_RvMBMJ0iMu33.s1qF0xFkRWbO4iaqOh9Y-1675353220-0-ASrFZkGZd4bhJ5tjhP7JtVoeNKFFJl6TNJfy4UY0Z1W3nKMc7ScF9IBmzO2UyceHNwFDoLnAkE3hkbGUPM0IvW8ebSP8KP9FgpKaTHJadYitYr/Dqd7s5v7jg2vxy+9u2SraPWf796Cm/ZE/DX2nm92h9zdwBbrKvEC7XCr9vo4FmiRYrFUbYchIpke9FNdizNdHu3LD9vDFX56U2iiP1EA=',s:[0xaad0cef0aa,0x033d6fb216],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='DsLkXnKVc+8=',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = 'DsLkXnKVc+8=';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./saved_resource(19).html"></iframe>
+
+</body></html>

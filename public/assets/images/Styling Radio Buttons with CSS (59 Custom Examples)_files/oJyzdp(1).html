@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://cdpn.io/jh3y/fullembedgrid/oJyzdp?animations=run&type=embed -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  
+  <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+  <meta name="apple-mobile-web-app-title" content="CodePen">
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+  <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+
+
+  
+  <title>CodePen - Project Management Triangle Selector w/ React + CSS Grid 😅</title>
+  
+  <link rel="stylesheet" href="./normalize.min.css">
+
+  
+  
+<style>
+@import url("https://fonts.googleapis.com/css?family=Lato");
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+  background: linear-gradient(28deg, #c5eff7, #fff);
+}
+form {
+  display: grid;
+  background: #fafafa;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem 0;
+  min-width: 160px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin: 0;
+  padding: 2rem 1rem;
+  filter: drop-shadow(20px 20px 20px #aaa);
+  position: relative;
+}
+h1 {
+  grid-column: 1/-1;
+  margin: 0;
+  font-size: 1.25rem;
+  color: #fff;
+  background: #89c4f4;
+  position: absolute;
+  width: 248px;
+  padding: 1rem;
+  z-index: 3;
+  top: 0;
+  left: -1rem;
+  text-align: center;
+  transform-origin: top left;
+  transform: rotate(-90deg) translate(-100%, -100%);
+}
+label {
+  cursor: pointer;
+}
+.check {
+  display: inline-block;
+  height: 40px;
+  width: 80px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.check__check {
+  z-index: 2;
+  opacity: 0;
+  cursor: pointer;
+}
+.check__check:checked ~ .check__indicator {
+  background: #7befb2;
+}
+.check__check:checked ~ .check__indicator:after {
+  transform: translate(40px, 0);
+}
+.check__check,
+.check__indicator {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+}
+.check__indicator {
+  background: #ececec;
+  transition: background 0.25s ease;
+}
+.check__indicator:after {
+  height: 30px;
+  width: 30px;
+  background: #fff;
+  content: '';
+  position: absolute;
+  border-radius: 100%;
+  top: 5px;
+  left: 5px;
+  transition: transform 0.25s ease;
+}
+</style>
+
+  
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no">
+  <div id="app"><form><h1>Services on Offer</h1><label for="Cheap">Cheap</label><div class="check"><input type="checkbox" class="check__check" id="Cheap" value="Cheap"><div class="check__indicator"></div></div><label for="Good">Good</label><div class="check"><input type="checkbox" class="check__check" id="Good" value="Good"><div class="check__indicator"></div></div><label for="Fast">Fast</label><div class="check"><input type="checkbox" class="check__check" id="Fast" value="Fast"><div class="check__indicator"></div></div></form></div>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+
+  <script src="https://unpkg.com/react@16.4.0/umd/react.development.js"></script>
+<script src="./react-dom.development.js.download"></script>
+<script src="./prop-types.min.js.download"></script>
+      <script id="rendered-js">
+function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}const { React, ReactDOM, PropTypes } = window;
+const { Component, Fragment } = React;
+const { render } = ReactDOM;
+const rootNode = document.getElementById('app');
+
+class MultiRadio extends Component {constructor(...args) {super(...args);_defineProperty(this, "state",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      options: this.props.options });_defineProperty(this, "onChange",
+
+    e => {
+      const invert =
+      this.state.options.filter(o => o.checked && o.label !== e.target.id).
+      length === this.props.limit;
+
+      this.setState({
+        options: this.state.options.reduce(
+        (arr, opt) => [
+        ...arr,
+        {
+          ...opt,
+          checked:
+          e.target.id === opt.label ?
+          e.target.checked :
+          invert ?
+          !opt.checked :
+          opt.checked }],
+
+
+        []) });
+
+
+    });_defineProperty(this, "render",
+    () => {
+      return /*#__PURE__*/(
+        React.createElement("form", null, /*#__PURE__*/
+        React.createElement("h1", null, "Services on Offer"),
+        this.state.options.map((o) => /*#__PURE__*/
+        React.createElement(Fragment, { key: `option--${o.label}` }, /*#__PURE__*/
+        React.createElement("label", { htmlFor: o.label }, o.label), /*#__PURE__*/
+        React.createElement("div", { className: "check" }, /*#__PURE__*/
+        React.createElement("input", {
+          onChange: this.onChange,
+          type: "checkbox",
+          className: "check__check",
+          checked: o.checked,
+          value: o.label,
+          id: o.label }), /*#__PURE__*/
+
+        React.createElement("div", { className: "check__indicator" }))))));
+
+
+
+
+
+    });}}_defineProperty(MultiRadio, "defaultProps", { limit: 2, options: [{ label: 'Cheap', checked: false }, { label: 'Good', checked: false }, { label: 'Fast', checked: true }] });_defineProperty(MultiRadio, "propTypes", { options: PropTypes.array, limit: PropTypes.number });
+
+
+render( /*#__PURE__*/React.createElement(MultiRadio, null), rootNode);
+//# sourceURL=pen.js
+    </script>
+
+  
+
+  <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-550eae0ce567d3d9182e33cee4e187761056020161aa87e3ef74dc467972c555.js"></script>
+
+
+
+ 
+</body></html>

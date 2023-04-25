@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)https://cdpn.io/fredjens/fullembedgrid/adqLNO?animations=run&type=embed -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  
+  <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+  <meta name="apple-mobile-web-app-title" content="CodePen">
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+  <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+
+
+  
+  <title>CodePen - Animated switch for radio buttons (css only)</title>
+  
+  
+  
+  
+<style>
+.switch {
+  position: relative;
+  width: 14rem;
+  padding: 0 1rem;
+  font-family: verdana;
+}
+.switch:before {
+  content: "  ";
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 3rem;
+  background: #000;
+  border-radius: 30px;
+}
+.switch__label {
+  display: inline-block;
+  width: 2rem;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: color 200ms ease-out;
+}
+.switch__label:hover {
+  color: white;
+}
+.switch__indicator {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: -0.5rem;
+  left: 0;
+  background: blue;
+  border-radius: 50%;
+  transition: transform 600ms cubic-bezier(0.02, 0.94, 0.09, 0.97), background 300ms cubic-bezier(0.17, 0.67, 0.14, 1.03);
+  transform: translate3d(1rem, 0, 0);
+}
+.switch input#one:checked ~ .switch__indicator {
+  background: PaleGreen;
+  transform: translate3d(1.2rem, 0, 0);
+}
+.switch input#two:checked ~ .switch__indicator {
+  background: MediumTurquoise;
+  transform: translate3d(5.5rem, 0, 0);
+}
+.switch input#three:checked ~ .switch__indicator {
+  background: PaleVioletRed;
+  transform: translate3d(10.6rem, 0, 0);
+}
+.switch input[type=radio]:not(:checked), .switch input[type=radio]:checked {
+  display: none;
+}
+
+body {
+  background: #333;
+  color: #999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -9rem;
+  margin-top: -3rem;
+}
+</style>
+
+  
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no">
+  <div class="switch">
+  <input name="switch" id="one" type="radio" checked="">
+  <label for="one" class="switch__label">One</label>
+  <input name="switch" id="two" type="radio">
+  <label for="two" class="switch__label">Two</label>
+  <input name="switch" id="three" type="radio">
+  <label for="three" class="switch__label">Three</label>
+  <div class="switch__indicator"></div>
+</div>
+  
+  
+  
+  
+
+  <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-550eae0ce567d3d9182e33cee4e187761056020161aa87e3ef74dc467972c555.js"></script>
+
+
+
+ 
+</body></html>

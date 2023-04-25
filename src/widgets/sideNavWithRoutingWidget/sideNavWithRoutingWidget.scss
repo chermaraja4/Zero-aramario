@@ -1,0 +1,15 @@
+.active {
+    list-style: disc;
+    font-weight: bold;
+}
+.non-active {
+    list-style: none;
+}
+
+.sideNavWidgetContainer {
+    ul {
+        li {
+            margin:15px 0;
+        }
+    }
+}

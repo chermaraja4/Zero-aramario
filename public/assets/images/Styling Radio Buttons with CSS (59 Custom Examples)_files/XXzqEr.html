@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)https://codepen.io/anon/embed/XXzqEr?height=500&theme-id=1&slug-hash=XXzqEr&default-tab=result -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width">
+<title>CodePen Embed - Google Dots Radio Buttons</title>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="CI4PXA1UeQjSI6S5Jts2m0bpczP4PRN5+wYLoJiJhwzDWZGGsAv6rauXzQvtTySHDWHF1+HEl2+RGI5YYBN3bw==">
+<link rel="stylesheet" media="all" href="./embed-5c9d0df4194479e72f3f4195cb70bfc2217587bcd5b1acda570c7aadbea18f9c.css">
+<style>
+    .hide {
+      display: none !important;
+    }
+
+    #result-box {
+      background: #28282a;
+      color: #ffffff;
+    }
+    .embed-footer,
+    .embed-nav {
+      background: #28282a;
+      
+    }
+    .embed-nav .code-types a,
+    .embed-nav .result-button-list a,
+    .action-button {
+      color: #ffffff;
+      background-color: #424242;
+    }
+    .embed-nav .code-types a.active,
+    .embed-nav .result-button-list a.active,
+    .action-button.active {
+      background: #212121;
+      color: #ffffff;
+      box-shadow: inset 0px 3px #ff8a00;
+    }
+    .embed-nav .logo-wrap .edit-on-codepen {
+      color: #a9a9a9;
+    }
+
+    .embed-nav svg {
+      stroke: #a9a9a9 !important;
+    }
+  </style>
+<link rel="stylesheet" media="all" href="./highcontrast-dark-c9f58c52f642f276610867eb0652eb22d9d88af6dddef0874efd8d911a7938ff.css">
+<link rel="stylesheet" href="./maVRwd.css">
+<meta name="monetization" content="$ilp.uphold.com/biyqg2MkQKbe">
+</head>
+<body id="the-body" style="border: 1px solid #39231b; --borderWidth: 1px;" class="codepen-embed-body static results-active">
+<nav class="embed-nav group" id="embed-nav">
+<ul class="code-types">
+<li class="code-type">
+<a id="html-link" href="https://codepen.io/anon/embed/XXzqEr?height=500&amp;theme-id=1&amp;slug-hash=XXzqEr&amp;default-tab=result#html-box" role="button" aria-pressed="false">
+HTML
+</a>
+</li>
+<li class="code-type">
+<a id="css-link" href="https://codepen.io/anon/embed/XXzqEr?height=500&amp;theme-id=1&amp;slug-hash=XXzqEr&amp;default-tab=result#css-box" role="button" aria-pressed="false">
+CSS
+</a>
+</li>
+<li class="code-type">
+<a id="js-link" href="https://codepen.io/anon/embed/XXzqEr?height=500&amp;theme-id=1&amp;slug-hash=XXzqEr&amp;default-tab=result#js-box" role="button" aria-pressed="false">
+JS
+</a>
+</li>
+</ul>
+<ul class="result-button-list">
+<li class="results results-type">
+<a id="result-link" href="https://codepen.io/anon/embed/XXzqEr?height=500&amp;theme-id=1&amp;slug-hash=XXzqEr&amp;default-tab=result#result-box" class="active" aria-pressed="true" role="button">
+Result
+</a>
+</li>
+<li>
+<a href="https://codepen.io/anon/embed/XXzqEr?height=500&amp;theme-id=1&amp;slug-hash=XXzqEr&amp;default-tab=result#resources-link" id="skip-results-iframe-link">Skip Results Iframe</a>
+</li>
+</ul>
+<div class="logo-wrap" id="edit-area">
+<a class="edit-on-codepen" target="_blank" rel="noopener" href="https://codepen.io/victorfreire/pen/XXzqEr" title="Edit on CodePen">
+<div class="large-logo">
+<span id="edit-on-text" class="open-on">EDIT ON</span>
+<svg id="embed-codepen-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 26" fill="none" stroke="#000" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="CodePen">
+<path d="M80 6h-9v14h9m34-14h-9v14h9m-3-7h-6m-28 0h-6m51 7V6l11 14V6M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24m55-10h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-6v14M15 8c-1.3-1.3-3-2-5-2-4 0-7 3-7 7s3 7 7 7c2 0 3.7-.8 5-2m49-5c0 4-3 7-7 7h-5V6h5c4 0 7 3 7 7z"></path>
+</svg>
+</div>
+<div class="box-logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 0 26 26" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" role="img" aria-label="Edit on CodePen">
+<path id="icon-codepen-box" d="M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24"></path>
+</svg>
+</div>
+</a>
+</div>
+</nav>
+<div id="output" data-border-style="thin" data-header="true">
+<div id="html-box" class="code-wrap code-box box " role="region" aria-label="HTML">
+<pre tabindex="0"><code data-lang="htmlmixed" id="actual-html-code" class=" cm-s-default">        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">main</span><span class="cm-tag cm-bracket">&gt;</span>
+            <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"container"</span><span class="cm-tag cm-bracket">&gt;</span>
+                <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">input</span> <span class="cm-attribute">type</span>=<span class="cm-string">"radio"</span> <span class="cm-attribute">class</span>=<span class="cm-string">"radio"</span> <span class="cm-attribute">id</span>=<span class="cm-string">"radio-1"</span> <span class="cm-attribute">name</span>=<span class="cm-string">"group"</span><span class="cm-tag cm-bracket">/&gt;</span>
+                <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">label</span> <span class="cm-attribute">for</span>=<span class="cm-string">"radio-1"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">label</span><span class="cm-tag cm-bracket">&gt;</span>
+                <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">input</span> <span class="cm-attribute">type</span>=<span class="cm-string">"radio"</span> <span class="cm-attribute">class</span>=<span class="cm-string">"radio"</span> <span class="cm-attribute">id</span>=<span class="cm-string">"radio-2"</span> <span class="cm-attribute">name</span>=<span class="cm-string">"group"</span><span class="cm-tag cm-bracket">/&gt;</span>
+                <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">label</span> <span class="cm-attribute">for</span>=<span class="cm-string">"radio-2"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">label</span><span class="cm-tag cm-bracket">&gt;</span>
+                <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">input</span> <span class="cm-attribute">type</span>=<span class="cm-string">"radio"</span> <span class="cm-attribute">class</span>=<span class="cm-string">"radio"</span> <span class="cm-attribute">id</span>=<span class="cm-string">"radio-3"</span> <span class="cm-attribute">name</span>=<span class="cm-string">"group"</span><span class="cm-tag cm-bracket">/&gt;</span>
+                <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">label</span> <span class="cm-attribute">for</span>=<span class="cm-string">"radio-3"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">label</span><span class="cm-tag cm-bracket">&gt;</span>
+                <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">input</span> <span class="cm-attribute">type</span>=<span class="cm-string">"radio"</span> <span class="cm-attribute">class</span>=<span class="cm-string">"radio"</span> <span class="cm-attribute">id</span>=<span class="cm-string">"radio-4"</span> <span class="cm-attribute">name</span>=<span class="cm-string">"group"</span><span class="cm-tag cm-bracket">/&gt;</span>
+                <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">label</span> <span class="cm-attribute">for</span>=<span class="cm-string">"radio-4"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">label</span><span class="cm-tag cm-bracket">&gt;</span>
+            <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">main</span><span class="cm-tag cm-bracket">&gt;</span></code></pre>
+</div>
+<div id="css-box" class="code-wrap code-box box " role="region" aria-label="CSS">
+<pre tabindex="0"><code data-lang="css" id="actual-css-code" class=" cm-s-default"><span class="cm-def">@keyframes</span> <span class="cm-variable">fade</span> {
+    <span class="cm-number">0%</span>, <span class="cm-number">50%</span> {
+        <span class="cm-property">opacity</span>: <span class="cm-number">0</span>;
+        <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">0</span>);
+    }
+}
+<span class="cm-def">@keyframes</span> <span class="cm-variable">dot-anim</span> {
+    <span class="cm-number">0%</span> {
+        <span class="cm-property">top</span>: <span class="cm-number">-4vw</span>;
+    }
+    <span class="cm-number">50%</span> {
+        <span class="cm-property">top</span>: <span class="cm-number">4vw</span>;
+    }
+    <span class="cm-number">100%</span> {
+        <span class="cm-property">top</span>: <span class="cm-number">-4vw</span>;
+    }
+}
+<span class="cm-def">@keyframes</span> <span class="cm-variable">checked-radio-3</span> {
+    <span class="cm-number">0%</span> {
+        <span class="cm-property">top</span>: <span class="cm-number">-10vw</span>;
+        <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">0</span>);
+    }
+    <span class="cm-number">100%</span> {
+        <span class="cm-property">top</span>: <span class="cm-number">0</span>;
+        <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1</span>);
+    }
+}
+<span class="cm-def">@keyframes</span> <span class="cm-variable">unchecked-radio-3</span> {
+    <span class="cm-number">0%</span> {
+        <span class="cm-property">bottom</span>: <span class="cm-number">0</span>;
+        <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1</span>);
+    }
+    <span class="cm-number">100%</span> {
+        <span class="cm-property">bottom</span>: <span class="cm-number">-10vw</span>;
+        <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">0</span>);
+    }
+}
+<span class="cm-def">@keyframes</span> <span class="cm-variable">checked-radio-4</span> {
+    <span class="cm-number">0%</span> {
+        <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">rotate</span>(<span class="cm-number">0</span>) <span class="cm-variable cm-callee">translateY</span>(<span class="cm-number">-4.8vw</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">.2</span>);
+    }
+    <span class="cm-number">83%</span> {
+        <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">rotate</span>(<span class="cm-number">360deg</span>) <span class="cm-variable cm-callee">translateY</span>(<span class="cm-number">-2.5vw</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1</span>);
+        <span class="cm-property">transform-origin</span>: <span class="cm-number">2vw</span>;
+    }
+    <span class="cm-number">88%</span> {
+        <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translateY</span>(<span class="cm-number">.6vw</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1</span>);
+    }
+    <span class="cm-number">93%</span> {
+        <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translateY</span>(<span class="cm-number">-.9vw</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1</span>);
+    }
+    <span class="cm-number">100%</span> {
+        <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translateY</span>(<span class="cm-number">0</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1</span>);
+    }
+}
+<span class="cm-def">@keyframes</span> <span class="cm-variable">unchecked-radio-4</span> {
+    <span class="cm-number">25%</span> {
+        <span class="cm-property">top</span>: <span class="cm-number">-6.5vw</span>;
+    }
+    <span class="cm-number">50%</span> {
+        <span class="cm-property">top</span>: <span class="cm-number">9vw</span>;
+    }
+    <span class="cm-number">75%</span> {
+        <span class="cm-property">top</span>: <span class="cm-number">-10vw</span>;
+    }
+    <span class="cm-number">100%</span> {
+        <span class="cm-property">top</span>: <span class="cm-number">-10vw</span>;
+        <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">0</span>);
+    }
+}
+*, *:<span class="cm-variable-3">before</span>, *:<span class="cm-variable-3">after</span> {
+    <span class="cm-property">margin</span>: <span class="cm-atom">auto</span>;
+    <span class="cm-property">padding</span>: <span class="cm-number">0</span>;
+    <span class="cm-property">outline</span>: <span class="cm-number">0</span>;
+    <span class="cm-property">overflow</span>: <span class="cm-atom">hidden</span>;
+    <span class="cm-property">box-sizing</span>: <span class="cm-atom">border-box</span>;
+}
+<span class="cm-tag">html</span>, <span class="cm-tag">body</span> { <span class="cm-property">background</span>: <span class="cm-keyword">white</span>; }
+<span class="cm-tag">main</span>, <span class="cm-qualifier">.container</span>, <span class="cm-tag">label</span>, <span class="cm-tag">label</span>:<span class="cm-variable-3">before</span>, <span class="cm-tag">label</span>:<span class="cm-variable-3">after</span> {
+    <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+    <span class="cm-property">top</span>: <span class="cm-number">0</span>;
+    <span class="cm-property">bottom</span>: <span class="cm-number">0</span>;
+    <span class="cm-property">left</span>: <span class="cm-number">0</span>;
+    <span class="cm-property">right</span>: <span class="cm-number">0</span>;
+}
+<span class="cm-tag">main</span> {
+    <span class="cm-property">width</span>: <span class="cm-number">95vw</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">50vw</span>;
+}
+<span class="cm-qualifier">.container</span> {
+    <span class="cm-property">width</span>: <span class="cm-number">100%</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">100%</span>;
+    <span class="cm-property">animation</span>: <span class="cm-variable">fade</span> <span class="cm-number">1s</span>;
+}
+<span class="cm-tag">label</span> {
+    <span class="cm-property">display</span>: <span class="cm-atom">inline-block</span>;
+    <span class="cm-property">width</span>: <span class="cm-number">10vw</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">10vw</span>;
+    <span class="cm-property">border-radius</span>: <span class="cm-number">50%</span>;
+    <span class="cm-property">transition</span>: <span class="cm-atom">all</span> <span class="cm-number">.2s</span> <span class="cm-atom">ease-in-out</span>;
+    <span class="cm-property">animation-timing-function</span>: <span class="cm-atom">ease-in-out</span>;
+    <span class="cm-property">animation-iteration-count</span>: <span class="cm-atom">infinite</span>;
+    <span class="cm-property">animation-duration</span>: <span class="cm-number">1.6s</span>;
+    <span class="cm-property">animation-name</span>: <span class="cm-variable">dot-anim</span>;
+}
+<span class="cm-qualifier">.radio</span>:<span class="cm-variable-3">checked</span> + <span class="cm-tag">label</span> {
+    <span class="cm-property">animation-play-state</span>: <span class="cm-atom">paused</span>;
+}
+<span class="cm-tag">label</span>:<span class="cm-variable-3">before</span> {
+    <span class="cm-property">content</span>: <span class="cm-string">""</span>;
+    <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+    <span class="cm-property">width</span>: <span class="cm-number">5vw</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">5vw</span>;
+    <span class="cm-property">background</span>: <span class="cm-keyword">white</span>;
+    <span class="cm-property">border-radius</span>: <span class="cm-number">50%</span>;
+    <span class="cm-property">box-shadow</span>: <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">0</span>, <span class="cm-number">0</span>, <span class="cm-number">0</span>, <span class="cm-number">0.117647</span>) <span class="cm-number">0</span> <span class="cm-number">0</span> <span class="cm-number">.8vw</span> <span class="cm-number">0</span>, <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">0</span>, <span class="cm-number">0</span>, <span class="cm-number">0</span>, <span class="cm-number">0.239216</span>) <span class="cm-number">0</span> <span class="cm-number">.8vw</span> <span class="cm-number">.8vw</span> <span class="cm-number">0</span>;
+    <span class="cm-property">transition</span>: <span class="cm-atom">all</span> <span class="cm-number">.2s</span>;
+}
+<span class="cm-tag">label</span>:<span class="cm-variable-3">hover</span>:<span class="cm-variable-3">before</span> {
+    <span class="cm-property">box-shadow</span>: <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">0</span>, <span class="cm-number">0</span>, <span class="cm-number">0</span>, <span class="cm-number">0.0784314</span>) <span class="cm-number">0</span> <span class="cm-number">0</span> <span class="cm-number">1vw</span> <span class="cm-number">0</span>, <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">0</span>, <span class="cm-number">0</span>, <span class="cm-number">0</span>, <span class="cm-number">0.239216</span>) <span class="cm-number">0</span> <span class="cm-number">1vw</span> <span class="cm-number">1vw</span> <span class="cm-number">0</span>;
+}
+<span class="cm-tag">label</span>:<span class="cm-variable-3">after</span> {
+    <span class="cm-property">content</span>: <span class="cm-string">""</span>;
+    <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+    <span class="cm-property">width</span>: <span class="cm-number">10vw</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">10vw</span>;
+    <span class="cm-property">background</span>: <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">255</span>, <span class="cm-number">255</span>, <span class="cm-number">255</span>, <span class="cm-number">.5</span>);
+    <span class="cm-property">border-radius</span>: <span class="cm-number">50%</span>;
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">0</span>);
+}
+<span class="cm-qualifier">.radio</span>:<span class="cm-variable-3">checked</span> + <span class="cm-tag">label</span>:<span class="cm-variable-3">after</span> {
+    <span class="cm-property">background</span>: <span class="cm-atom">transparent</span>;
+    <span class="cm-property">transition</span>: <span class="cm-atom">all</span> <span class="cm-number">.5s</span>;
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1</span>);
+}
+<span class="cm-comment">/**** BLUE Radio button code ****/</span>
+<span class="cm-builtin">#radio-1</span> + <span class="cm-tag">label</span> {
+    <span class="cm-property">left</span>: <span class="cm-number">-60vw</span>;
+    <span class="cm-property">background</span>: <span class="cm-atom">#4285F4</span>;
+    <span class="cm-property">animation-delay</span>: <span class="cm-number">0s</span>;
+}
+<span class="cm-builtin">#radio-1</span> + <span class="cm-tag">label</span>:<span class="cm-variable-3">before</span> {
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">0</span>);
+}
+<span class="cm-builtin">#radio-1</span>:<span class="cm-variable-3">checked</span> + <span class="cm-tag">label</span>:<span class="cm-variable-3">before</span> {
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1</span>);
+    <span class="cm-property">transition</span>: <span class="cm-atom">all</span> <span class="cm-number">.4s</span>;
+}
+<span class="cm-comment">/**** RED radio button code ****/</span>
+<span class="cm-builtin">#radio-2</span> + <span class="cm-tag">label</span> {
+    <span class="cm-property">left</span>: <span class="cm-number">-20vw</span>;
+    <span class="cm-property">background</span>: <span class="cm-atom">#EA4335</span>;
+    <span class="cm-property">border-color</span>: <span class="cm-atom">#EA4335</span><span class="cm-keyword">!important</span>;
+    <span class="cm-property">animation-delay</span>: <span class="cm-number">.2s</span>;
+}
+<span class="cm-builtin">#radio-2</span>:<span class="cm-variable-3">checked</span> + <span class="cm-tag">label</span> {
+    <span class="cm-property">background</span>: <span class="cm-keyword">white</span>;
+    <span class="cm-property">border</span>: <span class="cm-number">1vw</span> <span class="cm-atom">solid</span>;
+    <span class="cm-property">box-shadow</span>: <span class="cm-atom">inset</span> <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">0</span>, <span class="cm-number">0</span>, <span class="cm-number">0</span>, <span class="cm-number">0.117647</span>) <span class="cm-number">0</span> <span class="cm-number">0</span> <span class="cm-number">.6vw</span> <span class="cm-number">0</span>, <span class="cm-atom">inset</span> <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">0</span>, <span class="cm-number">0</span>, <span class="cm-number">0</span>, <span class="cm-number">0.239216</span>) <span class="cm-number">0</span> <span class="cm-number">.6vw</span> <span class="cm-number">.8vw</span> <span class="cm-number">0</span>;
+    <span class="cm-property">transition</span>: <span class="cm-atom">all</span> <span class="cm-number">.2s</span>;
+}
+<span class="cm-builtin">#radio-2</span>:<span class="cm-variable-3">checked</span> + <span class="cm-tag">label</span>:<span class="cm-variable-3">before</span> {
+    <span class="cm-property">width</span>: <span class="cm-number">5vw</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">5vw</span>;
+    <span class="cm-property">background</span>: <span class="cm-atom">#EA4335</span>;
+    <span class="cm-property">transition</span>: <span class="cm-atom">all</span> <span class="cm-number">.4s</span>;
+}
+<span class="cm-comment">/* for IE */</span>
+<span class="cm-builtin">#radio-2</span>:<span class="cm-variable cm-callee">not</span>(:<span class="cm-variable-3">checked</span>) + <span class="cm-tag">label</span>:<span class="cm-variable-3">before</span> {
+    <span class="cm-property">width</span>: <span class="cm-number">8vw</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">8vw</span>;
+    <span class="cm-property">background</span>: <span class="cm-atom">#EA4335</span>;
+    <span class="cm-property">box-shadow</span>: <span class="cm-atom">none</span>;
+}
+<span class="cm-comment">/**** YELLOW radio button code ****/</span>
+<span class="cm-builtin">#radio-3</span> + <span class="cm-tag">label</span> {
+    <span class="cm-property">left</span>: <span class="cm-number">20vw</span>;
+    <span class="cm-property">background</span>: <span class="cm-atom">#FBBC05</span>;
+    <span class="cm-property">animation-delay</span>: <span class="cm-number">.4s</span>;
+}
+<span class="cm-builtin">#radio-3</span> + <span class="cm-tag">label</span>:<span class="cm-variable-3">before</span> {
+    <span class="cm-comment">/* background: #E91E63; */</span>
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">0</span>);
+    <span class="cm-property">animation-name</span>: <span class="cm-variable">unchecked-radio-3</span>;
+    <span class="cm-property">animation-duration</span>: <span class="cm-number">.2s</span>;
+    <span class="cm-property">animation-timing-function</span>: <span class="cm-atom">ease-in-out</span>;
+}
+<span class="cm-builtin">#radio-3</span>:<span class="cm-variable-3">checked</span> + <span class="cm-tag">label</span>:<span class="cm-variable-3">before</span> {
+    <span class="cm-property">animation-name</span>: <span class="cm-variable">checked-radio-3</span>;
+    <span class="cm-property">animation-duration</span>: <span class="cm-number">.4s</span>;
+    <span class="cm-property">animation-timing-function</span>: <span class="cm-atom">ease-in-out</span>;
+    <span class="cm-property">animation-fill-mode</span>: <span class="cm-atom">both</span>;
+}
+<span class="cm-comment">/**** GREEN radio button code ****/</span>
+<span class="cm-builtin">#radio-4</span> + <span class="cm-tag">label</span> {
+    <span class="cm-property">left</span>: <span class="cm-number">60vw</span>;
+    <span class="cm-property">background</span>: <span class="cm-atom">#34A853</span>;
+    <span class="cm-property">animation-delay</span>: <span class="cm-number">.6s</span>;
+}
+<span class="cm-builtin">#radio-4</span> + <span class="cm-tag">label</span>:<span class="cm-variable-3">before</span> {
+    <span class="cm-comment">/* background: #8BC34A; */</span>
+    <span class="cm-property">animation</span>: <span class="cm-variable">unchecked-radio-4</span> <span class="cm-number">.5s</span> <span class="cm-atom">both</span>;
+}
+<span class="cm-builtin">#radio-4</span>:<span class="cm-variable-3">checked</span> + <span class="cm-tag">label</span>:<span class="cm-variable-3">before</span> {
+    <span class="cm-property">animation-name</span>: <span class="cm-variable">checked-radio-4</span>;
+    <span class="cm-property">animation-duration</span>: <span class="cm-number">.6s</span>;
+    <span class="cm-property">animation-timing-function</span>: <span class="cm-variable cm-callee">cubic-bezier</span>(<span class="cm-number">0.22</span>, <span class="cm-number">0.61</span>, <span class="cm-number">0.36</span>, <span class="cm-number">1</span>);
+    <span class="cm-property">animation-fill-mode</span>: <span class="cm-atom">both</span>;
+}
+[<span class="cm-tag">type</span>=<span class="cm-string">"radio"</span>] {
+    <span class="cm-property">display</span>: <span class="cm-atom">none</span>;
+}</code></pre>
+</div>
+<div id="js-box" class="code-wrap code-box box " role="region" aria-label="JS">
+<pre tabindex="0"><code data-lang="javascript" id="actual-js-code" class=" cm-s-default"><span class="cm-comment">// Just check/uncheck to see the effects transitions.</span>
+
+
+
+
+
+<span class="cm-comment">//          Inspiration</span>
+
+<span class="cm-comment">//design.google.com/articles/evolving-the-google-identity/</span></code></pre>
+</div>
+<div id="result-box" class="code-box active zoom-1" role="region" aria-label="Result">
+<iframe allow="accelerometer; camera; encrypted-media; display-capture; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write; web-share" allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="result-iframe  " frameborder="0" id="result-iframe" loading="lazy" name="CodePen Preview for Google Dots Radio Buttons" sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-downloads allow-presentation" scrolling="yes" title="CodePen Preview for Google Dots Radio Buttons" data-src="https://cdpn.io/victorfreire/fullembedgrid/XXzqEr?animations=run&amp;type=embed" src="./XXzqEr(1).html">
+  </iframe>
+</div>
+<div id="about-box">
+<div class="about-container">
+<div class="about-user">
+<a href="https://codepen.io/victorfreire" target="_blank" rel="noopener"><img src="./default(5).png" loading="lazy" alt="" class="about-image"></a>
+<div class="about-user-info">
+<p>
+This Pen is owned by <a href="https://codepen.io/victorfreire" target="_blank" rel="noopener">Victor Freire</a> on <a href="https://codepen.io/" target="_blank" rel="noopener">CodePen</a>.
+</p>
+<p>
+<a href="https://codepen.io/victorfreire" target="_blank" rel="noopener" class="about-user-more">
+See more by @victorfreire on CodePen
+</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="resources-box" class="resources-box">
+<h3>External CSS</h3>
+<p>
+This Pen doesn't use any external CSS resources.
+</p>
+<h3>External JavaScript</h3>
+<p>
+This Pen doesn't use any external JavaScript resources.
+</p>
+</div>
+</div>
+<footer class="embed-footer" id="embed-footer">
+<button id="resources-link" class="resources-link action-button bottom left" href="#resources-box" aria-pressed="false" role="button">
+Resources
+</button>
+<ul class="scaling-choices bottom right">
+<li><button class="action-button" id="zoom-button-1">1×</button></li>
+<li><button class="action-button" id="zoom-button-05">0.5×</button></li>
+<li><button class="action-button" id="zoom-button-025">0.25×</button></li>
+</ul>
+<button id="rerun-button" class="action-button rerun-button bottom right">
+Rerun
+</button>
+</footer>
+<script nonce="">
+    __processedPen = {"html":"&lt;main&gt;\n            &lt;div class=&quot;container&quot;&gt;\n                &lt;input type=&quot;radio&quot; class=&quot;radio&quot; id=&quot;radio-1&quot; name=&quot;group&quot;/&gt;\n                &lt;label for=&quot;radio-1&quot;&gt;&lt;/label&gt;\n                &lt;input type=&quot;radio&quot; class=&quot;radio&quot; id=&quot;radio-2&quot; name=&quot;group&quot;/&gt;\n                &lt;label for=&quot;radio-2&quot;&gt;&lt;/label&gt;\n                &lt;input type=&quot;radio&quot; class=&quot;radio&quot; id=&quot;radio-3&quot; name=&quot;group&quot;/&gt;\n                &lt;label for=&quot;radio-3&quot;&gt;&lt;/label&gt;\n                &lt;input type=&quot;radio&quot; class=&quot;radio&quot; id=&quot;radio-4&quot; name=&quot;group&quot;/&gt;\n                &lt;label for=&quot;radio-4&quot;&gt;&lt;/label&gt;\n            &lt;/div&gt;\n        &lt;/main&gt;","css":"@keyframes fade {\n    0%, 50% {\n        opacity: 0;\n        transform: scale(0);\n    }\n}\n@keyframes dot-anim {\n    0% {\n        top: -4vw;\n    }\n    50% {\n        top: 4vw;\n    }\n    100% {\n        top: -4vw;\n    }\n}\n@keyframes checked-radio-3 {\n    0% {\n        top: -10vw;\n        transform: scale(0);\n    }\n    100% {\n        top: 0;\n        transform: scale(1);\n    }\n}\n@keyframes unchecked-radio-3 {\n    0% {\n        bottom: 0;\n        transform: scale(1);\n    }\n    100% {\n        bottom: -10vw;\n        transform: scale(0);\n    }\n}\n@keyframes checked-radio-4 {\n    0% {\n        transform: rotate(0) translateY(-4.8vw) scale(.2);\n    }\n    83% {\n        transform: rotate(360deg) translateY(-2.5vw) scale(1);\n        transform-origin: 2vw;\n    }\n    88% {\n        transform: translateY(.6vw) scale(1);\n    }\n    93% {\n        transform: translateY(-.9vw) scale(1);\n    }\n    100% {\n        transform: translateY(0) scale(1);\n    }\n}\n@keyframes unchecked-radio-4 {\n    25% {\n        top: -6.5vw;\n    }\n    50% {\n        top: 9vw;\n    }\n    75% {\n        top: -10vw;\n    }\n    100% {\n        top: -10vw;\n        transform: scale(0);\n    }\n}\n*, *:before, *:after {\n    margin: auto;\n    padding: 0;\n    outline: 0;\n    overflow: hidden;\n    box-sizing: border-box;\n}\nhtml, body { background: white; }\nmain, .container, label, label:before, label:after {\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    left: 0;\n    right: 0;\n}\nmain {\n    width: 95vw;\n    height: 50vw;\n}\n.container {\n    width: 100%;\n    height: 100%;\n    animation: fade 1s;\n}\nlabel {\n    display: inline-block;\n    width: 10vw;\n    height: 10vw;\n    border-radius: 50%;\n    transition: all .2s ease-in-out;\n    animation-timing-function: ease-in-out;\n    animation-iteration-count: infinite;\n    animation-duration: 1.6s;\n    animation-name: dot-anim;\n}\n.radio:checked + label {\n    animation-play-state: paused;\n}\nlabel:before {\n    content: &quot;&quot;;\n    position: absolute;\n    width: 5vw;\n    height: 5vw;\n    background: white;\n    border-radius: 50%;\n    box-shadow: rgba(0, 0, 0, 0.117647) 0 0 .8vw 0, rgba(0, 0, 0, 0.239216) 0 .8vw .8vw 0;\n    transition: all .2s;\n}\nlabel:hover:before {\n    box-shadow: rgba(0, 0, 0, 0.0784314) 0 0 1vw 0, rgba(0, 0, 0, 0.239216) 0 1vw 1vw 0;\n}\nlabel:after {\n    content: &quot;&quot;;\n    position: absolute;\n    width: 10vw;\n    height: 10vw;\n    background: rgba(255, 255, 255, .5);\n    border-radius: 50%;\n    transform: scale(0);\n}\n.radio:checked + label:after {\n    background: transparent;\n    transition: all .5s;\n    transform: scale(1);\n}\n/**** BLUE Radio button code ****/\n#radio-1 + label {\n    left: -60vw;\n    background: #4285F4;\n    animation-delay: 0s;\n}\n#radio-1 + label:before {\n    transform: scale(0);\n}\n#radio-1:checked + label:before {\n    transform: scale(1);\n    transition: all .4s;\n}\n/**** RED radio button code ****/\n#radio-2 + label {\n    left: -20vw;\n    background: #EA4335;\n    border-color: #EA4335!important;\n    animation-delay: .2s;\n}\n#radio-2:checked + label {\n    background: white;\n    border: 1vw solid;\n    box-shadow: inset rgba(0, 0, 0, 0.117647) 0 0 .6vw 0, inset rgba(0, 0, 0, 0.239216) 0 .6vw .8vw 0;\n    transition: all .2s;\n}\n#radio-2:checked + label:before {\n    width: 5vw;\n    height: 5vw;\n    background: #EA4335;\n    transition: all .4s;\n}\n/* for IE */\n#radio-2:not(:checked) + label:before {\n    width: 8vw;\n    height: 8vw;\n    background: #EA4335;\n    box-shadow: none;\n}\n/**** YELLOW radio button code ****/\n#radio-3 + label {\n    left: 20vw;\n    background: #FBBC05;\n    animation-delay: .4s;\n}\n#radio-3 + label:before {\n    /* background: #E91E63; */\n    transform: scale(0);\n    animation-name: unchecked-radio-3;\n    animation-duration: .2s;\n    animation-timing-function: ease-in-out;\n}\n#radio-3:checked + label:before {\n    animation-name: checked-radio-3;\n    animation-duration: .4s;\n    animation-timing-function: ease-in-out;\n    animation-fill-mode: both;\n}\n/**** GREEN radio button code ****/\n#radio-4 + label {\n    left: 60vw;\n    background: #34A853;\n    animation-delay: .6s;\n}\n#radio-4 + label:before {\n    /* background: #8BC34A; */\n    animation: unchecked-radio-4 .5s both;\n}\n#radio-4:checked + label:before {\n    animation-name: checked-radio-4;\n    animation-duration: .6s;\n    animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);\n    animation-fill-mode: both;\n}\n[type=&quot;radio&quot;] {\n    display: none;\n}","js":"// Just check/uncheck to see the effects transitions.\n\n\n\n\n\n//          Inspiration\n\n//design.google.com/articles/evolving-the-google-identity/"};
+    __preprocessors = {
+      "html": "none",
+      "css": "none",
+      "js": "none"
+    };
+    __preprocessorNames = {
+      "html": "HTML",
+      "css": "CSS",
+      "js": "JS"
+    };
+    __editable = false;
+    __embed_prefill = false;
+  </script>
+<script src="./embed-59842fbf0495f2c0b079a7f4ce7544fb0912f3535856bf4dc5c205acbb621c54.js.download"></script>
+<script nonce="">(function(){var js = "window['__CF$cv$params']={r:'793419d1ff651d3d',m:'HyKIt_S_EA2M6vtDtQ48edBeC_SZgpO8GMBWbRgWX4U-1675353220-0-AdJFjvJg3BdAUWeu7RrUTGoXhl+sFw3b5jFcG7hZ2VNyEgn/Ee6lfzTplGmhc6ypDgBIGaJdoXErCD+dXvkjm967roSBLB2aFxJOIAwvk/ym7kIIHjFF0tvN1SvVEuydKLtnkl4KxpkqfSmHMiLQzpyP+VgeyPsQUSXFelMdY+tT3ucfaniBcvlaBVRlq2tNK7ZQbwfcejDf5dwKm5q27WE=',s:[0x23ec1caf79,0xb4b9844e2e],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='srun9cFr7aI=',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = 'srun9cFr7aI=';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./saved_resource(7).html"></iframe>
+
+</body></html>

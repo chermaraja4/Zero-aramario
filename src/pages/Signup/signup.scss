@@ -1,0 +1,68 @@
+.login-left-image {
+    padding-left: 0;
+
+    img {
+        height: 100vh;
+    }
+}
+
+.passwordInput {
+    .eyeIcon {
+        position: relative;
+        right: 13px;
+        float: right;
+        top: -27px;
+    }
+}
+
+
+
+.select-gender {
+    color: black;
+    font-weight: 600;
+}
+
+.create-account-button {
+    background-color: darkgray;
+    color: white;
+    text-transform: inherit;
+    border: none;
+    width: 60%;
+    margin-top: 20px;
+    border-radius: 0;
+}
+
+.signin-mobile {
+    .select-gender {
+        color: darkgray;
+    }
+
+    .create-account-button {
+        width: 100%;
+        background: black;
+        color: white;
+    }
+}
+
+.passwrd-instructions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .instructions {
+        background-color: lightgray;
+        padding: 4px 7px;
+        font-size: 11px;
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.signin-desktop {
+    h2 {
+        font-weight: bolder;
+        font-size: 30px;
+    }
+}

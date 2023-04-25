@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)https://codepen.io/anon/embed/EeVmWZ?height=500&theme-id=1&slug-hash=EeVmWZ&default-tab=result -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width">
+<title>CodePen Embed - Fancy Checkboxes and Radio Buttons — with Font Awesome</title>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="LM2aeh8w5DgGzFJn6wLxosR1nuXn7SFv04MvSS+MwqXnGgSgom9nnX94O9UgluO+j/0oAf4UpXm5naqx1xYyxg==">
+<link rel="stylesheet" media="all" href="./embed-5c9d0df4194479e72f3f4195cb70bfc2217587bcd5b1acda570c7aadbea18f9c.css">
+<style>
+    .hide {
+      display: none !important;
+    }
+
+    #result-box {
+      background: #28282a;
+      color: #ffffff;
+    }
+    .embed-footer,
+    .embed-nav {
+      background: #28282a;
+      
+    }
+    .embed-nav .code-types a,
+    .embed-nav .result-button-list a,
+    .action-button {
+      color: #ffffff;
+      background-color: #424242;
+    }
+    .embed-nav .code-types a.active,
+    .embed-nav .result-button-list a.active,
+    .action-button.active {
+      background: #212121;
+      color: #ffffff;
+      box-shadow: inset 0px 3px #ff8a00;
+    }
+    .embed-nav .logo-wrap .edit-on-codepen {
+      color: #a9a9a9;
+    }
+
+    .embed-nav svg {
+      stroke: #a9a9a9 !important;
+    }
+  </style>
+<link rel="stylesheet" media="all" href="./highcontrast-dark-c9f58c52f642f276610867eb0652eb22d9d88af6dddef0874efd8d911a7938ff.css">
+<link rel="stylesheet" href="./maVRwd.css">
+<meta name="monetization" content="$ilp.uphold.com/biyqg2MkQKbe">
+</head>
+<body id="the-body" style="border: 1px solid #39231b; --borderWidth: 1px;" class="codepen-embed-body static results-active">
+<nav class="embed-nav group" id="embed-nav">
+<ul class="code-types">
+<li class="code-type">
+<a id="html-link" href="https://codepen.io/anon/embed/EeVmWZ?height=500&amp;theme-id=1&amp;slug-hash=EeVmWZ&amp;default-tab=result#html-box" role="button" aria-pressed="false">
+HTML
+</a>
+</li>
+<li class="code-type">
+<a id="css-link" href="https://codepen.io/anon/embed/EeVmWZ?height=500&amp;theme-id=1&amp;slug-hash=EeVmWZ&amp;default-tab=result#css-box" role="button" aria-pressed="false">
+SCSS
+</a>
+</li>
+<li class="code-type">
+<a id="js-link" href="https://codepen.io/anon/embed/EeVmWZ?height=500&amp;theme-id=1&amp;slug-hash=EeVmWZ&amp;default-tab=result#js-box" role="button" aria-pressed="false">
+JS
+</a>
+</li>
+</ul>
+<ul class="result-button-list">
+<li class="results results-type">
+<a id="result-link" href="https://codepen.io/anon/embed/EeVmWZ?height=500&amp;theme-id=1&amp;slug-hash=EeVmWZ&amp;default-tab=result#result-box" class="active" aria-pressed="true" role="button">
+Result
+</a>
+</li>
+<li>
+<a href="https://codepen.io/anon/embed/EeVmWZ?height=500&amp;theme-id=1&amp;slug-hash=EeVmWZ&amp;default-tab=result#resources-link" id="skip-results-iframe-link">Skip Results Iframe</a>
+</li>
+</ul>
+<div class="logo-wrap" id="edit-area">
+<a class="edit-on-codepen" target="_blank" rel="noopener" href="https://codepen.io/jasesmith/pen/EeVmWZ" title="Edit on CodePen">
+<div class="large-logo">
+<span id="edit-on-text" class="open-on">EDIT ON</span>
+<svg id="embed-codepen-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 26" fill="none" stroke="#000" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="CodePen">
+<path d="M80 6h-9v14h9m34-14h-9v14h9m-3-7h-6m-28 0h-6m51 7V6l11 14V6M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24m55-10h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-6v14M15 8c-1.3-1.3-3-2-5-2-4 0-7 3-7 7s3 7 7 7c2 0 3.7-.8 5-2m49-5c0 4-3 7-7 7h-5V6h5c4 0 7 3 7 7z"></path>
+</svg>
+</div>
+<div class="box-logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 0 26 26" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" role="img" aria-label="Edit on CodePen">
+<path id="icon-codepen-box" d="M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24"></path>
+</svg>
+</div>
+</a>
+</div>
+</nav>
+<div id="output" data-border-style="thin" data-header="true">
+<div id="html-box" class="code-wrap code-box box " role="region" aria-label="HTML">
+<pre tabindex="0"><code data-lang="htmlmixed" id="actual-html-code" class=" cm-s-default"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">main</span> <span class="cm-attribute">class</span>=<span class="cm-string">"fancy"</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">section</span> <span class="cm-attribute">class</span>=<span class="cm-string">"demo"</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"box"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h3</span><span class="cm-tag cm-bracket">&gt;</span>Checkbox <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span> <span class="cm-tag cm-bracket">/&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">small</span><span class="cm-tag cm-bracket">&gt;</span>(Multi-select)<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">small</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h3</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">label</span> <span class="cm-attribute">for</span>=<span class="cm-string">"Cookies"</span><span class="cm-tag cm-bracket">&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">input</span> <span class="cm-attribute">id</span>=<span class="cm-string">"Cookies"</span> <span class="cm-attribute">name</span>=<span class="cm-string">"yaybox"</span> <span class="cm-attribute">type</span>=<span class="cm-string">"checkbox"</span> <span class="cm-attribute">value</span>=<span class="cm-string">"Cookies"</span> <span class="cm-attribute">checked</span> <span class="cm-tag cm-bracket">/&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>Chocolate Chip Cookies<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">label</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">label</span> <span class="cm-attribute">for</span>=<span class="cm-string">"Milk"</span><span class="cm-tag cm-bracket">&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">input</span> <span class="cm-attribute">id</span>=<span class="cm-string">"Milk"</span> <span class="cm-attribute">name</span>=<span class="cm-string">"yaybox"</span> <span class="cm-attribute">type</span>=<span class="cm-string">"checkbox"</span> <span class="cm-attribute">value</span>=<span class="cm-string">"Milk"</span> <span class="cm-tag cm-bracket">/&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>Ice Cold Milk<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">label</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">label</span> <span class="cm-attribute">for</span>=<span class="cm-string">"Other"</span><span class="cm-tag cm-bracket">&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">input</span> <span class="cm-attribute">id</span>=<span class="cm-string">"Other"</span> <span class="cm-attribute">name</span>=<span class="cm-string">"yaybox"</span> <span class="cm-attribute">type</span>=<span class="cm-string">"checkbox"</span> <span class="cm-attribute">value</span>=<span class="cm-string">"Other"</span> <span class="cm-tag cm-bracket">/&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>Raspberry-Lemon Pastry with Cream Cheese Frosting and Graham Cracker Crust<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">label</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">hr</span> <span class="cm-tag cm-bracket">/&gt;</span>
+
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h3</span><span class="cm-tag cm-bracket">&gt;</span>Radio Button <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span> <span class="cm-tag cm-bracket">/&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">small</span><span class="cm-tag cm-bracket">&gt;</span>(Single-select)<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">small</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h3</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">label</span> <span class="cm-attribute">for</span>=<span class="cm-string">"Chocolate"</span><span class="cm-tag cm-bracket">&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">input</span> <span class="cm-attribute">id</span>=<span class="cm-string">"Chocolate"</span> <span class="cm-attribute">name</span>=<span class="cm-string">"yaydio"</span> <span class="cm-attribute">type</span>=<span class="cm-string">"radio"</span> <span class="cm-attribute">value</span>=<span class="cm-string">"Chocolate"</span> <span class="cm-tag cm-bracket">/&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>Chocolate Candies<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">label</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">label</span> <span class="cm-attribute">for</span>=<span class="cm-string">"Strawberry"</span><span class="cm-tag cm-bracket">&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">input</span> <span class="cm-attribute">id</span>=<span class="cm-string">"Strawberry"</span> <span class="cm-attribute">name</span>=<span class="cm-string">"yaydio"</span> <span class="cm-attribute">type</span>=<span class="cm-string">"radio"</span> <span class="cm-attribute">value</span>=<span class="cm-string">"Strawberry"</span> <span class="cm-tag cm-bracket">/&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>Strawberry Jelly<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">label</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">label</span> <span class="cm-attribute">for</span>=<span class="cm-string">"Vanilla"</span><span class="cm-tag cm-bracket">&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">input</span> <span class="cm-attribute">id</span>=<span class="cm-string">"Vanilla"</span> <span class="cm-attribute">name</span>=<span class="cm-string">"yaydio"</span> <span class="cm-attribute">type</span>=<span class="cm-string">"radio"</span> <span class="cm-attribute">value</span>=<span class="cm-string">"Vanilla"</span> <span class="cm-attribute">checked</span> <span class="cm-tag cm-bracket">/&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>Vanilla Ice Cream<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">label</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">section</span><span class="cm-tag cm-bracket">&gt;</span>
+  
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">section</span> <span class="cm-attribute">class</span>=<span class="cm-string">"controls"</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">label</span> <span class="cm-attribute">for</span>=<span class="cm-string">"sim"</span><span class="cm-tag cm-bracket">&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">input</span> <span class="cm-attribute">id</span>=<span class="cm-string">"sim"</span> <span class="cm-attribute">name</span>=<span class="cm-string">"sim"</span> <span class="cm-attribute">type</span>=<span class="cm-string">"checkbox"</span> <span class="cm-attribute">value</span>=<span class="cm-string">"sim"</span> <span class="cm-attribute">checked</span> <span class="cm-attribute">onchange</span>=<span class="cm-string">"toggleTheFancy()"</span> <span class="cm-tag cm-bracket">/&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>Toggle The Fanciness<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">label</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">label</span> <span class="cm-attribute">for</span>=<span class="cm-string">"square"</span><span class="cm-tag cm-bracket">&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">input</span> <span class="cm-attribute">id</span>=<span class="cm-string">"square"</span> <span class="cm-attribute">name</span>=<span class="cm-string">"square"</span> <span class="cm-attribute">type</span>=<span class="cm-string">"checkbox"</span> <span class="cm-attribute">value</span>=<span class="cm-string">"square"</span> <span class="cm-attribute">onchange</span>=<span class="cm-string">"toggleTheShape()"</span> <span class="cm-tag cm-bracket">/&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>Square Checkboxes<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">label</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">small</span><span class="cm-tag cm-bracket">&gt;</span>Change width to force line-<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span> <span class="cm-tag cm-bracket">/&gt;</span>wrapping. Notice the text alignment!<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">small</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span> <span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">label</span> <span class="cm-attribute">for</span>=<span class="cm-string">"slider"</span><span class="cm-tag cm-bracket">&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">input</span> <span class="cm-attribute">id</span>=<span class="cm-string">"slider"</span> <span class="cm-attribute">type</span>=<span class="cm-string">"range"</span> <span class="cm-attribute">min</span>=<span class="cm-string">"5"</span> <span class="cm-attribute">max</span>=<span class="cm-string">"100"</span> <span class="cm-attribute">value</span>=<span class="cm-string">"100"</span> <span class="cm-attribute">oninput</span>=<span class="cm-string">"setProperty('--demo-width', this.value)"</span> <span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">label</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">section</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">main</span><span class="cm-tag cm-bracket">&gt;</span></code></pre>
+</div>
+<div id="css-box" class="code-wrap code-box box " role="region" aria-label="CSS">
+<pre tabindex="0"><code data-lang="text/x-scss" id="actual-css-code" class=" cm-s-default"><span class="cm-qualifier">.fancy</span> <span class="cm-tag">label</span> {
+  <span class="cm-property">display</span>: <span class="cm-atom">inline-flex</span>;
+  <span class="cm-property">align-items</span>: <span class="cm-atom">baseline</span>;
+
+  <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-tag">checkbox</span>],
+  <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-tag">radio</span>] {
+    <span class="cm-property">position</span>: <span class="cm-atom">relative</span>;
+    <span class="cm-property">appearance</span>: <span class="cm-atom">none</span>;
+    <span class="cm-property">font-size</span>: <span class="cm-atom">inherit</span>;
+    <span class="cm-property">width</span>: <span class="cm-number">1em</span>;
+    <span class="cm-property">margin</span>: <span class="cm-number">0</span>;
+    <span class="cm-property">color</span>: <span class="cm-atom">inherit</span>;
+    <span class="cm-property">outline</span>: <span class="cm-atom">none</span>;
+    <span class="cm-property">font-family</span>: <span class="cm-string">'Font Awesome 5 Pro'</span>;
+    <span class="cm-property">transition</span>: <span class="cm-number">300ms</span> <span class="cm-atom">ease-out</span>;
+
+    &amp;::<span class="cm-variable-3">after</span> {
+      <span class="cm-property">content</span>: <span class="cm-string">'\f111'</span>; <span class="cm-comment">// circle</span>
+      <span class="cm-property">display</span>: <span class="cm-atom">inline-block</span>;
+      <span class="cm-property">text-align</span>: <span class="cm-atom">center</span>;
+      <span class="cm-property">width</span>: <span class="cm-number">1em</span>;
+    }
+
+    &amp;:<span class="cm-variable-3">checked</span>::<span class="cm-variable-3">after</span> {
+      <span class="cm-property">font-weight</span>: <span class="cm-number">900</span>;
+    }
+    &amp;:<span class="cm-variable-3">active</span> {
+      <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">.6</span>);
+    }
+
+    + <span class="cm-tag">span</span> {
+      <span class="cm-property">margin-left</span>: <span class="cm-number">.35em</span>;
+    }
+  }
+  
+  <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-tag">checkbox</span>]:<span class="cm-variable-3">checked</span>::<span class="cm-variable-3">after</span> {
+    <span class="cm-property">content</span>: <span class="cm-string">'\f058'</span>; <span class="cm-comment">// check-circle</span>
+  }
+
+  <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-tag">radio</span>]:<span class="cm-variable-3">checked</span>::<span class="cm-variable-3">after</span> {
+    <span class="cm-property">content</span>: <span class="cm-string">'\f192'</span>; <span class="cm-comment">// dot-circle</span>
+  }
+}
+
+<span class="cm-qualifier">.fancy</span><span class="cm-qualifier">.square</span> <span class="cm-tag">label</span> {
+  <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-tag">checkbox</span>]:<span class="cm-variable-3">after</span> {
+    <span class="cm-property">content</span>: <span class="cm-string">'\f0c8'</span>; <span class="cm-comment">// square</span>
+  }
+  <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-tag">checkbox</span>]:<span class="cm-variable-3">checked</span>::<span class="cm-variable-3">after</span> {
+    <span class="cm-property">content</span>: <span class="cm-string">'\f14a'</span>; <span class="cm-comment">// check-square</span>
+  }
+}
+
+
+
+
+
+
+
+
+
+<span class="cm-comment">/* demo layout – not relevant to the fanciness */</span>
+:<span class="cm-variable-3">root</span> {
+  <span class="cm-variable-2">--demo-width</span>: <span class="cm-number">30</span>;
+}
+
+<span class="cm-tag">body</span> {
+  <span class="cm-property">margin</span>: <span class="cm-number">0</span>;
+  <span class="cm-property">min-height</span>: <span class="cm-number">100vh</span>;
+  <span class="cm-property">font-size</span>: <span class="cm-variable cm-callee">calc</span>(<span class="cm-number">1vmax</span> + <span class="cm-number">.5em</span>);
+  <span class="cm-property">line-height</span>: <span class="cm-number">1.4</span>;
+  <span class="cm-property">font-family</span>: <span class="cm-atom">sans-serif</span>;
+  <span class="cm-property">display</span>: <span class="cm-atom">flex</span>;
+
+  <span class="cm-tag">main</span> {
+    <span class="cm-property">flex</span>: <span class="cm-number">1</span>;
+    <span class="cm-property">display</span>: <span class="cm-atom">flex</span>;
+    <span class="cm-property">flex-direction</span>: <span class="cm-atom">row</span>;
+    <span class="cm-property">align-items</span>: <span class="cm-atom">baseline</span>;
+    <span class="cm-property">padding</span>: <span class="cm-number">0em</span>;
+
+    <span class="cm-tag">section</span> {
+      <span class="cm-property">flex</span>: <span class="cm-number">1</span>;
+      <span class="cm-property">padding</span>: <span class="cm-number">2em</span>;
+      <span class="cm-property">display</span>: <span class="cm-atom">flex</span>;
+      <span class="cm-property">align-items</span>: <span class="cm-atom">center</span>;
+      <span class="cm-property">justify-content</span>: <span class="cm-atom">center</span>;
+      
+      + <span class="cm-tag">section</span> {
+        <span class="cm-property">flex</span>: <span class="cm-atom">none</span>;
+        <span class="cm-property">padding</span>: <span class="cm-number">1em</span>;
+        <span class="cm-property">margin</span>: <span class="cm-number">2em</span>;
+        <span class="cm-property">background</span>: <span class="cm-atom">#1fc2f5</span>;
+        <span class="cm-property">color</span>: <span class="cm-atom">#fff</span>;
+        <span class="cm-property">cursor</span>: <span class="cm-atom">pointer</span>;
+        <span class="cm-property">transition</span>: <span class="cm-variable">font-size</span> <span class="cm-number">100ms</span> <span class="cm-atom">ease-out</span>;
+        <span class="cm-property">border-radius</span>: <span class="cm-number">.5em</span>;
+      }
+    }
+  }
+}
+
+<span class="cm-qualifier">.box</span> {
+  <span class="cm-property">position</span>: <span class="cm-atom">relative</span>;
+  <span class="cm-property">width</span>: <span class="cm-variable cm-callee">calc</span>(<span class="cm-variable cm-callee">var</span>(<span class="cm-variable-2">--demo-width</span>) * <span class="cm-number">1%</span>);
+  <span class="cm-property">border</span>: <span class="cm-number">1px</span> <span class="cm-atom">dashed</span> <span class="cm-atom">#ccc</span>;
+  <span class="cm-property">padding</span>: <span class="cm-number">1em</span>;
+  <span class="cm-property">margin</span>: <span class="cm-number">-.5em</span>;
+  <span class="cm-property">border-radius</span>: <span class="cm-number">.3em</span>;
+  &amp;::<span class="cm-variable-3">after</span> {
+    <span class="cm-property">font-size</span>: <span class="cm-number">.8em</span>;
+    <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+    <span class="cm-property">top</span>: <span class="cm-number">0</span>;
+    <span class="cm-property">left</span>: <span class="cm-number">50%</span>;
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translate</span>(<span class="cm-number">-50%</span>, <span class="cm-number">-50%</span>);
+    <span class="cm-property">background</span>: <span class="cm-atom">#fff</span>;
+    <span class="cm-property">border</span>: <span class="cm-number">1px</span> <span class="cm-atom">dashed</span> <span class="cm-atom">#ccc</span>;
+    <span class="cm-property">padding</span>: <span class="cm-number">0</span> <span class="cm-number">.65em</span>;
+    <span class="cm-property">border-radius</span>: <span class="cm-number">1em</span>;
+    <span class="cm-property">counter-reset</span>: <span class="cm-variable">dw</span> <span class="cm-variable cm-callee">var</span>(<span class="cm-variable-2">--demo-width</span>);
+    <span class="cm-property">content</span>: <span class="cm-variable cm-callee">counter</span>(<span class="cm-variable">dw</span>) <span class="cm-string">"%"</span>;
+  }
+}
+
+<span class="cm-tag">h3</span> {
+  <span class="cm-property">margin</span>: <span class="cm-number">0</span> <span class="cm-number">0</span> <span class="cm-number">.5em</span> <span class="cm-number">0</span>;
+}
+
+<span class="cm-tag">p</span> {
+  <span class="cm-property">margin</span>: <span class="cm-number">0</span> <span class="cm-number">0</span> <span class="cm-number">1em</span> <span class="cm-number">0</span>;
+}
+
+<span class="cm-tag">hr</span> {
+  <span class="cm-property">border</span>: <span class="cm-number">1px</span> <span class="cm-atom">dashed</span> <span class="cm-atom">#ccc</span>;
+  <span class="cm-property">height</span>: <span class="cm-number">0</span>;
+  <span class="cm-property">margin</span>: <span class="cm-number">1em</span> <span class="cm-number">0</span>;
+}
+
+<span class="cm-comment">// Bonus Fanciness! Look at you, digging around here!</span>
+<span class="cm-comment">// fancy range slider</span>
+<span class="cm-qualifier">.fancy</span> <span class="cm-tag">label</span> {
+  <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"range"</span>] {
+    <span class="cm-property">appearance</span>: <span class="cm-atom">none</span>;
+    <span class="cm-property">outline</span>: <span class="cm-atom">none</span>;
+    <span class="cm-property">display</span>: <span class="cm-atom">block</span>;
+    <span class="cm-property">padding</span>: <span class="cm-number">0</span>;
+    <span class="cm-property">border</span>: <span class="cm-number">0</span>;
+    <span class="cm-property">width</span>: <span class="cm-atom">auto</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">.25em</span>;
+    <span class="cm-property">border-radius</span>: <span class="cm-number">1em</span>;
+    <span class="cm-property">cursor</span>: <span class="cm-atom">pointer</span>;
+    <span class="cm-property">font-size</span>: <span class="cm-atom">inherit</span>;
+    <span class="cm-comment">// MOZILLA</span>
+    &amp;::<span class="cm-meta">-moz-</span><span class="cm-variable-3">range-track</span> {
+      <span class="cm-property">appearance</span>: <span class="cm-atom">none</span>;
+      <span class="cm-property">background</span>: <span class="cm-atom">#fff</span>;
+      <span class="cm-property">outline</span>: <span class="cm-atom">none</span>;
+    }
+    &amp;::<span class="cm-meta">-moz-</span><span class="cm-variable-3">focus-outer</span> {
+      <span class="cm-property">border</span>: <span class="cm-number">0</span>;
+    }
+    &amp;::<span class="cm-meta">-moz-</span><span class="cm-variable-3">range-thumb</span> {
+      <span class="cm-property">appearance</span>: <span class="cm-atom">none</span>;
+      <span class="cm-property">width</span>: <span class="cm-number">1em</span>;
+      <span class="cm-property">height</span>: <span class="cm-number">1em</span>;
+      <span class="cm-property">border</span>: <span class="cm-atom">none</span>;
+      <span class="cm-property">box-shadow</span>: <span class="cm-number">0</span> <span class="cm-number">0</span> <span class="cm-number">0</span> <span class="cm-number">.2em</span> <span class="cm-atom">#1fc2f5</span>;
+      <span class="cm-property">border-radius</span>: <span class="cm-number">1em</span>;
+      <span class="cm-property">background</span>: <span class="cm-atom">#fff</span>;
+      <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">.7</span>);
+      <span class="cm-property">transition</span>: <span class="cm-number">.3s</span> <span class="cm-atom">ease-out</span>;
+    }
+    &amp;::<span class="cm-meta">-moz-</span><span class="cm-variable-3">range-thumb</span>:<span class="cm-variable-3">focus</span>,
+    &amp;::<span class="cm-meta">-moz-</span><span class="cm-variable-3">range-thumb</span>:<span class="cm-variable-3">active</span> {
+      <span class="cm-property">appearance</span>: <span class="cm-atom">none</span>;
+      <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1.5</span>);
+    }
+    <span class="cm-comment">// BLINK/WEBKIT</span>
+    &amp;::<span class="cm-meta">-webkit-</span><span class="cm-variable-3">slider-thumb</span> {
+      <span class="cm-property">appearance</span>: <span class="cm-atom">none</span>;
+      <span class="cm-property">width</span>: <span class="cm-number">1em</span>;
+      <span class="cm-property">height</span>: <span class="cm-number">1em</span>;
+      <span class="cm-property">border</span>: <span class="cm-atom">none</span>;
+      <span class="cm-property">box-shadow</span>: <span class="cm-number">0</span> <span class="cm-number">0</span> <span class="cm-number">0</span> <span class="cm-number">.2em</span> <span class="cm-atom">#1fc2f5</span>;
+      <span class="cm-property">border-radius</span>: <span class="cm-number">1em</span>;
+      <span class="cm-property">background</span>: <span class="cm-atom">#fff</span>;
+      <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">.8</span>);
+      <span class="cm-property">transition</span>: <span class="cm-number">.3s</span> <span class="cm-atom">ease-out</span>;
+    }
+    &amp;::<span class="cm-meta">-webkit-</span><span class="cm-variable-3">slider-thumb</span>:<span class="cm-variable-3">focus</span>,
+    &amp;::<span class="cm-meta">-webkit-</span><span class="cm-variable-3">slider-thumb</span>:<span class="cm-variable-3">active</span> {
+      <span class="cm-property">appearance</span>: <span class="cm-atom">none</span>;
+      <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1.1</span>);
+    }
+  }
+}</code></pre>
+<a href="https://codepen.io/anon/embed/EeVmWZ?height=500&amp;theme-id=1&amp;slug-hash=EeVmWZ&amp;default-tab=result#0" id="view-css-compiled-button" class="action-button bottom right view-compiled-button" data-type="css">
+ View Compiled
+</a>
+</div>
+<div id="js-box" class="code-wrap code-box box " role="region" aria-label="JS">
+<pre tabindex="0"><code data-lang="javascript" id="actual-js-code" class=" cm-s-default"><span class="cm-comment">// Simulation controls to illustrate differences</span>
+<span class="cm-comment">// This is not relevant to the implementing the fanciness</span>
+<span class="cm-keyword">const</span> <span class="cm-def">element</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">'main'</span>)
+<span class="cm-comment">// slider communication</span>
+<span class="cm-keyword">const</span> <span class="cm-def">setProperty</span> <span class="cm-operator">=</span> (<span class="cm-def">property</span>, <span class="cm-def">value</span>) <span class="cm-operator">=&gt;</span> <span class="cm-variable">document</span>.<span class="cm-property">body</span>.<span class="cm-property">style</span>.<span class="cm-property">setProperty</span>(<span class="cm-variable-2">property</span>, <span class="cm-variable-2">value</span>)
+<span class="cm-comment">// fanciness on/off</span>
+<span class="cm-keyword">const</span> <span class="cm-def">toggleTheFancy</span> <span class="cm-operator">=</span> () <span class="cm-operator">=&gt;</span> <span class="cm-variable">element</span>.<span class="cm-property">classList</span>.<span class="cm-property">toggle</span>(<span class="cm-string">'fancy'</span>)
+<span class="cm-comment">// shape shifting</span>
+<span class="cm-keyword">const</span> <span class="cm-def">toggleTheShape</span> <span class="cm-operator">=</span> () <span class="cm-operator">=&gt;</span> <span class="cm-variable">element</span>.<span class="cm-property">classList</span>.<span class="cm-property">toggle</span>(<span class="cm-string">'square'</span>)
+
+<span class="cm-variable">setProperty</span>(<span class="cm-string">'--demo-width'</span>, <span class="cm-number">100</span>)
+</code></pre>
+</div>
+<div id="result-box" class="code-box active zoom-1" role="region" aria-label="Result">
+<iframe allow="accelerometer; camera; encrypted-media; display-capture; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write; web-share" allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="result-iframe  " frameborder="0" id="result-iframe" loading="lazy" name="CodePen Preview for Fancy Checkboxes and Radio Buttons — with Font Awesome" sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-downloads allow-presentation" scrolling="yes" title="CodePen Preview for Fancy Checkboxes and Radio Buttons — with Font Awesome" data-src="https://cdpn.io/jasesmith/fullembedgrid/EeVmWZ?animations=run&amp;type=embed" src="./EeVmWZ(1).html">
+  </iframe>
+</div>
+<div id="about-box">
+<div class="about-container">
+<div class="about-user">
+<a href="https://codepen.io/jasesmith" target="_blank" rel="noopener"><img src="./default(43).png" loading="lazy" alt="" class="about-image"></a>
+<div class="about-user-info">
+<p>
+This Pen is owned by <a href="https://codepen.io/jasesmith" target="_blank" rel="noopener">Jase</a> on <a href="https://codepen.io/" target="_blank" rel="noopener">CodePen</a>.
+</p>
+<p>
+<a href="https://codepen.io/jasesmith" target="_blank" rel="noopener" class="about-user-more">
+See more by @jasesmith on CodePen
+</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="resources-box" class="resources-box">
+<h3>External CSS</h3>
+<ol class="list-of-resources">
+<li>
+<a href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css" target="_blank">https://pro.fontawesome.com/releases/v5.2.0/css/all.css</a>
+</li>
+</ol>
+<h3>External JavaScript</h3>
+<p>
+This Pen doesn't use any external JavaScript resources.
+</p>
+</div>
+</div>
+<footer class="embed-footer" id="embed-footer">
+<button id="resources-link" class="resources-link action-button bottom left" href="#resources-box" aria-pressed="false" role="button">
+Resources
+</button>
+<ul class="scaling-choices bottom right">
+<li><button class="action-button" id="zoom-button-1">1×</button></li>
+<li><button class="action-button" id="zoom-button-05">0.5×</button></li>
+<li><button class="action-button" id="zoom-button-025">0.25×</button></li>
+</ul>
+<button id="rerun-button" class="action-button rerun-button bottom right">
+Rerun
+</button>
+</footer>
+<script nonce="">
+    __processedPen = {"html":"&lt;main class=&quot;fancy&quot;&gt;\n  &lt;section class=&quot;demo&quot;&gt;\n    &lt;div class=&quot;box&quot;&gt;\n      &lt;h3&gt;Checkbox &lt;br /&gt;&lt;small&gt;(Multi-select)&lt;/small&gt;&lt;/h3&gt;\n      &lt;p&gt;\n        &lt;label for=&quot;Cookies&quot;&gt;\n          &lt;input id=&quot;Cookies&quot; name=&quot;yaybox&quot; type=&quot;checkbox&quot; value=&quot;Cookies&quot; checked /&gt;\n          &lt;span&gt;Chocolate Chip Cookies&lt;/span&gt;\n        &lt;/label&gt;\n      &lt;/p&gt;\n      &lt;p&gt;\n        &lt;label for=&quot;Milk&quot;&gt;\n          &lt;input id=&quot;Milk&quot; name=&quot;yaybox&quot; type=&quot;checkbox&quot; value=&quot;Milk&quot; /&gt;\n          &lt;span&gt;Ice Cold Milk&lt;/span&gt;\n        &lt;/label&gt;\n      &lt;/p&gt;\n\n      &lt;p&gt;\n        &lt;label for=&quot;Other&quot;&gt;\n          &lt;input id=&quot;Other&quot; name=&quot;yaybox&quot; type=&quot;checkbox&quot; value=&quot;Other&quot; /&gt;\n          &lt;span&gt;Raspberry-Lemon Pastry with Cream Cheese Frosting and Graham Cracker Crust&lt;/span&gt;\n        &lt;/label&gt;\n      &lt;/p&gt;\n\n      &lt;hr /&gt;\n\n      &lt;h3&gt;Radio Button &lt;br /&gt;&lt;small&gt;(Single-select)&lt;/small&gt;&lt;/h3&gt;\n      &lt;p&gt;\n        &lt;label for=&quot;Chocolate&quot;&gt;\n          &lt;input id=&quot;Chocolate&quot; name=&quot;yaydio&quot; type=&quot;radio&quot; value=&quot;Chocolate&quot; /&gt;\n          &lt;span&gt;Chocolate Candies&lt;/span&gt;\n        &lt;/label&gt;\n      &lt;/p&gt;\n      &lt;p&gt;\n        &lt;label for=&quot;Strawberry&quot;&gt;\n          &lt;input id=&quot;Strawberry&quot; name=&quot;yaydio&quot; type=&quot;radio&quot; value=&quot;Strawberry&quot; /&gt;\n          &lt;span&gt;Strawberry Jelly&lt;/span&gt;\n        &lt;/label&gt;\n      &lt;/p&gt;\n      &lt;p&gt;\n        &lt;label for=&quot;Vanilla&quot;&gt;\n          &lt;input id=&quot;Vanilla&quot; name=&quot;yaydio&quot; type=&quot;radio&quot; value=&quot;Vanilla&quot; checked /&gt;\n          &lt;span&gt;Vanilla Ice Cream&lt;/span&gt;\n        &lt;/label&gt;\n      &lt;/p&gt;\n    &lt;/div&gt;\n  &lt;/section&gt;\n  \n  &lt;section class=&quot;controls&quot;&gt;\n    &lt;div&gt;\n      &lt;p&gt;\n        &lt;label for=&quot;sim&quot;&gt;\n          &lt;input id=&quot;sim&quot; name=&quot;sim&quot; type=&quot;checkbox&quot; value=&quot;sim&quot; checked onchange=&quot;toggleTheFancy()&quot; /&gt;\n          &lt;span&gt;Toggle The Fanciness&lt;/span&gt;\n        &lt;/label&gt;\n      &lt;/p&gt;\n      &lt;p&gt;\n        &lt;label for=&quot;square&quot;&gt;\n          &lt;input id=&quot;square&quot; name=&quot;square&quot; type=&quot;checkbox&quot; value=&quot;square&quot; onchange=&quot;toggleTheShape()&quot; /&gt;\n          &lt;span&gt;Square Checkboxes&lt;/span&gt;\n        &lt;/label&gt;\n      &lt;/p&gt;\n      &lt;p&gt;\n        &lt;small&gt;Change width to force line-&lt;br /&gt;wrapping. Notice the text alignment!&lt;/small&gt;&lt;br /&gt;\n        &lt;label for=&quot;slider&quot;&gt;\n          &lt;input id=&quot;slider&quot; type=&quot;range&quot; min=&quot;5&quot; max=&quot;100&quot; value=&quot;100&quot; oninput=&quot;setProperty(&#39;--demo-width&#39;, this.value)&quot; /&gt;\n        &lt;/label&gt;\n      &lt;/p&gt;\n    &lt;/div&gt;\n  &lt;/section&gt;\n&lt;/main&gt;","css":"@charset &quot;UTF-8&quot;;\n.fancy label {\n  display: inline-flex;\n  align-items: baseline;\n}\n.fancy label input[type=checkbox],\n.fancy label input[type=radio] {\n  position: relative;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  font-size: inherit;\n  width: 1em;\n  margin: 0;\n  color: inherit;\n  outline: none;\n  font-family: &quot;Font Awesome 5 Pro&quot;;\n  transition: 300ms ease-out;\n}\n.fancy label input[type=checkbox]::after,\n.fancy label input[type=radio]::after {\n  content: &quot;&quot;;\n  display: inline-block;\n  text-align: center;\n  width: 1em;\n}\n.fancy label input[type=checkbox]:checked::after,\n.fancy label input[type=radio]:checked::after {\n  font-weight: 900;\n}\n.fancy label input[type=checkbox]:active,\n.fancy label input[type=radio]:active {\n  transform: scale(0.6);\n}\n.fancy label input[type=checkbox] + span,\n.fancy label input[type=radio] + span {\n  margin-left: 0.35em;\n}\n.fancy label input[type=checkbox]:checked::after {\n  content: &quot;&quot;;\n}\n.fancy label input[type=radio]:checked::after {\n  content: &quot;&quot;;\n}\n\n.fancy.square label input[type=checkbox]:after {\n  content: &quot;&quot;;\n}\n.fancy.square label input[type=checkbox]:checked::after {\n  content: &quot;&quot;;\n}\n\n/* demo layout – not relevant to the fanciness */\n:root {\n  --demo-width: 30;\n}\n\nbody {\n  margin: 0;\n  min-height: 100vh;\n  font-size: calc(1vmax + .5em);\n  line-height: 1.4;\n  font-family: sans-serif;\n  display: flex;\n}\nbody main {\n  flex: 1;\n  display: flex;\n  flex-direction: row;\n  align-items: baseline;\n  padding: 0em;\n}\nbody main section {\n  flex: 1;\n  padding: 2em;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\nbody main section + section {\n  flex: none;\n  padding: 1em;\n  margin: 2em;\n  background: #1fc2f5;\n  color: #fff;\n  cursor: pointer;\n  transition: font-size 100ms ease-out;\n  border-radius: 0.5em;\n}\n\n.box {\n  position: relative;\n  width: calc(var(--demo-width) * 1%);\n  border: 1px dashed #ccc;\n  padding: 1em;\n  margin: -0.5em;\n  border-radius: 0.3em;\n}\n.box::after {\n  font-size: 0.8em;\n  position: absolute;\n  top: 0;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  background: #fff;\n  border: 1px dashed #ccc;\n  padding: 0 0.65em;\n  border-radius: 1em;\n  counter-reset: dw var(--demo-width);\n  content: counter(dw) &quot;%&quot;;\n}\n\nh3 {\n  margin: 0 0 0.5em 0;\n}\n\np {\n  margin: 0 0 1em 0;\n}\n\nhr {\n  border: 1px dashed #ccc;\n  height: 0;\n  margin: 1em 0;\n}\n\n.fancy label input[type=range] {\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  outline: none;\n  display: block;\n  padding: 0;\n  border: 0;\n  width: auto;\n  height: 0.25em;\n  border-radius: 1em;\n  cursor: pointer;\n  font-size: inherit;\n}\n.fancy label input[type=range]::-moz-range-track {\n  -moz-appearance: none;\n       appearance: none;\n  background: #fff;\n  outline: none;\n}\n.fancy label input[type=range]::-moz-focus-outer {\n  border: 0;\n}\n.fancy label input[type=range]::-moz-range-thumb {\n  -moz-appearance: none;\n       appearance: none;\n  width: 1em;\n  height: 1em;\n  border: none;\n  box-shadow: 0 0 0 0.2em #1fc2f5;\n  border-radius: 1em;\n  background: #fff;\n  transform: scale(0.7);\n  -moz-transition: 0.3s ease-out;\n  transition: 0.3s ease-out;\n}\n.fancy label input[type=range]::-moz-range-thumb:focus, .fancy label input[type=range]::-moz-range-thumb:active {\n  -moz-appearance: none;\n       appearance: none;\n  transform: scale(1.5);\n}\n.fancy label input[type=range]::-webkit-slider-thumb {\n  -webkit-appearance: none;\n          appearance: none;\n  width: 1em;\n  height: 1em;\n  border: none;\n  box-shadow: 0 0 0 0.2em #1fc2f5;\n  border-radius: 1em;\n  background: #fff;\n  transform: scale(0.8);\n  -webkit-transition: 0.3s ease-out;\n  transition: 0.3s ease-out;\n}\n.fancy label input[type=range]::-webkit-slider-thumb:focus, .fancy label input[type=range]::-webkit-slider-thumb:active {\n  -webkit-appearance: none;\n          appearance: none;\n  transform: scale(1.1);\n}","js":"// Simulation controls to illustrate differences\n// This is not relevant to the implementing the fanciness\nconst element = document.querySelector(&#39;main&#39;);\n// slider communication\nconst setProperty = (property, value) =&gt; document.body.style.setProperty(property, value);\n// fanciness on/off\nconst toggleTheFancy = () =&gt; element.classList.toggle(&#39;fancy&#39;);\n// shape shifting\nconst toggleTheShape = () =&gt; element.classList.toggle(&#39;square&#39;);\n\nsetProperty(&#39;--demo-width&#39;, 100);"};
+    __preprocessors = {
+      "html": "none",
+      "css": "scss",
+      "js": "none"
+    };
+    __preprocessorNames = {
+      "html": "HTML",
+      "css": "SCSS",
+      "js": "JS"
+    };
+    __editable = false;
+    __embed_prefill = false;
+  </script>
+<script src="./embed-59842fbf0495f2c0b079a7f4ce7544fb0912f3535856bf4dc5c205acbb621c54.js.download"></script>
+<script nonce="">(function(){var js = "window['__CF$cv$params']={r:'793419d5783c1d3d',m:'lDRZxOaWwXVf3BQllJPeYWZncE1wT9Mgj92rpRs6Oa4-1675353220-0-Ad0Dt6qzcffR1vF0M9naXxA5/SnuVr3buQ2Qv4R2YecT3A8n6PZYW9QTR3JwWBPq+b5qYqns7ID31ArhIqbKu7VsrUk59jba9Asb66XUP2HBaOKv01XXm1yy74eb/F35S+hnMhM0LBaXTwSmj1AmRYIq3/8ZsVDT2YqCzrCH1crkMnUZhk01R5Y3Hn3FDWuOdotHuTXq8A1igtg+oWgLEXY=',s:[0x382a880fb2,0x170017f7dc],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='kFbb8/OB884=',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = 'kFbb8/OB884=';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./saved_resource(50).html"></iframe>
+
+</body></html>

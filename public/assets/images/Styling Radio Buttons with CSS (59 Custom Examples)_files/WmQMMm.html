@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)https://codepen.io/anon/embed/WmQMMm?height=500&theme-id=1&slug-hash=WmQMMm&default-tab=result -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width">
+<title>CodePen Embed - Animated SVG radio buttons</title>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="4gYAzgGCic0C0tMAIXuLNTkUu/PSBC5fpq+YlAoev88p0Z4UvN0KaHtmurLq75kpcpwNF8v9qknMsR1s8oRPrA==">
+<link rel="stylesheet" media="all" href="./embed-5c9d0df4194479e72f3f4195cb70bfc2217587bcd5b1acda570c7aadbea18f9c.css">
+<style>
+    .hide {
+      display: none !important;
+    }
+
+    #result-box {
+      background: #28282a;
+      color: #ffffff;
+    }
+    .embed-footer,
+    .embed-nav {
+      background: #28282a;
+      
+    }
+    .embed-nav .code-types a,
+    .embed-nav .result-button-list a,
+    .action-button {
+      color: #ffffff;
+      background-color: #424242;
+    }
+    .embed-nav .code-types a.active,
+    .embed-nav .result-button-list a.active,
+    .action-button.active {
+      background: #212121;
+      color: #ffffff;
+      box-shadow: inset 0px 3px #ff8a00;
+    }
+    .embed-nav .logo-wrap .edit-on-codepen {
+      color: #a9a9a9;
+    }
+
+    .embed-nav svg {
+      stroke: #a9a9a9 !important;
+    }
+  </style>
+<link rel="stylesheet" media="all" href="./highcontrast-dark-c9f58c52f642f276610867eb0652eb22d9d88af6dddef0874efd8d911a7938ff.css">
+<link rel="stylesheet" href="./maVRwd.css">
+<meta name="monetization" content="$ilp.uphold.com/biyqg2MkQKbe">
+</head>
+<body id="the-body" style="border: 1px solid #39231b; --borderWidth: 1px;" class="codepen-embed-body static results-active">
+<nav class="embed-nav group" id="embed-nav">
+<ul class="code-types">
+<li class="code-type">
+<a id="html-link" href="https://codepen.io/anon/embed/WmQMMm?height=500&amp;theme-id=1&amp;slug-hash=WmQMMm&amp;default-tab=result#html-box" role="button" aria-pressed="false">
+Pug
+</a>
+</li>
+<li class="code-type">
+<a id="css-link" href="https://codepen.io/anon/embed/WmQMMm?height=500&amp;theme-id=1&amp;slug-hash=WmQMMm&amp;default-tab=result#css-box" role="button" aria-pressed="false">
+SCSS
+</a>
+</li>
+</ul>
+<ul class="result-button-list">
+<li class="results results-type">
+<a id="result-link" href="https://codepen.io/anon/embed/WmQMMm?height=500&amp;theme-id=1&amp;slug-hash=WmQMMm&amp;default-tab=result#result-box" class="active" aria-pressed="true" role="button">
+Result
+</a>
+</li>
+<li>
+<a href="https://codepen.io/anon/embed/WmQMMm?height=500&amp;theme-id=1&amp;slug-hash=WmQMMm&amp;default-tab=result#resources-link" id="skip-results-iframe-link">Skip Results Iframe</a>
+</li>
+</ul>
+<div class="logo-wrap" id="edit-area">
+<a class="edit-on-codepen" target="_blank" rel="noopener" href="https://codepen.io/andrejsharapov/pen/WmQMMm" title="Edit on CodePen">
+<div class="large-logo">
+<span id="edit-on-text" class="open-on">EDIT ON</span>
+<svg id="embed-codepen-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 26" fill="none" stroke="#000" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="CodePen">
+<path d="M80 6h-9v14h9m34-14h-9v14h9m-3-7h-6m-28 0h-6m51 7V6l11 14V6M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24m55-10h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-6v14M15 8c-1.3-1.3-3-2-5-2-4 0-7 3-7 7s3 7 7 7c2 0 3.7-.8 5-2m49-5c0 4-3 7-7 7h-5V6h5c4 0 7 3 7 7z"></path>
+</svg>
+</div>
+<div class="box-logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 0 26 26" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" role="img" aria-label="Edit on CodePen">
+<path id="icon-codepen-box" d="M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24"></path>
+</svg>
+</div>
+</a>
+</div>
+</nav>
+<div id="output" data-border-style="thin" data-header="true">
+<div id="html-box" class="code-wrap code-box box " role="region" aria-label="HTML">
+<pre tabindex="0"><code data-lang="pug" id="actual-html-code" class=" cm-s-default"><span class="cm-punctuation">-</span> <span class="cm-keyword">var</span> <span class="cm-def">colone</span> <span class="cm-operator">=</span> <span class="cm-string">"#ff8a00"</span>;
+<span class="cm-punctuation">-</span> <span class="cm-keyword">var</span> <span class="cm-def">coltwo</span> <span class="cm-operator">=</span> <span class="cm-string">"#da1b60"</span>;
+<span class="cm-punctuation">-</span> <span class="cm-keyword">var</span> <span class="cm-def">border</span> <span class="cm-operator">=</span> <span class="cm-string">"#4c4f5a"</span>;
+
+<span class="cm-punctuation">-</span> <span class="cm-keyword">var</span> <span class="cm-def">sizeS</span> <span class="cm-operator">=</span> <span class="cm-string">"8px"</span>;
+<span class="cm-punctuation">-</span> <span class="cm-keyword">var</span> <span class="cm-def">sizeM</span> <span class="cm-operator">=</span> <span class="cm-string">"18px"</span>;
+<span class="cm-punctuation">-</span> <span class="cm-keyword">var</span> <span class="cm-def">sizeL</span> <span class="cm-operator">=</span> <span class="cm-string">"20px"</span>;
+
+<span class="cm-qualifier">.container</span>
+<span class="cm-indent">  </span><span class="cm-qualifier">.name</span>
+<span class="cm-indent">    </span><span class="cm-tag">svg</span><span class="cm-qualifier">.gear</span>
+<span class="cm-indent">      </span><span class="cm-tag">path</span><span class="cm-punctuation">(</span>
+<span class="cm-attribute">      d</span><span class="cm-operator">=</span><span class="cm-string">"M15 6.675l-1.8-.6c-.2-.1-.3-.3-.2-.4l.9-1.7c.6-1.2-.7-2.5-1.9-1.9l-1.7.9c-.1.1-.3 0-.4-.2l-.6-1.8c-.4-1.3-2.2-1.3-2.6 0l-.6 1.8c-.1.2-.3.3-.4.2l-1.7-.9c-1.2-.6-2.5.7-1.9 1.9l.9 1.7c.1.1 0 .3-.2.4l-1.8.6c-1.3.4-1.3 2.3 0 2.7l1.8.6c.2 0 .3.2.2.3l-.9 1.7c-.6 1.2.7 2.5 1.9 1.9l1.7-.9c.2-.1.4 0 .4.2l.6 1.8c.4 1.3 2.3 1.3 2.7 0l.6-1.8c.1-.2.3-.3.4-.2l1.7.9c1.2.6 2.5-.7 1.9-1.9l-1-1.7c-.1-.2 0-.4.2-.4l1.8-.6c1.3-.4 1.3-2.2 0-2.6zm-7 3.7c-1.3 0-2.4-1.1-2.4-2.4 0-1.3 1.1-2.4 2.4-2.4 1.3 0 2.4 1.1 2.4 2.4 0 1.3-1.1 2.4-2.4 2.4z"</span>
+      <span class="cm-attribute">fill</span><span class="cm-operator">=</span><span class="cm-variable">border</span>
+      <span class="cm-punctuation">)</span><span class="cm-string">      </span>
+<span class="cm-indent">    </span><span class="cm-tag">h4</span><span class="cm-string"> Click on the radio buttons or labels</span>
+<span class="cm-indent">  </span><span class="cm-keyword">each</span><span class="cm-variable"> val</span><span class="cm-keyword"> in</span> [{<span class="cm-property">id</span>: <span class="cm-string">"Uno"</span>, <span class="cm-property">name</span>: <span class="cm-string">"I like this work"</span>}, {<span class="cm-property">id</span>: <span class="cm-string">"Dos"</span>, <span class="cm-property">name</span>: <span class="cm-string">"Share in social networks"</span>}, {<span class="cm-property">id</span>: <span class="cm-string">"Tres"</span>, <span class="cm-property">name</span>: <span class="cm-string">"Follow the author"</span>}]
+<span class="cm-indent">    </span><span class="cm-tag">input</span><span class="cm-punctuation">(</span>
+<span class="cm-attribute">    type</span><span class="cm-operator">=</span><span class="cm-string">"radio"</span> 
+    <span class="cm-attribute">name</span><span class="cm-operator">=</span><span class="cm-string">"field"</span>
+    <span class="cm-attribute">id</span><span class="cm-operator">=</span> <span class="cm-variable">val</span>.<span class="cm-property">id</span>
+    <span class="cm-punctuation">)</span>
+<span class="cm-indent">    </span><span class="cm-tag">label</span><span class="cm-punctuation">(</span>
+<span class="cm-attribute">    for</span><span class="cm-operator">=</span> <span class="cm-variable">val</span>.<span class="cm-property">id</span>
+    <span class="cm-punctuation">)</span>
+<span class="cm-indent">      </span><span class="cm-tag">svg</span><span class="cm-qualifier">.check</span><span class="cm-punctuation">(</span>
+<span class="cm-attribute">      viewbox</span><span class="cm-operator">=</span><span class="cm-string">"0 0 40 40"</span>
+      <span class="cm-punctuation">)</span>
+<span class="cm-indent">        </span><span class="cm-tag">defs</span>
+<span class="cm-indent">          </span><span class="cm-tag">linearGradient</span><span class="cm-punctuation">(</span>
+<span class="cm-attribute">          id</span><span class="cm-operator">=</span><span class="cm-string">"gradient"</span>
+          <span class="cm-attribute">x1</span><span class="cm-operator">=</span><span class="cm-string">"0"</span>
+          <span class="cm-attribute">y1</span><span class="cm-operator">=</span><span class="cm-string">"0"</span>
+          <span class="cm-attribute">x2</span><span class="cm-operator">=</span><span class="cm-string">"0"</span>
+          <span class="cm-attribute">y2</span><span class="cm-operator">=</span><span class="cm-string">"100%"</span>
+          <span class="cm-punctuation">)</span>
+<span class="cm-indent">            </span><span class="cm-tag">stop</span><span class="cm-punctuation">(</span>
+<span class="cm-attribute">            offset</span><span class="cm-operator">=</span><span class="cm-string">"0%"</span>
+            <span class="cm-attribute">stop-color</span><span class="cm-operator">=</span><span class="cm-variable">colone</span>
+            <span class="cm-punctuation">)</span>
+<span class="cm-indent">            </span><span class="cm-tag">stop</span><span class="cm-punctuation">(</span>
+<span class="cm-attribute">            offset</span><span class="cm-operator">=</span><span class="cm-string">"100%"</span>
+            <span class="cm-attribute">stop-color</span><span class="cm-operator">=</span><span class="cm-variable">coltwo</span>
+            <span class="cm-punctuation">)</span>
+<span class="cm-indent">        </span><span class="cm-tag">circle</span><span class="cm-punctuation">(</span>
+<span class="cm-attribute">        id</span><span class="cm-operator">=</span><span class="cm-string">"border"</span>
+        <span class="cm-attribute">r</span><span class="cm-operator">=</span> <span class="cm-variable">sizeM</span>
+        <span class="cm-attribute">cx</span><span class="cm-operator">=</span> <span class="cm-variable">sizeL</span>
+        <span class="cm-attribute">cy</span><span class="cm-operator">=</span> <span class="cm-variable">sizeL</span>
+        <span class="cm-punctuation">)</span>
+<span class="cm-indent">        </span><span class="cm-tag">circle</span><span class="cm-punctuation">(</span>
+<span class="cm-attribute">        id</span><span class="cm-operator">=</span><span class="cm-string">"dot"</span>
+        <span class="cm-attribute">r</span><span class="cm-operator">=</span> <span class="cm-variable">sizeS</span>
+        <span class="cm-attribute">cx</span><span class="cm-operator">=</span> <span class="cm-variable">sizeL</span>
+        <span class="cm-attribute">cy</span><span class="cm-operator">=</span> <span class="cm-variable">sizeL</span>
+        <span class="cm-punctuation">)</span>
+<span class="cm-indent">      </span><span class="cm-punctuation">=</span> <span class="cm-variable">val</span>.<span class="cm-property">name</span>
+<span class="cm-indent">      </span>
+<span class="cm-qualifier">.btn</span>
+<span class="cm-indent">  </span><span class="cm-tag">a</span><span class="cm-punctuation">(</span><span class="cm-attribute">href</span><span class="cm-operator">=</span><span class="cm-string">"https://codepen.io/andrejsharapov/pen/GzaMRq"</span> <span class="cm-attribute">target</span><span class="cm-operator">=</span><span class="cm-string">"_blank"</span> <span class="cm-attribute">title</span><span class="cm-operator">=</span><span class="cm-string">""</span><span class="cm-punctuation">)</span><span class="cm-string"> Styles for the Checkboxes</span>
+<span class="cm-indent">  </span><span class="cm-tag">a</span><span class="cm-punctuation">(</span><span class="cm-attribute">href</span><span class="cm-operator">=</span><span class="cm-string">"https://twitter.com/andrejsharapov"</span> <span class="cm-attribute">target</span><span class="cm-operator">=</span><span class="cm-string">"_blank"</span> <span class="cm-attribute">title</span><span class="cm-operator">=</span><span class="cm-string">""</span><span class="cm-punctuation">)</span><span class="cm-string"> Follow me in Twitter</span></code></pre>
+<a href="https://codepen.io/anon/embed/WmQMMm?height=500&amp;theme-id=1&amp;slug-hash=WmQMMm&amp;default-tab=result#0" id="view-html-compiled-button" class="action-button bottom right view-compiled-button" data-type="html">
+View Compiled
+</a>
+</div>
+<div id="css-box" class="code-wrap code-box box " role="region" aria-label="CSS">
+<pre tabindex="0"><code data-lang="text/x-scss" id="actual-css-code" class=" cm-s-default"><span class="cm-variable-2">$colone</span>: <span class="cm-atom">#ff8a00</span>;
+<span class="cm-variable-2">$coltwo</span>: <span class="cm-atom">#da1b60</span>;
+
+<span class="cm-variable-2">$size</span>: <span class="cm-number">1.35rem</span>;
+<span class="cm-variable-2">$color_</span>: <span class="cm-atom">#7a7a8c</span>;
+<span class="cm-variable-2">$ground</span>: <span class="cm-atom">#1d1e22</span>; <span class="cm-comment">// ffffff</span>
+<span class="cm-variable-2">$border</span>: <span class="cm-atom">#4c4f5a</span>;
+
+<span class="cm-variable-2">$duration</span>: <span class="cm-number">500</span>;
+
+<span class="cm-comment">// for demo</span>
+
+<span class="cm-tag">body</span> {
+  <span class="cm-property">margin</span>: <span class="cm-number">0</span>;
+  <span class="cm-property">display</span>: <span class="cm-atom">flex</span>;
+  <span class="cm-property">min-height</span>: <span class="cm-number">100vh</span>;
+  <span class="cm-property">flex-direction</span>: <span class="cm-atom">column</span>;
+  <span class="cm-property">justify-content</span>: <span class="cm-atom">center</span>;
+  <span class="cm-property">align-items</span>: <span class="cm-atom">center</span>;
+  <span class="cm-property">font</span>: <span class="cm-number">400</span> <span class="cm-variable-2">$size</span> <span class="cm-atom">sans-serif</span>;
+  <span class="cm-property">color</span>: <span class="cm-variable-2">$color_</span>;
+  <span class="cm-property">background-color</span>: <span class="cm-variable-2">$ground</span>;
+  <span class="cm-property">background</span>: <span class="cm-variable cm-callee">radial-gradient</span>(
+    <span class="cm-variable-2">$border</span> <span class="cm-number">6%</span>,
+    <span class="cm-atom">transparent</span> <span class="cm-number">6%</span>),
+    <span class="cm-variable cm-callee">darken</span>(<span class="cm-variable-2">$ground</span>, <span class="cm-number">2%</span>
+  );
+  <span class="cm-property">background-position</span>: <span class="cm-number">0</span> <span class="cm-number">0</span>, <span class="cm-number">25px</span> <span class="cm-number">25px</span>;
+  <span class="cm-property">background-size</span>: <span class="cm-number">25px</span> <span class="cm-number">25px</span>;
+}
+
+<span class="cm-tag">a</span> {
+  <span class="cm-property">text-decoration</span>: <span class="cm-atom">none</span>;
+  <span class="cm-property">color</span>: <span class="cm-variable-2">$color_</span>;
+  <span class="cm-property">font-size</span>: <span class="cm-variable-2">$size</span> <span class="cm-operator">/</span> <span class="cm-number">2</span>;
+}
+
+<span class="cm-qualifier">.container</span> {
+  <span class="cm-property">position</span>: <span class="cm-atom">relative</span>;
+  <span class="cm-property">padding</span>: (<span class="cm-variable-2">$size</span> <span class="cm-operator">/</span> <span class="cm-number">2</span>);
+  <span class="cm-property">display</span>: <span class="cm-atom">flex</span>;
+  <span class="cm-property">min-width</span>: <span class="cm-number">400px</span>;
+  <span class="cm-property">height</span>: <span class="cm-atom">auto</span>;
+  <span class="cm-property">flex-direction</span>: <span class="cm-atom">column</span>;
+  <span class="cm-property">justify-content</span>: <span class="cm-atom">center</span>;
+  <span class="cm-property">border-radius</span>: <span class="cm-variable-2">$size</span> <span class="cm-operator">/</span> <span class="cm-number">3</span>;
+  <span class="cm-property">background-color</span>: <span class="cm-variable-2">$ground</span>;
+  <span class="cm-property">box-shadow</span>: <span class="cm-number">0</span> <span class="cm-number">5px</span> <span class="cm-number">30px</span> <span class="cm-variable cm-callee">rgba</span>(<span class="cm-variable cm-callee">darken</span>(<span class="cm-variable-2">$ground</span>, <span class="cm-number">12%</span>), <span class="cm-number">0.3</span>);
+  
+  <span class="cm-qualifier">.name</span> {
+    <span class="cm-property">margin-bottom</span>: (<span class="cm-variable-2">$size</span> <span class="cm-operator">/</span> <span class="cm-number">2</span>);
+    <span class="cm-property">display</span>: <span class="cm-atom">flex</span>;
+    <span class="cm-property">justify-content</span>: <span class="cm-atom">flex-end</span>;
+    
+    <span class="cm-tag">h4</span> {      
+      <span class="cm-property">margin</span>: <span class="cm-number">0</span>;
+      <span class="cm-property">text-transform</span>: <span class="cm-atom">uppercase</span>;
+      <span class="cm-property">font-size</span>: (<span class="cm-variable-2">$size</span> <span class="cm-operator">/</span> <span class="cm-number">1.5</span>);
+      <span class="cm-property">font-weight</span>: <span class="cm-atom">normal</span>;
+      <span class="cm-property">color</span>: <span class="cm-variable cm-callee">lighten</span>(<span class="cm-variable-2">$color_</span>, <span class="cm-number">35%</span>);
+      <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">0</span>);
+      <span class="cm-property">transform-origin</span>: <span class="cm-number">100%</span> <span class="cm-number">50%</span>;
+      <span class="cm-property">transition</span>: <span class="cm-atom">transform</span> <span class="cm-variable-2">$duration</span> * <span class="cm-number">1ms</span> <span class="cm-atom">ease</span>;
+    }
+  }
+  
+  <span class="cm-tag">svg</span> {
+    <span class="cm-property">width</span>: <span class="cm-variable-2">$size</span>;
+    <span class="cm-property">height</span>: <span class="cm-variable-2">$size</span>;
+    
+    &amp;<span class="cm-qualifier">.gear</span> {
+      <span class="cm-property">order</span>: <span class="cm-number">1</span>;
+      <span class="cm-property">margin-left</span>: <span class="cm-variable-2">$size</span>;
+      <span class="cm-property">cursor</span>: <span class="cm-atom">help</span>;
+      
+      &amp;:<span class="cm-variable-3">hover</span> ~ <span class="cm-tag">h4</span> {
+        <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1</span>);
+      }
+    }
+  }
+}
+
+<span class="cm-qualifier">.btn</span> {
+  <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+  <span class="cm-property">bottom</span>: <span class="cm-variable-2">$size</span>;
+  <span class="cm-property">left</span>: <span class="cm-number">50%</span>;
+  <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translateX</span>(<span class="cm-number">-50%</span>);
+  
+  <span class="cm-tag">a</span> {
+    <span class="cm-property">margin</span>: <span class="cm-atom">auto</span> <span class="cm-variable-2">$size</span>;
+  }
+}
+
+<span class="cm-comment">// radio buttons</span>
+
+<span class="cm-tag">label</span> {
+  <span class="cm-property">position</span>: <span class="cm-atom">relative</span>;
+  <span class="cm-property">margin</span>: (<span class="cm-variable-2">$size</span> <span class="cm-operator">/</span> <span class="cm-number">2</span>) <span class="cm-variable-2">$size</span>;
+  <span class="cm-property">display</span>: <span class="cm-atom">flex</span>;
+  <span class="cm-property">width</span>: <span class="cm-atom">auto</span>;
+  <span class="cm-property">align-items</span>: <span class="cm-atom">center</span>;
+  <span class="cm-property">cursor</span>: <span class="cm-atom">pointer</span>;
+}
+
+<span class="cm-qualifier">.check</span> {
+  <span class="cm-property">margin-right</span>: <span class="cm-number">7px</span>;
+  <span class="cm-property">width</span>: <span class="cm-variable-2">$size</span>;
+  <span class="cm-property">height</span>: <span class="cm-variable-2">$size</span>;
+
+  <span class="cm-builtin">#border</span> {
+    <span class="cm-property">fill</span>: <span class="cm-atom">none</span>;
+    <span class="cm-property">stroke</span>: <span class="cm-variable-2">$color_</span>;
+    <span class="cm-property">stroke-width</span>: <span class="cm-number">3</span>;
+    <span class="cm-property">stroke-linecap</span>: <span class="cm-atom">round</span>;
+  }
+
+  <span class="cm-builtin">#dot</span> {
+    <span class="cm-property">fill</span>: <span class="cm-variable cm-callee">url</span>(<span class="cm-string">#gradient</span>);
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">0</span>);
+    <span class="cm-property">transform-origin</span>: <span class="cm-number">50%</span> <span class="cm-number">50%</span>;
+  }
+}
+
+<span class="cm-tag">input</span> {
+  <span class="cm-property">display</span>: <span class="cm-atom">none</span>;
+
+  &amp;:<span class="cm-variable-3">checked</span> + <span class="cm-tag">label</span> {
+    <span class="cm-property">background</span>: <span class="cm-variable cm-callee">linear-gradient</span>(<span class="cm-number">180deg</span>, <span class="cm-variable-2">$colone</span>, <span class="cm-variable-2">$coltwo</span>);
+    <span class="cm-meta">-webkit-</span><span class="cm-property">background-clip</span>: <span class="cm-atom">text</span>;
+    <span class="cm-meta">-webkit-</span><span class="cm-property">text-fill-color</span>: <span class="cm-variable-3">transparent</span>;
+
+    <span class="cm-tag">svg</span> {
+      <span class="cm-builtin">#border</span> {
+        <span class="cm-property">stroke</span>: <span class="cm-variable cm-callee">url</span>(<span class="cm-string">#gradient</span>);
+        <span class="cm-property">stroke-dasharray</span>: <span class="cm-number">145</span>;
+        <span class="cm-property">stroke-dashoffset</span>: <span class="cm-number">145</span>;
+        <span class="cm-property">animation</span>: <span class="cm-variable">checked</span> <span class="cm-variable-2">$duration</span> * <span class="cm-number">1ms</span> <span class="cm-atom">ease</span> <span class="cm-atom">forwards</span>;
+      }
+
+      <span class="cm-builtin">#dot</span> {
+        <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1</span>);
+        <span class="cm-property">transition</span>: <span class="cm-atom">transform</span> <span class="cm-variable-2">$duration</span> * <span class="cm-number">1ms</span>
+          <span class="cm-variable cm-callee">cubic-bezier</span>(<span class="cm-number">0.57</span>, <span class="cm-number">0.21</span>, <span class="cm-number">0.69</span>, <span class="cm-number">3.25</span>);
+      }
+    }
+  }
+}
+
+<span class="cm-def">@keyframes</span> <span class="cm-variable">checked</span> {
+  <span class="cm-tag">to</span> {
+    <span class="cm-property">stroke-dashoffset</span>: <span class="cm-number">0</span>;
+  }
+}
+</code></pre>
+<a href="https://codepen.io/anon/embed/WmQMMm?height=500&amp;theme-id=1&amp;slug-hash=WmQMMm&amp;default-tab=result#0" id="view-css-compiled-button" class="action-button bottom right view-compiled-button" data-type="css">
+View Compiled
+</a>
+</div>
+<div id="result-box" class="code-box active zoom-1" role="region" aria-label="Result">
+<iframe allow="accelerometer; camera; encrypted-media; display-capture; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write; web-share" allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="result-iframe  " frameborder="0" id="result-iframe" loading="lazy" name="CodePen Preview for Animated SVG radio buttons" sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-downloads allow-presentation" scrolling="yes" title="CodePen Preview for Animated SVG radio buttons" data-src="https://cdpn.io/andrejsharapov/fullembedgrid/WmQMMm?animations=run&amp;type=embed" src="./WmQMMm(1).html">
+  </iframe>
+</div>
+<div id="about-box">
+<div class="about-container">
+<div class="about-user">
+<a href="https://codepen.io/andrejsharapov" target="_blank" rel="noopener"><img src="./default(35).png" loading="lazy" alt="" class="about-image"></a>
+<div class="about-user-info">
+<p>
+This Pen is owned by <a href="https://codepen.io/andrejsharapov" target="_blank" rel="noopener">Andrej Sharapov</a> on <a href="https://codepen.io/" target="_blank" rel="noopener">CodePen</a>.
+</p>
+<p>
+<a href="https://codepen.io/andrejsharapov" target="_blank" rel="noopener" class="about-user-more">
+See more by @andrejsharapov on CodePen
+</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="resources-box" class="resources-box">
+<h3>External CSS</h3>
+<p>
+This Pen doesn't use any external CSS resources.
+</p>
+<h3>External JavaScript</h3>
+<p>
+This Pen doesn't use any external JavaScript resources.
+</p>
+</div>
+</div>
+<footer class="embed-footer" id="embed-footer">
+<button id="resources-link" class="resources-link action-button bottom left" href="#resources-box" aria-pressed="false" role="button">
+Resources
+</button>
+<ul class="scaling-choices bottom right">
+<li><button class="action-button" id="zoom-button-1">1×</button></li>
+<li><button class="action-button" id="zoom-button-05">0.5×</button></li>
+<li><button class="action-button" id="zoom-button-025">0.25×</button></li>
+</ul>
+<button id="rerun-button" class="action-button rerun-button bottom right">
+Rerun
+</button>
+</footer>
+<script nonce="">
+    __processedPen = {"html":"&lt;div class=&quot;container&quot;&gt;\n  &lt;div class=&quot;name&quot;&gt;\n    &lt;svg class=&quot;gear&quot;&gt;\n      &lt;path d=&quot;M15 6.675l-1.8-.6c-.2-.1-.3-.3-.2-.4l.9-1.7c.6-1.2-.7-2.5-1.9-1.9l-1.7.9c-.1.1-.3 0-.4-.2l-.6-1.8c-.4-1.3-2.2-1.3-2.6 0l-.6 1.8c-.1.2-.3.3-.4.2l-1.7-.9c-1.2-.6-2.5.7-1.9 1.9l.9 1.7c.1.1 0 .3-.2.4l-1.8.6c-1.3.4-1.3 2.3 0 2.7l1.8.6c.2 0 .3.2.2.3l-.9 1.7c-.6 1.2.7 2.5 1.9 1.9l1.7-.9c.2-.1.4 0 .4.2l.6 1.8c.4 1.3 2.3 1.3 2.7 0l.6-1.8c.1-.2.3-.3.4-.2l1.7.9c1.2.6 2.5-.7 1.9-1.9l-1-1.7c-.1-.2 0-.4.2-.4l1.8-.6c1.3-.4 1.3-2.2 0-2.6zm-7 3.7c-1.3 0-2.4-1.1-2.4-2.4 0-1.3 1.1-2.4 2.4-2.4 1.3 0 2.4 1.1 2.4 2.4 0 1.3-1.1 2.4-2.4 2.4z&quot; fill=&quot;#4c4f5a&quot;&gt;     &lt;/path&gt;\n    &lt;/svg&gt;\n    &lt;h4&gt;Click on the radio buttons or labels&lt;/h4&gt;\n  &lt;/div&gt;\n  &lt;input type=&quot;radio&quot; name=&quot;field&quot; id=&quot;Uno&quot;/&gt;\n  &lt;label for=&quot;Uno&quot;&gt;\n    &lt;svg class=&quot;check&quot; viewbox=&quot;0 0 40 40&quot;&gt;\n      &lt;defs&gt;\n        &lt;linearGradient id=&quot;gradient&quot; x1=&quot;0&quot; y1=&quot;0&quot; x2=&quot;0&quot; y2=&quot;100%&quot;&gt;\n          &lt;stop offset=&quot;0%&quot; stop-color=&quot;#ff8a00&quot;&gt;&lt;/stop&gt;\n          &lt;stop offset=&quot;100%&quot; stop-color=&quot;#da1b60&quot;&gt;&lt;/stop&gt;\n        &lt;/linearGradient&gt;\n      &lt;/defs&gt;\n      &lt;circle id=&quot;border&quot; r=&quot;18px&quot; cx=&quot;20px&quot; cy=&quot;20px&quot;&gt;&lt;/circle&gt;\n      &lt;circle id=&quot;dot&quot; r=&quot;8px&quot; cx=&quot;20px&quot; cy=&quot;20px&quot;&gt;&lt;/circle&gt;\n    &lt;/svg&gt;I like this work\n  &lt;/label&gt;\n  &lt;input type=&quot;radio&quot; name=&quot;field&quot; id=&quot;Dos&quot;/&gt;\n  &lt;label for=&quot;Dos&quot;&gt;\n    &lt;svg class=&quot;check&quot; viewbox=&quot;0 0 40 40&quot;&gt;\n      &lt;defs&gt;\n        &lt;linearGradient id=&quot;gradient&quot; x1=&quot;0&quot; y1=&quot;0&quot; x2=&quot;0&quot; y2=&quot;100%&quot;&gt;\n          &lt;stop offset=&quot;0%&quot; stop-color=&quot;#ff8a00&quot;&gt;&lt;/stop&gt;\n          &lt;stop offset=&quot;100%&quot; stop-color=&quot;#da1b60&quot;&gt;&lt;/stop&gt;\n        &lt;/linearGradient&gt;\n      &lt;/defs&gt;\n      &lt;circle id=&quot;border&quot; r=&quot;18px&quot; cx=&quot;20px&quot; cy=&quot;20px&quot;&gt;&lt;/circle&gt;\n      &lt;circle id=&quot;dot&quot; r=&quot;8px&quot; cx=&quot;20px&quot; cy=&quot;20px&quot;&gt;&lt;/circle&gt;\n    &lt;/svg&gt;Share in social networks\n  &lt;/label&gt;\n  &lt;input type=&quot;radio&quot; name=&quot;field&quot; id=&quot;Tres&quot;/&gt;\n  &lt;label for=&quot;Tres&quot;&gt;\n    &lt;svg class=&quot;check&quot; viewbox=&quot;0 0 40 40&quot;&gt;\n      &lt;defs&gt;\n        &lt;linearGradient id=&quot;gradient&quot; x1=&quot;0&quot; y1=&quot;0&quot; x2=&quot;0&quot; y2=&quot;100%&quot;&gt;\n          &lt;stop offset=&quot;0%&quot; stop-color=&quot;#ff8a00&quot;&gt;&lt;/stop&gt;\n          &lt;stop offset=&quot;100%&quot; stop-color=&quot;#da1b60&quot;&gt;&lt;/stop&gt;\n        &lt;/linearGradient&gt;\n      &lt;/defs&gt;\n      &lt;circle id=&quot;border&quot; r=&quot;18px&quot; cx=&quot;20px&quot; cy=&quot;20px&quot;&gt;&lt;/circle&gt;\n      &lt;circle id=&quot;dot&quot; r=&quot;8px&quot; cx=&quot;20px&quot; cy=&quot;20px&quot;&gt;&lt;/circle&gt;\n    &lt;/svg&gt;Follow the author\n  &lt;/label&gt;\n&lt;/div&gt;\n&lt;div class=&quot;btn&quot;&gt;&lt;a href=&quot;https://codepen.io/andrejsharapov/pen/GzaMRq&quot; target=&quot;_blank&quot; title=&quot;&quot;&gt;Styles for the Checkboxes&lt;/a&gt;&lt;a href=&quot;https://twitter.com/andrejsharapov&quot; target=&quot;_blank&quot; title=&quot;&quot;&gt;Follow me in Twitter&lt;/a&gt;&lt;/div&gt;","css":"body {\n  margin: 0;\n  display: flex;\n  min-height: 100vh;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  font: 400 1.35rem sans-serif;\n  color: #7a7a8c;\n  background-color: #1d1e22;\n  background: radial-gradient(#4c4f5a 6%, transparent 6%), #18191c;\n  background-position: 0 0, 25px 25px;\n  background-size: 25px 25px;\n}\n\na {\n  text-decoration: none;\n  color: #7a7a8c;\n  font-size: 0.675rem;\n}\n\n.container {\n  position: relative;\n  padding: 0.675rem;\n  display: flex;\n  min-width: 400px;\n  height: auto;\n  flex-direction: column;\n  justify-content: center;\n  border-radius: 0.45rem;\n  background-color: #1d1e22;\n  box-shadow: 0 5px 30px rgba(1, 1, 1, 0.3);\n}\n.container .name {\n  margin-bottom: 0.675rem;\n  display: flex;\n  justify-content: flex-end;\n}\n.container .name h4 {\n  margin: 0;\n  text-transform: uppercase;\n  font-size: 0.9rem;\n  font-weight: normal;\n  color: #dadadf;\n  transform: scale(0);\n  transform-origin: 100% 50%;\n  transition: transform 500ms ease;\n}\n.container svg {\n  width: 1.35rem;\n  height: 1.35rem;\n}\n.container svg.gear {\n  order: 1;\n  margin-left: 1.35rem;\n  cursor: help;\n}\n.container svg.gear:hover ~ h4 {\n  transform: scale(1);\n}\n\n.btn {\n  position: absolute;\n  bottom: 1.35rem;\n  left: 50%;\n  transform: translateX(-50%);\n}\n.btn a {\n  margin: auto 1.35rem;\n}\n\nlabel {\n  position: relative;\n  margin: 0.675rem 1.35rem;\n  display: flex;\n  width: auto;\n  align-items: center;\n  cursor: pointer;\n}\n\n.check {\n  margin-right: 7px;\n  width: 1.35rem;\n  height: 1.35rem;\n}\n.check #border {\n  fill: none;\n  stroke: #7a7a8c;\n  stroke-width: 3;\n  stroke-linecap: round;\n}\n.check #dot {\n  fill: url(#gradient);\n  transform: scale(0);\n  transform-origin: 50% 50%;\n}\n\ninput {\n  display: none;\n}\ninput:checked + label {\n  background: linear-gradient(180deg, #ff8a00, #da1b60);\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}\ninput:checked + label svg #border {\n  stroke: url(#gradient);\n  stroke-dasharray: 145;\n  stroke-dashoffset: 145;\n  animation: checked 500ms ease forwards;\n}\ninput:checked + label svg #dot {\n  transform: scale(1);\n  transition: transform 500ms cubic-bezier(0.57, 0.21, 0.69, 3.25);\n}\n\n@keyframes checked {\n  to {\n    stroke-dashoffset: 0;\n  }\n}","js":""};
+    __preprocessors = {
+      "html": "pug",
+      "css": "scss",
+      "js": "none"
+    };
+    __preprocessorNames = {
+      "html": "Pug",
+      "css": "SCSS",
+      "js": "JS"
+    };
+    __editable = false;
+    __embed_prefill = false;
+  </script>
+<script src="./embed-59842fbf0495f2c0b079a7f4ce7544fb0912f3535856bf4dc5c205acbb621c54.js.download"></script>
+<script nonce="">(function(){var js = "window['__CF$cv$params']={r:'793419d53fa41d3d',m:'DnrW.xB9g6WSnSdP_Z77UBz1azMXGGXgba1R.iAjhS4-1675353220-0-AbXzvW26BMWj4/TBHgls0kNvJn2hv5btggyAC08VS638IYQkOVB4ePAoeklmacw3Ake6FlXsa2vDrYIsE9L/7oJEzsGDGGLi77pb8MKrGgqJs/vIDLLB7D5xw5QOfAmgVnqsnqKNCmVHgY7vVWssOohxV4qL6aBA8KdMiAOXGoyNiXRLhtNzFdVaKBJiG5oLn9RJsEPiwp0RIxNEoe7tHEA=',s:[0xd7e3df7c39,0x499e631fa7],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='I3mBHFXqylQ=',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = 'I3mBHFXqylQ=';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./saved_resource(38).html"></iframe>
+
+</body></html>

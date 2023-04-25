@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)https://codepen.io/anon/embed/RxYbgg?height=400&theme-id=1&slug-hash=RxYbgg&default-tab=result -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width">
+<title>CodePen Embed - Smile Toggle | HTML + CSS</title>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="ssPrq8c4ddtqz9qu9+sV7yP8Dbenrj8SWUZRr/QoT+Z5FHVxemf2fhN7sxw8fwfzaHS7U75XuwQzWNRXDLK/hQ==">
+<link rel="stylesheet" media="all" href="./embed-5c9d0df4194479e72f3f4195cb70bfc2217587bcd5b1acda570c7aadbea18f9c.css">
+<style>
+    .hide {
+      display: none !important;
+    }
+
+    #result-box {
+      background: #28282a;
+      color: #ffffff;
+    }
+    .embed-footer,
+    .embed-nav {
+      background: #28282a;
+      
+    }
+    .embed-nav .code-types a,
+    .embed-nav .result-button-list a,
+    .action-button {
+      color: #ffffff;
+      background-color: #424242;
+    }
+    .embed-nav .code-types a.active,
+    .embed-nav .result-button-list a.active,
+    .action-button.active {
+      background: #212121;
+      color: #ffffff;
+      box-shadow: inset 0px 3px #ff8a00;
+    }
+    .embed-nav .logo-wrap .edit-on-codepen {
+      color: #a9a9a9;
+    }
+
+    .embed-nav svg {
+      stroke: #a9a9a9 !important;
+    }
+  </style>
+<link rel="stylesheet" media="all" href="./highcontrast-dark-c9f58c52f642f276610867eb0652eb22d9d88af6dddef0874efd8d911a7938ff.css">
+<link rel="stylesheet" href="./maVRwd.css">
+<meta name="monetization" content="$ilp.uphold.com/biyqg2MkQKbe">
+</head>
+<body id="the-body" style="border: 1px solid #39231b; --borderWidth: 1px;" class="codepen-embed-body static results-active">
+<nav class="embed-nav group" id="embed-nav">
+<ul class="code-types">
+<li class="code-type">
+<a id="html-link" href="https://codepen.io/anon/embed/RxYbgg?height=400&amp;theme-id=1&amp;slug-hash=RxYbgg&amp;default-tab=result#html-box" role="button" aria-pressed="false">
+HTML
+</a>
+</li>
+<li class="code-type">
+<a id="css-link" href="https://codepen.io/anon/embed/RxYbgg?height=400&amp;theme-id=1&amp;slug-hash=RxYbgg&amp;default-tab=result#css-box" role="button" aria-pressed="false">
+SCSS
+</a>
+</li>
+</ul>
+<ul class="result-button-list">
+<li class="results results-type">
+<a id="result-link" href="https://codepen.io/anon/embed/RxYbgg?height=400&amp;theme-id=1&amp;slug-hash=RxYbgg&amp;default-tab=result#result-box" class="active" aria-pressed="true" role="button">
+Result
+</a>
+</li>
+<li>
+<a href="https://codepen.io/anon/embed/RxYbgg?height=400&amp;theme-id=1&amp;slug-hash=RxYbgg&amp;default-tab=result#resources-link" id="skip-results-iframe-link">Skip Results Iframe</a>
+</li>
+</ul>
+<div class="logo-wrap" id="edit-area">
+<a class="edit-on-codepen" target="_blank" rel="noopener" href="https://codepen.io/CameronFitzwilliam/pen/RxYbgg" title="Edit on CodePen">
+<div class="large-logo">
+<span id="edit-on-text" class="open-on">EDIT ON</span>
+<svg id="embed-codepen-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 26" fill="none" stroke="#000" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="CodePen">
+<path d="M80 6h-9v14h9m34-14h-9v14h9m-3-7h-6m-28 0h-6m51 7V6l11 14V6M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24m55-10h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-6v14M15 8c-1.3-1.3-3-2-5-2-4 0-7 3-7 7s3 7 7 7c2 0 3.7-.8 5-2m49-5c0 4-3 7-7 7h-5V6h5c4 0 7 3 7 7z"></path>
+</svg>
+</div>
+<div class="box-logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 0 26 26" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" role="img" aria-label="Edit on CodePen">
+<path id="icon-codepen-box" d="M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24"></path>
+</svg>
+</div>
+</a>
+</div>
+</nav>
+<div id="output" data-border-style="thin" data-header="true">
+<div id="html-box" class="code-wrap code-box box " role="region" aria-label="HTML">
+<pre tabindex="0"><code data-lang="htmlmixed" id="actual-html-code" class=" cm-s-default"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"normal-container"</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"smile-rating-container"</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"smile-rating-toggle-container"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">form</span> <span class="cm-attribute">class</span>=<span class="cm-string">"submit-rating"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">input</span> <span class="cm-attribute">id</span>=<span class="cm-string">"meh"</span>  <span class="cm-attribute">name</span>=<span class="cm-string">"satisfaction"</span> <span class="cm-attribute">type</span>=<span class="cm-string">"radio"</span> <span class="cm-tag cm-bracket">/&gt;</span> 
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">input</span> <span class="cm-attribute">id</span>=<span class="cm-string">"fun"</span> <span class="cm-attribute">name</span>=<span class="cm-string">"satisfaction"</span> <span class="cm-attribute">type</span>=<span class="cm-string">"radio"</span> <span class="cm-tag cm-bracket">/&gt;</span> 
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">label</span> <span class="cm-attribute">for</span>=<span class="cm-string">"meh"</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rating-label rating-label-meh"</span><span class="cm-tag cm-bracket">&gt;</span>Bad<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">label</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"smile-rating-toggle"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+        
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rating-eye rating-eye-left"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rating-eye rating-eye-right"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+        
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"mouth rating-eye-bad-mouth"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+        
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"toggle-rating-pill"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">label</span> <span class="cm-attribute">for</span>=<span class="cm-string">"fun"</span> <span class="cm-attribute">class</span>=<span class="cm-string">"rating-label rating-label-fun"</span><span class="cm-tag cm-bracket">&gt;</span>Fun<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">label</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">form</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></code></pre>
+</div>
+<div id="css-box" class="code-wrap code-box box " role="region" aria-label="CSS">
+<pre tabindex="0"><code data-lang="text/x-scss" id="actual-css-code" class=" cm-s-default"><span class="cm-def">@import</span> <span class="cm-variable cm-callee">url</span>(<span class="cm-string">'https://fonts.googleapis.com/css?family=Roboto:700,900'</span>);
+
+<span class="cm-variable-2">$ratingGreyColor</span>: <span class="cm-atom">#d0cccd</span>;
+<span class="cm-variable-2">$ratingBlueColor</span>: <span class="cm-atom">#00b9ee</span>;
+<span class="cm-variable-2">$ratingDarkColor</span>: <span class="cm-atom">#555e63</span>;
+
+<span class="cm-qualifier">.normal-container</span> {
+  <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+  <span class="cm-property">height</span>: <span class="cm-number">100%</span>;
+  <span class="cm-property">width</span>: <span class="cm-number">100%</span>;
+}
+
+<span class="cm-qualifier">.smile-rating-container</span> {
+  <span class="cm-property">position</span>: <span class="cm-atom">relative</span>;
+  <span class="cm-property">height</span>: <span class="cm-number">10%</span>;
+  <span class="cm-property">min-width</span>: <span class="cm-number">220px</span>;
+  <span class="cm-property">max-width</span>: <span class="cm-number">520px</span>;
+  <span class="cm-property">margin</span>: <span class="cm-atom">auto</span>;
+  <span class="cm-property">font-family</span>: <span class="cm-string">'Roboto'</span>, <span class="cm-atom">sans-serif</span>;
+  <span class="cm-property">top</span>: <span class="cm-number">20%</span>;
+}
+
+<span class="cm-qualifier">.submit-rating</span> {
+  <span class="cm-property">display</span>: <span class="cm-atom">flex</span>;
+  <span class="cm-property">align-items</span>: <span class="cm-atom">center</span>;
+  <span class="cm-property">justify-content</span>: <span class="cm-atom">center</span>;
+}
+<span class="cm-qualifier">.rating-label</span> {
+  <span class="cm-property">position</span>: <span class="cm-atom">relative</span>;
+  <span class="cm-property">font-size</span>: <span class="cm-number">1.6em</span>;
+  <span class="cm-property">text-align</span>: <span class="cm-atom">center</span>;
+  <span class="cm-property">flex</span>: <span class="cm-number">0.34</span>;
+  <span class="cm-property">z-index</span>: <span class="cm-number">3</span>;
+  <span class="cm-property">font-weight</span>: <span class="cm-atom">bold</span>;
+  <span class="cm-property">cursor</span>: <span class="cm-atom">pointer</span>;
+  <span class="cm-property">color</span>: <span class="cm-variable-2">$ratingGreyColor</span>;
+  <span class="cm-property">transition</span>: <span class="cm-number">500ms</span>;
+}
+<span class="cm-qualifier">.rating-label</span>:<span class="cm-variable-3">hover</span>, <span class="cm-qualifier">.rating-label</span>:<span class="cm-variable-3">active</span> {
+  <span class="cm-property">color</span>: <span class="cm-variable-2">$ratingGreyColor</span>;
+}
+<span class="cm-qualifier">.rating-label-fun</span> {
+  <span class="cm-property">left</span>: <span class="cm-number">-58px</span>;  
+  <span class="cm-property">text-align</span>: <span class="cm-atom">right</span>;
+}
+<span class="cm-qualifier">.rating-label-meh</span> {
+  <span class="cm-property">left</span>: <span class="cm-number">58px</span>; 
+  <span class="cm-property">text-align</span>: <span class="cm-atom">left</span>;
+  <span class="cm-property">color</span>: <span class="cm-atom">#222</span>;
+}
+<span class="cm-qualifier">.smile-rating-container</span> <span class="cm-tag">input</span> {
+  <span class="cm-property">display</span>: <span class="cm-atom">none</span>;
+}
+
+<span class="cm-qualifier">.smile-rating-toggle-container</span> {
+  
+}
+
+<span class="cm-qualifier">.toggle-rating-pill</span> {
+  <span class="cm-property">position</span>: <span class="cm-atom">relative</span>;
+  <span class="cm-property">height</span>: <span class="cm-number">65px</span>;
+  <span class="cm-property">width</span>: <span class="cm-number">165px</span>;
+  <span class="cm-property">background</span>: <span class="cm-variable-2">$ratingGreyColor</span>;
+  <span class="cm-property">border-radius</span>: <span class="cm-number">500px</span>;
+  <span class="cm-property">transition</span>: <span class="cm-atom">all</span> <span class="cm-number">500ms</span>;
+}
+
+<span class="cm-qualifier">.smile-rating-toggle</span> {
+  <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+  <span class="cm-property">width</span>: <span class="cm-number">54px</span>;
+  <span class="cm-property">height</span>: <span class="cm-number">54px</span>;
+  <span class="cm-property">background-color</span>: <span class="cm-keyword">white</span>;
+  <span class="cm-property">left</span>: <span class="cm-number">182px</span>;
+  <span class="cm-property">border-radius</span>: <span class="cm-number">500px</span>;
+  <span class="cm-property">transition</span>: <span class="cm-atom">all</span> <span class="cm-number">500ms</span>;
+  <span class="cm-property">z-index</span>: <span class="cm-number">4</span>;
+}
+<span class="cm-qualifier">.rating-eye</span> {
+  <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+  <span class="cm-property">height</span>: <span class="cm-number">12px</span>;
+  <span class="cm-property">width</span>: <span class="cm-number">8px</span>;
+  <span class="cm-property">top</span>: <span class="cm-number">22px</span>;
+  <span class="cm-property">background</span>: <span class="cm-variable-2">$ratingGreyColor</span>;
+  <span class="cm-property">border-radius</span>: <span class="cm-number">500px</span>;
+  <span class="cm-property">z-index</span>: <span class="cm-number">5</span>;
+  <span class="cm-property">transition</span>: <span class="cm-atom">all</span> <span class="cm-number">440ms</span>;
+  <span class="cm-property">animation</span>: <span class="cm-variable">blink-eye</span> <span class="cm-number">3s</span> <span class="cm-atom">infinite</span>;
+}
+<span class="cm-def">@keyframes</span> <span class="cm-variable">blink-eye</span> {
+  <span class="cm-number">0%</span> {
+    <span class="cm-property">height</span>: <span class="cm-number">12px</span>;
+    <span class="cm-property">width</span>: <span class="cm-number">8px</span>;
+    <span class="cm-property">top</span>: <span class="cm-number">22px</span>;
+  }
+  <span class="cm-number">20%</span> {
+    <span class="cm-property">height</span>: <span class="cm-number">12px</span>;
+    <span class="cm-property">width</span>: <span class="cm-number">8px</span>;
+    <span class="cm-property">top</span>: <span class="cm-number">22px</span>;
+  }
+  <span class="cm-number">40%</span> {
+    <span class="cm-property">height</span>: <span class="cm-number">12px</span>;
+    <span class="cm-property">width</span>: <span class="cm-number">8px</span>;
+    <span class="cm-property">top</span>: <span class="cm-number">22px</span>;    
+  }
+  <span class="cm-number">60%</span> {
+    <span class="cm-property">height</span>: <span class="cm-number">12px</span>;
+    <span class="cm-property">width</span>: <span class="cm-number">8px</span>;
+    <span class="cm-property">top</span>: <span class="cm-number">22px</span>;
+  }
+  <span class="cm-number">80%</span> {
+    <span class="cm-property">height</span>: <span class="cm-number">12px</span>;
+    <span class="cm-property">width</span>: <span class="cm-number">8px</span>;
+    <span class="cm-property">top</span>: <span class="cm-number">22px</span>;
+  }
+  <span class="cm-number">90%</span> {
+    <span class="cm-property">height</span>: <span class="cm-number">12px</span>;
+    <span class="cm-property">width</span>: <span class="cm-number">8px</span>;
+    <span class="cm-property">top</span>: <span class="cm-number">22px</span>;    
+  }
+  <span class="cm-number">95%</span> {
+    <span class="cm-property">height</span>: <span class="cm-number">2px</span>;
+    <span class="cm-property">width</span>: <span class="cm-number">8px</span>;
+    <span class="cm-property">top</span>: <span class="cm-number">30px</span>;
+  }
+  <span class="cm-number">100%</span> {
+    <span class="cm-property">height</span>: <span class="cm-number">12px</span>;
+    <span class="cm-property">width</span>: <span class="cm-number">8px</span>;
+    <span class="cm-property">top</span>: <span class="cm-number">22px</span>;
+  }
+}
+<span class="cm-qualifier">.rating-eye-left</span> {
+  <span class="cm-property">left</span>: <span class="cm-number">192px</span>;
+}
+<span class="cm-qualifier">.rating-eye-right</span> {
+  <span class="cm-property">left</span>: <span class="cm-number">216px</span>;
+}
+
+<span class="cm-qualifier">.mouth</span> {
+  <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+  <span class="cm-property">width</span>: <span class="cm-number">28px</span>;
+  <span class="cm-property">height</span>: <span class="cm-number">20px</span>;
+  <span class="cm-property">z-index</span>: <span class="cm-number">6</span>;
+  <span class="cm-property">border</span>: <span class="cm-number">4px</span> <span class="cm-atom">solid</span> <span class="cm-variable-2">$ratingGreyColor</span>;
+  <span class="cm-property">border-radius</span>: <span class="cm-number">10%</span>;
+  <span class="cm-property">border-bottom-color</span>: <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">1</span>,<span class="cm-number">1</span>,<span class="cm-number">1</span>,<span class="cm-number">0</span>);
+  <span class="cm-property">border-right-color</span>: <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">1</span>,<span class="cm-number">1</span>,<span class="cm-number">1</span>,<span class="cm-number">0</span>);
+  <span class="cm-property">border-left-color</span>: <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">1</span>,<span class="cm-number">1</span>,<span class="cm-number">1</span>,<span class="cm-number">0</span>);
+  <span class="cm-property">top</span>: <span class="cm-number">42px</span>;
+  <span class="cm-property">left</span>: <span class="cm-number">190px</span>;
+  <span class="cm-property">transition</span>: <span class="cm-atom">all</span> <span class="cm-number">500ms</span>;
+}
+
+<span class="cm-comment">/*</span>
+<span class="cm-comment">Toggle Changes</span>
+<span class="cm-comment">*/</span>
+
+<span class="cm-builtin">#meh</span>:<span class="cm-variable-3">checked</span>~<span class="cm-qualifier">.rating-label-meh</span> {
+  <span class="cm-property">color</span>: <span class="cm-variable-2">$ratingDarkColor</span>;
+}
+<span class="cm-builtin">#fun</span>:<span class="cm-variable-3">checked</span>~<span class="cm-qualifier">.rating-label-meh</span> {
+  <span class="cm-property">color</span>: <span class="cm-variable-2">$ratingGreyColor</span>;
+}
+<span class="cm-builtin">#fun</span>:<span class="cm-variable-3">checked</span>~<span class="cm-qualifier">.mouth</span> {
+  <span class="cm-property">border</span>: <span class="cm-number">4px</span> <span class="cm-atom">solid</span> <span class="cm-variable-2">$ratingBlueColor</span>;
+  <span class="cm-property">border-bottom-color</span>: <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">1</span>,<span class="cm-number">1</span>,<span class="cm-number">1</span>,<span class="cm-number">0</span>);
+  <span class="cm-property">border-right-color</span>: <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">1</span>,<span class="cm-number">1</span>,<span class="cm-number">1</span>,<span class="cm-number">0</span>);
+  <span class="cm-property">border-left-color</span>: <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">1</span>,<span class="cm-number">1</span>,<span class="cm-number">1</span>,<span class="cm-number">0</span>);
+  <span class="cm-property">top</span>: <span class="cm-number">23px</span>;
+  <span class="cm-property">left</span>: <span class="cm-number">291px</span>;
+  <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">rotateX</span>(<span class="cm-number">180deg</span>);
+  <span class="cm-property">border-radius</span>: <span class="cm-number">100%</span>;
+}
+
+<span class="cm-builtin">#fun</span>:<span class="cm-variable-3">checked</span>~<span class="cm-qualifier">.rating-label-fun</span> {
+  <span class="cm-property">color</span>: <span class="cm-variable-2">$ratingDarkColor</span>;
+}
+<span class="cm-builtin">#fun</span>:<span class="cm-variable-3">checked</span>~<span class="cm-qualifier">.smile-rating-toggle</span> {
+  <span class="cm-property">left</span>: <span class="cm-number">282px</span>;
+}
+
+<span class="cm-builtin">#fun</span>:<span class="cm-variable-3">checked</span>~<span class="cm-qualifier">.rating-eye-left</span> {
+  <span class="cm-property">left</span>: <span class="cm-number">292px</span>;
+}
+<span class="cm-builtin">#fun</span>:<span class="cm-variable-3">checked</span>~<span class="cm-qualifier">.rating-eye-right</span> {
+  <span class="cm-property">left</span>: <span class="cm-number">316px</span>;
+}
+
+<span class="cm-builtin">#fun</span>:<span class="cm-variable-3">checked</span>~<span class="cm-qualifier">.toggle-rating-pill</span> {
+  <span class="cm-property">background-color</span>: <span class="cm-variable-2">$ratingBlueColor</span>;
+}
+
+<span class="cm-builtin">#fun</span>:<span class="cm-variable-3">checked</span>~<span class="cm-qualifier">.rating-eye</span> {
+  <span class="cm-property">background-color</span>: <span class="cm-variable-2">$ratingBlueColor</span>;
+}
+
+
+<span class="cm-def">@media</span> <span class="cm-keyword">only</span> <span class="cm-attribute">screen</span> <span class="cm-keyword">and</span> (<span class="cm-property">max-width</span>:<span class="cm-number">524px</span>) {
+  <span class="cm-qualifier">.normal-container</span> {
+    <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">100%</span>;
+    <span class="cm-property">width</span>: <span class="cm-number">100%</span>;
+  }
+  <span class="cm-qualifier">.smile-rating-container</span> {
+    <span class="cm-property">position</span>: <span class="cm-atom">relative</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">10%</span>;
+    <span class="cm-property">width</span>: <span class="cm-number">490px</span>;
+    <span class="cm-property">margin</span>: <span class="cm-atom">auto</span>;
+    <span class="cm-property">font-family</span>: <span class="cm-string">'Roboto'</span>, <span class="cm-atom">sans-serif</span>;
+    <span class="cm-property">top</span>: <span class="cm-number">20%</span>;
+  }
+
+  <span class="cm-qualifier">.submit-rating</span> {
+    <span class="cm-property">display</span>: <span class="cm-atom">flex</span>;
+    <span class="cm-property">align-items</span>: <span class="cm-atom">center</span>;
+    <span class="cm-property">justify-content</span>: <span class="cm-atom">center</span>;
+  }
+  <span class="cm-qualifier">.rating-label</span> {
+    <span class="cm-property">position</span>: <span class="cm-atom">relative</span>;
+    <span class="cm-property">font-size</span>: <span class="cm-number">1.6em</span>;
+    <span class="cm-property">text-align</span>: <span class="cm-atom">center</span>;
+    <span class="cm-property">flex</span>: <span class="cm-number">0.34</span>;
+    <span class="cm-property">z-index</span>: <span class="cm-number">3</span>;
+    <span class="cm-property">font-weight</span>: <span class="cm-atom">bold</span>;
+    <span class="cm-property">cursor</span>: <span class="cm-atom">pointer</span>;
+    <span class="cm-property">color</span>: <span class="cm-variable-2">$ratingGreyColor</span>;
+    <span class="cm-property">transition</span>: <span class="cm-number">500ms</span>;
+  }
+  <span class="cm-qualifier">.rating-label</span>:<span class="cm-variable-3">hover</span>, <span class="cm-qualifier">.rating-label</span>:<span class="cm-variable-3">active</span> {
+    <span class="cm-property">color</span>: <span class="cm-variable-2">$ratingGreyColor</span>;
+  }
+  <span class="cm-qualifier">.rating-label-fun</span> {
+    <span class="cm-property">left</span>: <span class="cm-number">-58px</span>;  
+    <span class="cm-property">text-align</span>: <span class="cm-atom">right</span>;
+  }
+  <span class="cm-qualifier">.rating-label-meh</span> {
+    <span class="cm-property">left</span>: <span class="cm-number">50px</span>; 
+    <span class="cm-property">text-align</span>: <span class="cm-atom">left</span>;
+    <span class="cm-property">color</span>: <span class="cm-atom">#222</span>;
+  }
+  <span class="cm-qualifier">.smile-rating-container</span> <span class="cm-tag">input</span> {
+    <span class="cm-property">display</span>: <span class="cm-atom">none</span>;
+  }
+
+  <span class="cm-qualifier">.smile-rating-toggle-container</span> {
+
+  }
+
+  <span class="cm-qualifier">.toggle-rating-pill</span> {
+    <span class="cm-property">position</span>: <span class="cm-atom">relative</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">65px</span>;
+    <span class="cm-property">width</span>: <span class="cm-number">165px</span>;
+    <span class="cm-property">background</span>: <span class="cm-variable-2">$ratingGreyColor</span>;
+    <span class="cm-property">border-radius</span>: <span class="cm-number">500px</span>;
+    <span class="cm-property">transition</span>: <span class="cm-atom">all</span> <span class="cm-number">500ms</span>;
+  }
+
+  <span class="cm-qualifier">.smile-rating-toggle</span> {
+    <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+    <span class="cm-property">width</span>: <span class="cm-number">54px</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">54px</span>;
+    <span class="cm-property">background-color</span>: <span class="cm-keyword">white</span>;
+    <span class="cm-property">left</span>: <span class="cm-number">168px</span>;
+    <span class="cm-property">border-radius</span>: <span class="cm-number">500px</span>;
+    <span class="cm-property">transition</span>: <span class="cm-atom">all</span> <span class="cm-number">500ms</span>;
+    <span class="cm-property">z-index</span>: <span class="cm-number">4</span>;
+  }
+  <span class="cm-qualifier">.rating-eye</span> {
+    <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">12px</span>;
+    <span class="cm-property">width</span>: <span class="cm-number">8px</span>;
+    <span class="cm-property">background</span>: <span class="cm-variable-2">$ratingGreyColor</span>;
+    <span class="cm-property">border-radius</span>: <span class="cm-number">500px</span>;
+    <span class="cm-property">top</span>: <span class="cm-number">22px</span>;
+    <span class="cm-property">z-index</span>: <span class="cm-number">5</span>;
+    <span class="cm-property">transition</span>: <span class="cm-atom">all</span> <span class="cm-number">440ms</span>;
+  }
+  <span class="cm-qualifier">.rating-eye-left</span> {
+    <span class="cm-property">left</span>: <span class="cm-number">180px</span>;
+  }
+  <span class="cm-qualifier">.rating-eye-right</span> {
+    <span class="cm-property">left</span>: <span class="cm-number">201px</span>;
+  }
+
+  <span class="cm-qualifier">.mouth</span> {
+    <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+    <span class="cm-property">width</span>: <span class="cm-number">28px</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">20px</span>;
+    <span class="cm-property">z-index</span>: <span class="cm-number">6</span>;
+    <span class="cm-property">border</span>: <span class="cm-number">4px</span> <span class="cm-atom">solid</span> <span class="cm-variable-2">$ratingGreyColor</span>;
+    <span class="cm-property">border-radius</span>: <span class="cm-number">10%</span>;
+    <span class="cm-property">border-bottom-color</span>: <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">1</span>,<span class="cm-number">1</span>,<span class="cm-number">1</span>,<span class="cm-number">0</span>);
+    <span class="cm-property">border-right-color</span>: <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">1</span>,<span class="cm-number">1</span>,<span class="cm-number">1</span>,<span class="cm-number">0</span>);
+    <span class="cm-property">border-left-color</span>: <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">1</span>,<span class="cm-number">1</span>,<span class="cm-number">1</span>,<span class="cm-number">0</span>);
+    <span class="cm-property">top</span>: <span class="cm-number">42px</span>;
+    <span class="cm-property">left</span>: <span class="cm-number">177px</span>;
+    <span class="cm-property">transition</span>: <span class="cm-atom">all</span> <span class="cm-number">500ms</span>;
+  }
+
+  <span class="cm-comment">/*</span>
+<span class="cm-comment">  Toggle Changes</span>
+<span class="cm-comment">  */</span>
+
+  <span class="cm-builtin">#meh</span>:<span class="cm-variable-3">checked</span>~<span class="cm-qualifier">.rating-label-meh</span> {
+    <span class="cm-property">color</span>: <span class="cm-variable-2">$ratingDarkColor</span>;
+  }
+  <span class="cm-builtin">#fun</span>:<span class="cm-variable-3">checked</span>~<span class="cm-qualifier">.rating-label-meh</span> {
+    <span class="cm-property">color</span>: <span class="cm-variable-2">$ratingGreyColor</span>;
+  }
+  <span class="cm-builtin">#fun</span>:<span class="cm-variable-3">checked</span>~<span class="cm-qualifier">.mouth</span> {
+    <span class="cm-property">border</span>: <span class="cm-number">4px</span> <span class="cm-atom">solid</span> <span class="cm-variable-2">$ratingBlueColor</span>;
+    <span class="cm-property">border-bottom-color</span>: <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">1</span>,<span class="cm-number">1</span>,<span class="cm-number">1</span>,<span class="cm-number">0</span>);
+    <span class="cm-property">border-right-color</span>: <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">1</span>,<span class="cm-number">1</span>,<span class="cm-number">1</span>,<span class="cm-number">0</span>);
+    <span class="cm-property">border-left-color</span>: <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">1</span>,<span class="cm-number">1</span>,<span class="cm-number">1</span>,<span class="cm-number">0</span>);
+    <span class="cm-property">top</span>: <span class="cm-number">23px</span>;
+    <span class="cm-property">left</span>: <span class="cm-number">275px</span>;
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">rotateX</span>(<span class="cm-number">180deg</span>);
+    <span class="cm-property">border-radius</span>: <span class="cm-number">100%</span>;
+  }
+
+  <span class="cm-builtin">#fun</span>:<span class="cm-variable-3">checked</span>~<span class="cm-qualifier">.rating-label-fun</span> {
+    <span class="cm-property">color</span>: <span class="cm-variable-2">$ratingDarkColor</span>;
+  }
+  <span class="cm-builtin">#fun</span>:<span class="cm-variable-3">checked</span>~<span class="cm-qualifier">.smile-rating-toggle</span> {
+    <span class="cm-property">left</span>: <span class="cm-number">266px</span>;
+  }
+
+  <span class="cm-builtin">#fun</span>:<span class="cm-variable-3">checked</span>~<span class="cm-qualifier">.rating-eye-left</span> {
+    <span class="cm-property">left</span>: <span class="cm-number">275px</span>;
+  }
+  <span class="cm-builtin">#fun</span>:<span class="cm-variable-3">checked</span>~<span class="cm-qualifier">.rating-eye-right</span> {
+    <span class="cm-property">left</span>: <span class="cm-number">300px</span>;
+  }
+
+  <span class="cm-builtin">#fun</span>:<span class="cm-variable-3">checked</span>~<span class="cm-qualifier">.toggle-rating-pill</span> {
+    <span class="cm-property">background-color</span>: <span class="cm-variable-2">$ratingBlueColor</span>;
+  }
+
+  <span class="cm-builtin">#fun</span>:<span class="cm-variable-3">checked</span>~<span class="cm-qualifier">.rating-eye</span> {
+    <span class="cm-property">background-color</span>: <span class="cm-variable-2">$ratingBlueColor</span>;
+  }
+
+}</code></pre>
+<a href="https://codepen.io/anon/embed/RxYbgg?height=400&amp;theme-id=1&amp;slug-hash=RxYbgg&amp;default-tab=result#0" id="view-css-compiled-button" class="action-button bottom right view-compiled-button" data-type="css">
+View Compiled
+</a>
+</div>
+<div id="result-box" class="code-box active zoom-1" role="region" aria-label="Result">
+<iframe allow="accelerometer; camera; encrypted-media; display-capture; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write; web-share" allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="result-iframe  " frameborder="0" id="result-iframe" loading="lazy" name="CodePen Preview for Smile Toggle | HTML + CSS" sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-downloads allow-presentation" scrolling="yes" title="CodePen Preview for Smile Toggle | HTML + CSS" data-src="https://cdpn.io/CameronFitzwilliam/fullembedgrid/RxYbgg?animations=run&amp;type=embed" src="./RxYbgg(1).html">
+  </iframe>
+</div>
+<div id="about-box">
+<div class="about-container">
+<div class="about-user">
+<a href="https://codepen.io/CameronFitzwilliam" target="_blank" rel="noopener"><img src="./default(13).png" loading="lazy" alt="" class="about-image"></a>
+<div class="about-user-info">
+<p>
+This Pen is owned by <a href="https://codepen.io/CameronFitzwilliam" target="_blank" rel="noopener">Cameron Fitzwilliam</a> on <a href="https://codepen.io/" target="_blank" rel="noopener">CodePen</a>.
+</p>
+<p>
+<a href="https://codepen.io/CameronFitzwilliam" target="_blank" rel="noopener" class="about-user-more">
+See more by @CameronFitzwilliam on CodePen
+</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="resources-box" class="resources-box">
+<h3>External CSS</h3>
+<p>
+This Pen doesn't use any external CSS resources.
+</p>
+<h3>External JavaScript</h3>
+<p>
+This Pen doesn't use any external JavaScript resources.
+</p>
+</div>
+</div>
+<footer class="embed-footer" id="embed-footer">
+<button id="resources-link" class="resources-link action-button bottom left" href="#resources-box" aria-pressed="false" role="button">
+Resources
+</button>
+<ul class="scaling-choices bottom right">
+<li><button class="action-button" id="zoom-button-1">1×</button></li>
+<li><button class="action-button" id="zoom-button-05">0.5×</button></li>
+<li><button class="action-button" id="zoom-button-025">0.25×</button></li>
+</ul>
+<button id="rerun-button" class="action-button rerun-button bottom right">
+Rerun
+</button>
+</footer>
+<script nonce="">
+    __processedPen = {"html":"&lt;div class=&quot;normal-container&quot;&gt;\n\t&lt;div class=&quot;smile-rating-container&quot;&gt;\n\t\t&lt;div class=&quot;smile-rating-toggle-container&quot;&gt;\n\t\t\t&lt;form class=&quot;submit-rating&quot;&gt;\n\t\t\t\t&lt;input id=&quot;meh&quot;  name=&quot;satisfaction&quot; type=&quot;radio&quot; /&gt; \n\t\t\t\t&lt;input id=&quot;fun&quot; name=&quot;satisfaction&quot; type=&quot;radio&quot; /&gt; \n\t\t\t\t&lt;label for=&quot;meh&quot; class=&quot;rating-label rating-label-meh&quot;&gt;Bad&lt;/label&gt;\n\t\t\t\t&lt;div class=&quot;smile-rating-toggle&quot;&gt;&lt;/div&gt;\n\t\t\t\t\n\t\t\t\t&lt;div class=&quot;rating-eye rating-eye-left&quot;&gt;&lt;/div&gt;\n\t\t\t\t&lt;div class=&quot;rating-eye rating-eye-right&quot;&gt;&lt;/div&gt;\n\t\t\t\t\n\t\t\t\t&lt;div class=&quot;mouth rating-eye-bad-mouth&quot;&gt;&lt;/div&gt;\n\t\t\t\t\n\t\t\t\t&lt;div class=&quot;toggle-rating-pill&quot;&gt;&lt;/div&gt;\n\t\t\t\t&lt;label for=&quot;fun&quot; class=&quot;rating-label rating-label-fun&quot;&gt;Fun&lt;/label&gt;\n\t\t\t&lt;/form&gt;\n\t\t&lt;/div&gt;\n\t&lt;/div&gt;\n&lt;/div&gt;","css":"@import url(&quot;https://fonts.googleapis.com/css?family=Roboto:700,900&quot;);\n.normal-container {\n  position: absolute;\n  height: 100%;\n  width: 100%;\n}\n\n.smile-rating-container {\n  position: relative;\n  height: 10%;\n  min-width: 220px;\n  max-width: 520px;\n  margin: auto;\n  font-family: &quot;Roboto&quot;, sans-serif;\n  top: 20%;\n}\n\n.submit-rating {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.rating-label {\n  position: relative;\n  font-size: 1.6em;\n  text-align: center;\n  flex: 0.34;\n  z-index: 3;\n  font-weight: bold;\n  cursor: pointer;\n  color: #d0cccd;\n  transition: 500ms;\n}\n\n.rating-label:hover, .rating-label:active {\n  color: #d0cccd;\n}\n\n.rating-label-fun {\n  left: -58px;\n  text-align: right;\n}\n\n.rating-label-meh {\n  left: 58px;\n  text-align: left;\n  color: #222;\n}\n\n.smile-rating-container input {\n  display: none;\n}\n\n.toggle-rating-pill {\n  position: relative;\n  height: 65px;\n  width: 165px;\n  background: #d0cccd;\n  border-radius: 500px;\n  transition: all 500ms;\n}\n\n.smile-rating-toggle {\n  position: absolute;\n  width: 54px;\n  height: 54px;\n  background-color: white;\n  left: 182px;\n  border-radius: 500px;\n  transition: all 500ms;\n  z-index: 4;\n}\n\n.rating-eye {\n  position: absolute;\n  height: 12px;\n  width: 8px;\n  top: 22px;\n  background: #d0cccd;\n  border-radius: 500px;\n  z-index: 5;\n  transition: all 440ms;\n  -webkit-animation: blink-eye 3s infinite;\n          animation: blink-eye 3s infinite;\n}\n\n@-webkit-keyframes blink-eye {\n  0% {\n    height: 12px;\n    width: 8px;\n    top: 22px;\n  }\n  20% {\n    height: 12px;\n    width: 8px;\n    top: 22px;\n  }\n  40% {\n    height: 12px;\n    width: 8px;\n    top: 22px;\n  }\n  60% {\n    height: 12px;\n    width: 8px;\n    top: 22px;\n  }\n  80% {\n    height: 12px;\n    width: 8px;\n    top: 22px;\n  }\n  90% {\n    height: 12px;\n    width: 8px;\n    top: 22px;\n  }\n  95% {\n    height: 2px;\n    width: 8px;\n    top: 30px;\n  }\n  100% {\n    height: 12px;\n    width: 8px;\n    top: 22px;\n  }\n}\n\n@keyframes blink-eye {\n  0% {\n    height: 12px;\n    width: 8px;\n    top: 22px;\n  }\n  20% {\n    height: 12px;\n    width: 8px;\n    top: 22px;\n  }\n  40% {\n    height: 12px;\n    width: 8px;\n    top: 22px;\n  }\n  60% {\n    height: 12px;\n    width: 8px;\n    top: 22px;\n  }\n  80% {\n    height: 12px;\n    width: 8px;\n    top: 22px;\n  }\n  90% {\n    height: 12px;\n    width: 8px;\n    top: 22px;\n  }\n  95% {\n    height: 2px;\n    width: 8px;\n    top: 30px;\n  }\n  100% {\n    height: 12px;\n    width: 8px;\n    top: 22px;\n  }\n}\n.rating-eye-left {\n  left: 192px;\n}\n\n.rating-eye-right {\n  left: 216px;\n}\n\n.mouth {\n  position: absolute;\n  width: 28px;\n  height: 20px;\n  z-index: 6;\n  border: 4px solid #d0cccd;\n  border-radius: 10%;\n  border-bottom-color: rgba(1, 1, 1, 0);\n  border-right-color: rgba(1, 1, 1, 0);\n  border-left-color: rgba(1, 1, 1, 0);\n  top: 42px;\n  left: 190px;\n  transition: all 500ms;\n}\n\n/*\nToggle Changes\n*/\n#meh:checked ~ .rating-label-meh {\n  color: #555e63;\n}\n\n#fun:checked ~ .rating-label-meh {\n  color: #d0cccd;\n}\n\n#fun:checked ~ .mouth {\n  border: 4px solid #00b9ee;\n  border-bottom-color: rgba(1, 1, 1, 0);\n  border-right-color: rgba(1, 1, 1, 0);\n  border-left-color: rgba(1, 1, 1, 0);\n  top: 23px;\n  left: 291px;\n  transform: rotateX(180deg);\n  border-radius: 100%;\n}\n\n#fun:checked ~ .rating-label-fun {\n  color: #555e63;\n}\n\n#fun:checked ~ .smile-rating-toggle {\n  left: 282px;\n}\n\n#fun:checked ~ .rating-eye-left {\n  left: 292px;\n}\n\n#fun:checked ~ .rating-eye-right {\n  left: 316px;\n}\n\n#fun:checked ~ .toggle-rating-pill {\n  background-color: #00b9ee;\n}\n\n#fun:checked ~ .rating-eye {\n  background-color: #00b9ee;\n}\n\n@media only screen and (max-width: 524px) {\n  .normal-container {\n    position: absolute;\n    height: 100%;\n    width: 100%;\n  }\n\n  .smile-rating-container {\n    position: relative;\n    height: 10%;\n    width: 490px;\n    margin: auto;\n    font-family: &quot;Roboto&quot;, sans-serif;\n    top: 20%;\n  }\n\n  .submit-rating {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  .rating-label {\n    position: relative;\n    font-size: 1.6em;\n    text-align: center;\n    flex: 0.34;\n    z-index: 3;\n    font-weight: bold;\n    cursor: pointer;\n    color: #d0cccd;\n    transition: 500ms;\n  }\n\n  .rating-label:hover, .rating-label:active {\n    color: #d0cccd;\n  }\n\n  .rating-label-fun {\n    left: -58px;\n    text-align: right;\n  }\n\n  .rating-label-meh {\n    left: 50px;\n    text-align: left;\n    color: #222;\n  }\n\n  .smile-rating-container input {\n    display: none;\n  }\n\n  .toggle-rating-pill {\n    position: relative;\n    height: 65px;\n    width: 165px;\n    background: #d0cccd;\n    border-radius: 500px;\n    transition: all 500ms;\n  }\n\n  .smile-rating-toggle {\n    position: absolute;\n    width: 54px;\n    height: 54px;\n    background-color: white;\n    left: 168px;\n    border-radius: 500px;\n    transition: all 500ms;\n    z-index: 4;\n  }\n\n  .rating-eye {\n    position: absolute;\n    height: 12px;\n    width: 8px;\n    background: #d0cccd;\n    border-radius: 500px;\n    top: 22px;\n    z-index: 5;\n    transition: all 440ms;\n  }\n\n  .rating-eye-left {\n    left: 180px;\n  }\n\n  .rating-eye-right {\n    left: 201px;\n  }\n\n  .mouth {\n    position: absolute;\n    width: 28px;\n    height: 20px;\n    z-index: 6;\n    border: 4px solid #d0cccd;\n    border-radius: 10%;\n    border-bottom-color: rgba(1, 1, 1, 0);\n    border-right-color: rgba(1, 1, 1, 0);\n    border-left-color: rgba(1, 1, 1, 0);\n    top: 42px;\n    left: 177px;\n    transition: all 500ms;\n  }\n\n  /*\n  Toggle Changes\n  */\n  #meh:checked ~ .rating-label-meh {\n    color: #555e63;\n  }\n\n  #fun:checked ~ .rating-label-meh {\n    color: #d0cccd;\n  }\n\n  #fun:checked ~ .mouth {\n    border: 4px solid #00b9ee;\n    border-bottom-color: rgba(1, 1, 1, 0);\n    border-right-color: rgba(1, 1, 1, 0);\n    border-left-color: rgba(1, 1, 1, 0);\n    top: 23px;\n    left: 275px;\n    transform: rotateX(180deg);\n    border-radius: 100%;\n  }\n\n  #fun:checked ~ .rating-label-fun {\n    color: #555e63;\n  }\n\n  #fun:checked ~ .smile-rating-toggle {\n    left: 266px;\n  }\n\n  #fun:checked ~ .rating-eye-left {\n    left: 275px;\n  }\n\n  #fun:checked ~ .rating-eye-right {\n    left: 300px;\n  }\n\n  #fun:checked ~ .toggle-rating-pill {\n    background-color: #00b9ee;\n  }\n\n  #fun:checked ~ .rating-eye {\n    background-color: #00b9ee;\n  }\n}","js":""};
+    __preprocessors = {
+      "html": "none",
+      "css": "scss",
+      "js": "none"
+    };
+    __preprocessorNames = {
+      "html": "HTML",
+      "css": "SCSS",
+      "js": "JS"
+    };
+    __editable = false;
+    __embed_prefill = false;
+  </script>
+<script src="./embed-59842fbf0495f2c0b079a7f4ce7544fb0912f3535856bf4dc5c205acbb621c54.js.download"></script>
+<script nonce="">(function(){var js = "window['__CF$cv$params']={r:'793419d2e9bb1d3d',m:'30FC1M8YBR0i.KUuI4KJR2v.AZIBw1dDWOV82OVCvFE-1675353220-0-AeNB6jQVxhBGbe7Ace5bbpNs08nkeqkQ/tfXQaqT/ZqbcX9lwZBZeW5Dpo1I+xLiRrrUf6v9+HLwC8M2ZNbP1agoxmiV/9/XGqkOtKLl7Vnk81Rj2rzKxJ/koxhSJbIoI/nO4hjVlvpo05t98RLZLeOTUumt7b2IcLkzKcmYuOv8RcwyIfRFbxhdvT2p8EzbPkdoyFGNX/Ll00ow1cBQHzo=',s:[0x382a880fb2,0x033d6fb216],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='ngW1qYj/t10=',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = 'ngW1qYj/t10=';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./saved_resource(15).html"></iframe>
+
+</body></html>

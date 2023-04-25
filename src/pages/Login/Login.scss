@@ -1,0 +1,91 @@
+.desktop-login {
+    height: 90vh;
+
+    .form-label {
+        color: grey;
+    }
+
+    .form-control {
+        border-radius: 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid black;
+        padding: 0;
+        margin: 40px 0;
+    }
+
+    .sign-in-btn {
+        background: black;
+        outline: none;
+        border: none;
+        border-radius: 0;
+        width: 60%;
+        margin: 30px auto 0 auto;
+        display: block;
+    }
+
+    .titleblock {
+        h4 {
+            font-weight: bolder;
+        }
+
+        .create-account-btn {
+            background: transparent;
+            color: black;
+            outline: black;
+            border: 2px solid black;
+            margin: 40px auto 0 auto;
+            display: block;
+            width: 80%;
+            text-transform: inherit;
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+    .passwordInput {
+        .forgot {
+            position: relative;
+            right: 2px;
+            float: right;
+            top: -69px;
+        }
+    }
+}
+
+
+
+.mobile-login {
+    height: 100vh;
+
+    .mobile-sign-in {
+        border-bottom: 1px solid black;
+
+        p {
+            font-weight: bold;
+            // margin: 0;
+        }
+    }
+
+    .mobile-sign-in-btn {
+        background: black;
+        text-transform: inherit;
+        border: none;
+        border-radius: 0;
+        padding: 10px 0px;
+    }
+
+    .mobile-new-user-btn {
+        background: #ffff;
+        text-transform: inherit;
+        border-radius: 0;
+        border: 2px solid black;
+        color: black;
+    }
+
+    .form-control {
+        border-radius: 0;
+        border: 2px solid lightgray;
+        outline: none;
+    }
+}

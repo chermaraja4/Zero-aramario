@@ -1,0 +1,29 @@
+.terms-condtions-container {
+    margin-bottom: 100px;
+    h1 {
+        font-size: 40px;
+        font-weight: bolder;
+        color: #313131;
+    }
+    ul {
+        li {
+            list-style: disc;
+            margin-top: 40px;
+        }
+    }
+    .accordion-block {
+        margin-top: 40px;
+        .accordion-flush .accordion-item {
+            border: none;
+        }
+       .accordion-button {
+            text-transform: inherit;
+            font-weight: bold;
+            box-shadow: none;
+       }
+       .accordion-button:not(.collapsed) {
+        color: black;
+        background: white;
+       }
+    }
+}

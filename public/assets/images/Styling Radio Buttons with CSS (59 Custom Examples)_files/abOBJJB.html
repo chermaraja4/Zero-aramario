@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<!-- saved from url=(0096)https://codepen.io/anon/embed/abOBJJB?height=500&theme-id=1&slug-hash=abOBJJB&default-tab=result -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width">
+<title>CodePen Embed - UI // Radio Button</title>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="sBhi9RPsI9qByJ1yUAz8SXjLPKgsHA7gTGOeD2yQ0b17z/wvrrOgf/h89MCbmO5VM0OKTDXlivYmfRv3lAoh3g==">
+<link rel="stylesheet" media="all" href="./embed-5c9d0df4194479e72f3f4195cb70bfc2217587bcd5b1acda570c7aadbea18f9c.css">
+<style>
+    .hide {
+      display: none !important;
+    }
+
+    #result-box {
+      background: #28282a;
+      color: #ffffff;
+    }
+    .embed-footer,
+    .embed-nav {
+      background: #28282a;
+      
+    }
+    .embed-nav .code-types a,
+    .embed-nav .result-button-list a,
+    .action-button {
+      color: #ffffff;
+      background-color: #424242;
+    }
+    .embed-nav .code-types a.active,
+    .embed-nav .result-button-list a.active,
+    .action-button.active {
+      background: #212121;
+      color: #ffffff;
+      box-shadow: inset 0px 3px #ff8a00;
+    }
+    .embed-nav .logo-wrap .edit-on-codepen {
+      color: #a9a9a9;
+    }
+
+    .embed-nav svg {
+      stroke: #a9a9a9 !important;
+    }
+  </style>
+<link rel="stylesheet" media="all" href="./highcontrast-dark-c9f58c52f642f276610867eb0652eb22d9d88af6dddef0874efd8d911a7938ff.css">
+<link rel="stylesheet" href="./maVRwd.css">
+<meta name="monetization" content="$ilp.uphold.com/biyqg2MkQKbe">
+</head>
+<body id="the-body" style="border: 1px solid #39231b; --borderWidth: 1px;" class="codepen-embed-body static results-active">
+<nav class="embed-nav group" id="embed-nav">
+<ul class="code-types">
+<li class="code-type">
+<a id="html-link" href="https://codepen.io/anon/embed/abOBJJB?height=500&amp;theme-id=1&amp;slug-hash=abOBJJB&amp;default-tab=result#html-box" role="button" aria-pressed="false">
+HTML
+</a>
+</li>
+<li class="code-type">
+<a id="css-link" href="https://codepen.io/anon/embed/abOBJJB?height=500&amp;theme-id=1&amp;slug-hash=abOBJJB&amp;default-tab=result#css-box" role="button" aria-pressed="false">
+SCSS
+</a>
+</li>
+<li class="code-type">
+<a id="js-link" href="https://codepen.io/anon/embed/abOBJJB?height=500&amp;theme-id=1&amp;slug-hash=abOBJJB&amp;default-tab=result#js-box" role="button" aria-pressed="false">
+JS
+</a>
+</li>
+</ul>
+<ul class="result-button-list">
+<li class="results results-type">
+<a id="result-link" href="https://codepen.io/anon/embed/abOBJJB?height=500&amp;theme-id=1&amp;slug-hash=abOBJJB&amp;default-tab=result#result-box" class="active" aria-pressed="true" role="button">
+Result
+</a>
+</li>
+<li>
+<a href="https://codepen.io/anon/embed/abOBJJB?height=500&amp;theme-id=1&amp;slug-hash=abOBJJB&amp;default-tab=result#resources-link" id="skip-results-iframe-link">Skip Results Iframe</a>
+</li>
+</ul>
+<div class="logo-wrap" id="edit-area">
+<a class="edit-on-codepen" target="_blank" rel="noopener" href="https://codepen.io/coswise/pen/abOBJJB" title="Edit on CodePen">
+<div class="large-logo">
+<span id="edit-on-text" class="open-on">EDIT ON</span>
+<svg id="embed-codepen-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 26" fill="none" stroke="#000" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="CodePen">
+<path d="M80 6h-9v14h9m34-14h-9v14h9m-3-7h-6m-28 0h-6m51 7V6l11 14V6M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24m55-10h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-6v14M15 8c-1.3-1.3-3-2-5-2-4 0-7 3-7 7s3 7 7 7c2 0 3.7-.8 5-2m49-5c0 4-3 7-7 7h-5V6h5c4 0 7 3 7 7z"></path>
+</svg>
+</div>
+<div class="box-logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 0 26 26" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" role="img" aria-label="Edit on CodePen">
+<path id="icon-codepen-box" d="M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24"></path>
+</svg>
+</div>
+</a>
+</div>
+</nav>
+<div id="output" data-border-style="thin" data-header="true">
+<div id="html-box" class="code-wrap code-box box " role="region" aria-label="HTML">
+<pre tabindex="0"><code data-lang="htmlmixed" id="actual-html-code" class=" cm-s-default"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">'container'</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">'ul'</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">'li l1-1'</span> <span class="cm-attribute">id</span>=<span class="cm-string">'one'</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span> <span class="cm-attribute">class</span>=<span class="cm-string">'text'</span><span class="cm-tag cm-bracket">&gt;</span>One<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">'cr-wrap cr-w-1'</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">'cr'</span><span class="cm-tag cm-bracket">&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">'crx crx-1'</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>     
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">'li l1-2'</span> <span class="cm-attribute">id</span>=<span class="cm-string">'two'</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span> <span class="cm-attribute">class</span>=<span class="cm-string">'text'</span><span class="cm-tag cm-bracket">&gt;</span>Two<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">'cr-wrap cr-w-2'</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">'cr'</span><span class="cm-tag cm-bracket">&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">'crx crx-2'</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">'li l1-3'</span> <span class="cm-attribute">id</span>=<span class="cm-string">'three'</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span> <span class="cm-attribute">class</span>=<span class="cm-string">'text'</span><span class="cm-tag cm-bracket">&gt;</span>Three<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">'cr-wrap cr-w-3'</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">'cr'</span><span class="cm-tag cm-bracket">&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">'crx crx-3'</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+
+<span class="cm-comment">&lt;!-- References Dribbble / Twitter --&gt;</span>
+<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">'cs-ref'</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">class</span>=<span class="cm-string">"cs-dribbble"</span> <span class="cm-attribute">href</span>=<span class="cm-string">"https://dribbble.com/shots/10344240-UI-Radio-Button"</span> <span class="cm-attribute">target</span>=<span class="cm-string">"_blank"</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">'svgDribbble'</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">class</span>=<span class="cm-string">"cs-twitter"</span> <span class="cm-attribute">target</span>=<span class="cm-string">"_blank"</span> <span class="cm-attribute">href</span>=<span class="cm-string">"https://twitter.com/CosWiSe"</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">'svgTwitter'</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;</span>
+   <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">class</span>=<span class="cm-string">'cs-hicon'</span> <span class="cm-attribute">target</span>=<span class="cm-string">'_blank'</span> <span class="cm-attribute">href</span>=<span class="cm-string">'https://hicon.me/'</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">'svgHicon'</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></code></pre>
+</div>
+<div id="css-box" class="code-wrap code-box box " role="region" aria-label="CSS">
+<pre tabindex="0"><code data-lang="text/x-scss" id="actual-css-code" class=" cm-s-default"><span class="cm-comment">// IMPORT</span>
+<span class="cm-def">@import</span> <span class="cm-variable cm-callee">url</span>(<span class="cm-string">'https://fonts.googleapis.com/css?family=Muli:300,400,700,900'</span>);
+
+<span class="cm-comment">// VARIABLES </span>
+<span class="cm-comment">// $canvasBg: #f7f7f7; Grey</span>
+<span class="cm-variable-2">$canvasBg</span>: <span class="cm-atom">#f1f3f9</span>; <span class="cm-comment">// Bright #d5dbed</span>
+
+<span class="cm-variable-2">$textC</span>: <span class="cm-atom">#333333</span>;
+<span class="cm-variable-2">$col1</span>: <span class="cm-atom">#ff8c69</span>;
+<span class="cm-variable-2">$col2</span>: <span class="cm-variable">ff696c</span>;
+<span class="cm-variable-2">$col3</span>: <span class="cm-atom">#1462ff</span>;
+<span class="cm-variable-2">$col4</span>: <span class="cm-atom">#f0f1f5</span>;
+
+<span class="cm-variable-2">$colFb</span>: <span class="cm-atom">#4fa7ff</span>;
+
+<span class="cm-variable-2">$svgC</span>: <span class="cm-variable cm-callee">rgba</span>(<span class="cm-atom">#929cd0</span>, <span class="cm-number">.8</span>);
+<span class="cm-comment">// $shadowC: #d1d4e1;</span>
+<span class="cm-variable-2">$shadowC</span>: <span class="cm-atom">#d5dbed</span>;
+<span class="cm-variable-2">$shadowDef</span>: <span class="cm-number">0</span> <span class="cm-number">3px</span> <span class="cm-number">20px</span> <span class="cm-number">-3px</span> <span class="cm-variable-2">$shadowC</span>;
+<span class="cm-variable-2">$shadowDefTwo</span>: <span class="cm-number">0</span> <span class="cm-number">6px</span> <span class="cm-number">30px</span> <span class="cm-number">-10px</span> <span class="cm-variable-2">$shadowC</span>;
+
+<span class="cm-comment">// PLACEHOLDERS</span>
+%<span class="cm-tag">no-selection</span> {
+  <span class="cm-comment">// No selection</span>
+  <span class="cm-meta">-webkit-</span><span class="cm-property">user-select</span>: <span class="cm-atom">none</span>;  
+  <span class="cm-meta">-moz-</span><span class="cm-property">user-select</span>: <span class="cm-atom">none</span>;     
+  <span class="cm-meta">-ms-</span><span class="cm-property">user-select</span>: <span class="cm-atom">none</span>;      
+  <span class="cm-property">user-select</span>: <span class="cm-atom">none</span>;    
+}
+
+<span class="cm-comment">// DEFAULT</span>
+<span class="cm-tag">html</span> {
+  <span class="cm-property">display</span>: <span class="cm-atom">flex</span>;
+  <span class="cm-property">justify-content</span>: <span class="cm-atom">center</span>;
+  <span class="cm-property">align-items</span>: <span class="cm-atom">center</span>;
+  <span class="cm-property">background</span>: <span class="cm-variable-2">$canvasBg</span>;
+  <span class="cm-property">height</span>: <span class="cm-number">100vh</span>;
+  <span class="cm-property">font-family</span>: <span class="cm-string">'Muli'</span>, <span class="cm-variable">Arial</span>, <span class="cm-atom">sans-serif</span>;
+  &gt; * 
+  {
+    <span class="cm-def">@extend</span> %<span class="cm-tag">no-selection</span>;
+  }
+}
+
+<span class="cm-comment">// SVGs</span>
+<span class="cm-builtin">#dribbble</span> {
+  <span class="cm-property">position</span>: <span class="cm-atom">fixed</span>;
+  <span class="cm-property">display</span>: <span class="cm-atom">block</span>;
+  <span class="cm-property">right</span>: <span class="cm-number">70px</span>;
+  <span class="cm-property">bottom</span>: <span class="cm-number">16px</span>;
+  <span class="cm-tag">svg</span> {
+    <span class="cm-property">display</span>: <span class="cm-atom">block</span>;
+    <span class="cm-property">width</span>: <span class="cm-number">76px</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">24px</span>;
+    <span class="cm-property">fill</span>: <span class="cm-variable-2">$svgC</span>;
+  }
+}
+<span class="cm-builtin">#twitter</span> {
+  <span class="cm-property">position</span>: <span class="cm-atom">fixed</span>;
+  <span class="cm-property">display</span>: <span class="cm-atom">block</span>;
+  <span class="cm-property">right</span>: <span class="cm-number">25px</span>;
+  <span class="cm-property">bottom</span>: <span class="cm-number">11px</span>;
+  <span class="cm-tag">svg</span> {
+    <span class="cm-property">width</span>: <span class="cm-number">24px</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">24px</span>;
+    <span class="cm-property">fill</span>: <span class="cm-variable-2">$svgC</span>;
+  }
+}
+<span class="cm-builtin">#hicon</span> {
+  <span class="cm-property">position</span>: <span class="cm-atom">fixed</span>;
+  <span class="cm-property">display</span>: <span class="cm-atom">block</span>;
+  <span class="cm-property">left</span>: <span class="cm-number">25px</span>;
+  <span class="cm-property">bottom</span>: <span class="cm-number">-42px</span>;
+  <span class="cm-tag">svg</span> {
+    <span class="cm-property">width</span>: <span class="cm-number">78px</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">78px</span>;
+    <span class="cm-property">fill</span>: <span class="cm-variable-2">$svgC</span>;
+  }
+}
+
+<span class="cm-comment">// NEW CODE HERE</span>
+
+
+<span class="cm-comment">// Variables</span>
+<span class="cm-variable-2">$sW</span>: <span class="cm-number">150px</span>;
+<span class="cm-variable-2">$sH</span>: <span class="cm-number">200px</span>;
+
+<span class="cm-comment">// Placeholdders</span>
+%<span class="cm-tag">center</span> {
+  <span class="cm-property">display</span>: <span class="cm-atom">flex</span>;
+  <span class="cm-property">justify-content</span>: <span class="cm-atom">center</span>;
+  <span class="cm-property">align-items</span>: <span class="cm-atom">center</span>;
+}
+
+
+<span class="cm-comment">// Container</span>
+<span class="cm-qualifier">.container</span> {
+  <span class="cm-def">@extend</span> %<span class="cm-tag">center</span>;
+  <span class="cm-property">width</span>: <span class="cm-atom">auto</span>;
+  <span class="cm-property">height</span>: <span class="cm-atom">auto</span>;
+  <span class="cm-property">box-sizing</span>: <span class="cm-atom">border-box</span>;
+  <span class="cm-property">padding</span>: <span class="cm-number">30px</span> <span class="cm-number">20px</span>;
+  <span class="cm-property">background</span>: <span class="cm-atom">#fff</span>;
+  <span class="cm-property">box-shadow</span>: <span class="cm-number">0</span> <span class="cm-number">8px</span> <span class="cm-number">22px</span> <span class="cm-number">-6px</span> <span class="cm-variable cm-callee">rgba</span>(<span class="cm-variable-2">$shadowC</span>, <span class="cm-number">.9</span>);
+  <span class="cm-property">border-radius</span>: <span class="cm-number">12px</span>;
+}
+
+<span class="cm-comment">// List</span>
+<span class="cm-qualifier">.ul</span> {
+  <span class="cm-def">@extend</span> %<span class="cm-tag">center</span>;
+  <span class="cm-property">flex-direction</span>: <span class="cm-atom">column</span>;
+  <span class="cm-property">width</span>: <span class="cm-variable-2">$sW</span><span class="cm-operator">/</span><span class="cm-number">1.2</span>;
+  <span class="cm-property">height</span>: <span class="cm-atom">auto</span>;
+  <span class="cm-property">padding</span>: <span class="cm-number">0</span>;
+  &amp; &gt; <span class="cm-qualifier">.li</span>:<span class="cm-variable cm-callee">nth-child</span>(<span class="cm-number">2</span>) {
+    <span class="cm-property">margin</span>: <span class="cm-number">20px</span> <span class="cm-number">0</span>;
+  }
+}
+
+<span class="cm-qualifier">.li</span> {
+  <span class="cm-property">display</span>: <span class="cm-atom">flex</span>;
+  <span class="cm-property">justify-content</span>: <span class="cm-atom">space-between</span>;
+  <span class="cm-property">align-items</span>: <span class="cm-atom">center</span>;
+  <span class="cm-property">width</span>: <span class="cm-variable-2">$sW</span><span class="cm-operator">/</span><span class="cm-number">1.35</span>;
+  <span class="cm-property">height</span>: <span class="cm-number">30px</span>;
+  <span class="cm-property">cursor</span>: <span class="cm-atom">pointer</span>;
+  <span class="cm-property">position</span>: <span class="cm-atom">relative</span>;
+  <span class="cm-qualifier">.text</span> {
+    <span class="cm-property">font-size</span>: <span class="cm-number">1.1em</span>;
+  }
+}
+
+<span class="cm-comment">// Circles</span>
+<span class="cm-qualifier">.cr</span> {
+  <span class="cm-def">@extend</span> %<span class="cm-tag">center</span>;
+  <span class="cm-property">width</span>: <span class="cm-number">19px</span>;
+  <span class="cm-property">height</span>: <span class="cm-number">19px</span>;
+  <span class="cm-property">border-radius</span>: <span class="cm-number">50%</span>;
+  <span class="cm-property">background</span>: <span class="cm-atom">#fff</span>;
+  <span class="cm-property">border</span>: <span class="cm-number">2px</span> <span class="cm-atom">solid</span> <span class="cm-variable cm-callee">rgba</span>(<span class="cm-variable-2">$col3</span>, <span class="cm-number">.8</span>);
+  <span class="cm-property">overflow</span>: <span class="cm-atom">hidden</span>;
+  <span class="cm-property">position</span>: <span class="cm-atom">relative</span>;
+  <span class="cm-property">z-index</span>: <span class="cm-number">3</span>;
+}
+
+<span class="cm-qualifier">.crx</span> {
+  <span class="cm-property">width</span>: <span class="cm-number">12px</span>;
+  <span class="cm-property">height</span>: <span class="cm-number">12px</span>;
+  <span class="cm-property">border-radius</span>: <span class="cm-number">50%</span>;
+  <span class="cm-property">background</span>: <span class="cm-variable cm-callee">rgba</span>(<span class="cm-variable-2">$col3</span>, <span class="cm-number">.8</span>);
+  <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translatex</span>(<span class="cm-number">-19px</span>);
+}
+
+<span class="cm-comment">// CR Behaviour Post Selection</span>
+<span class="cm-comment">// Top</span>
+<span class="cm-qualifier">.crx-top-in</span> {
+  <span class="cm-property">animation</span>: <span class="cm-variable">fromTopIn</span> <span class="cm-number">479ms</span> <span class="cm-atom">linear</span> <span class="cm-atom">forwards</span> <span class="cm-number">129ms</span>;
+}
+<span class="cm-qualifier">.crx-top-out</span> {
+  <span class="cm-property">animation</span>: <span class="cm-variable">fromTopOut</span> <span class="cm-number">99ms</span> <span class="cm-atom">linear</span> <span class="cm-atom">forwards</span>;
+}
+
+<span class="cm-comment">//Bottom</span>
+<span class="cm-qualifier">.crx-bottom-out</span> {
+  <span class="cm-property">animation</span>: <span class="cm-variable">fromBottomOut</span> <span class="cm-number">99ms</span> <span class="cm-atom">linear</span> <span class="cm-atom">forwards</span>;
+} 
+<span class="cm-qualifier">.crx-bottom-in</span> {
+  <span class="cm-property">animation</span>: <span class="cm-variable">fromBottomIn</span> <span class="cm-number">479ms</span> <span class="cm-atom">linear</span> <span class="cm-atom">forwards</span> <span class="cm-number">129ms</span>;
+}
+
+
+<span class="cm-comment">// From Top</span>
+<span class="cm-def">@keyframes</span> <span class="cm-variable">fromTopIn</span> {
+  <span class="cm-number">0%</span> {
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translatey</span>(<span class="cm-number">-14px</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1.5</span>, <span class="cm-number">.6</span>); <span class="cm-comment">// Stage 0</span>
+  }
+  <span class="cm-number">33.2%</span> {
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translatey</span>(<span class="cm-number">-5px</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1.4</span>, <span class="cm-number">.8</span>); <span class="cm-comment">// Stage 1</span>
+  }
+  <span class="cm-number">49.8%</span> {
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translatey</span>(<span class="cm-number">0px</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">.9</span>, <span class="cm-number">1.2</span>); <span class="cm-comment">// Stage 2</span>
+  }
+  <span class="cm-number">66.4%</span> {
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translatey</span>(<span class="cm-number">6px</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1.4</span>, <span class="cm-number">.7</span>); <span class="cm-comment">// Stage 3</span>
+  }
+  <span class="cm-number">73%</span> {
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translatey</span>(<span class="cm-number">6px</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1.4</span>, <span class="cm-number">.7</span>); <span class="cm-comment">// Stage 4</span>
+  }
+  <span class="cm-number">83%</span> {
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translatey</span>(<span class="cm-number">-1px</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">.9</span>, <span class="cm-number">1.1</span>); <span class="cm-comment">// Stage 5</span>
+  }
+  <span class="cm-number">100%</span> {
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translatey</span>(<span class="cm-number">0</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1</span>, <span class="cm-number">1</span>); <span class="cm-comment">// Stage 6</span>
+  }
+}
+<span class="cm-def">@keyframes</span> <span class="cm-variable">fromTopOut</span> {
+  <span class="cm-number">0%</span> {
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translatey</span>(<span class="cm-number">0</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1</span>, <span class="cm-number">1</span>); <span class="cm-comment">// Stage 0</span>
+  }
+  <span class="cm-number">25%</span> {
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translatey</span>(<span class="cm-number">1px</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">.9</span>, <span class="cm-number">1.1</span>); <span class="cm-comment">// Stage 1</span>
+  }
+  <span class="cm-number">50%</span> {
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translatey</span>(<span class="cm-number">-6px</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1.4</span>, <span class="cm-number">.7</span>); <span class="cm-comment">// Stage 2</span>
+  }
+  <span class="cm-number">75%</span> {
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translatey</span>(<span class="cm-number">-7px</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1.6</span>, <span class="cm-number">.4</span>); <span class="cm-comment">// Stage 3</span>
+  }
+  <span class="cm-number">100%</span> {
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translatey</span>(<span class="cm-number">-14px</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1.6</span>, <span class="cm-number">.4</span>); <span class="cm-comment">// Stage 4</span>
+  }
+}
+
+<span class="cm-comment">// From Bottom</span>
+<span class="cm-def">@keyframes</span> <span class="cm-variable">fromBottomIn</span> {
+  <span class="cm-number">0%</span> {
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translatey</span>(<span class="cm-number">14px</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1.5</span>, <span class="cm-number">.6</span>); <span class="cm-comment">// Stage 0</span>
+  }
+  <span class="cm-number">33.2%</span> {
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translatey</span>(<span class="cm-number">5px</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1.4</span>, <span class="cm-number">.8</span>); <span class="cm-comment">// Stage 1</span>
+  }
+  <span class="cm-number">49.8%</span> {
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translatey</span>(<span class="cm-number">0px</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">.9</span>, <span class="cm-number">1.2</span>); <span class="cm-comment">// Stage 2</span>
+  }
+  <span class="cm-number">66.4%</span> {
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translatey</span>(<span class="cm-number">-6px</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1.4</span>, <span class="cm-number">.7</span>); <span class="cm-comment">// Stage 3</span>
+  }
+  <span class="cm-number">73%</span> {
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translatey</span>(<span class="cm-number">-6px</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1.4</span>, <span class="cm-number">.7</span>); <span class="cm-comment">// Stage 4</span>
+  }
+  <span class="cm-number">83%</span> {
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translatey</span>(<span class="cm-number">1px</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">.9</span>, <span class="cm-number">1.1</span>); <span class="cm-comment">// Stage 5</span>
+  }
+  <span class="cm-number">100%</span> {
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translatey</span>(<span class="cm-number">0</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1</span>, <span class="cm-number">1</span>); <span class="cm-comment">// Stage 6</span>
+  }
+}
+<span class="cm-def">@keyframes</span> <span class="cm-variable">fromBottomOut</span> {
+  <span class="cm-number">0%</span> {
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translatey</span>(<span class="cm-number">0</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1</span>, <span class="cm-number">1</span>); <span class="cm-comment">// Stage 0</span>
+  }
+  <span class="cm-number">25%</span> {
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translatey</span>(<span class="cm-number">-1px</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">.9</span>, <span class="cm-number">1.1</span>); <span class="cm-comment">// Stage 1</span>
+  }
+  <span class="cm-number">50%</span> {
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translatey</span>(<span class="cm-number">6px</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1.4</span>, <span class="cm-number">.7</span>); <span class="cm-comment">// Stage 2</span>
+  }
+  <span class="cm-number">75%</span> {
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translatey</span>(<span class="cm-number">7px</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1.6</span>, <span class="cm-number">.4</span>); <span class="cm-comment">// Stage 3</span>
+  }
+  <span class="cm-number">100%</span> {
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">translatey</span>(<span class="cm-number">14px</span>) <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1.6</span>, <span class="cm-number">.4</span>); <span class="cm-comment">// Stage 4</span>
+  }
+}
+
+<span class="cm-comment">// Circles Feedback</span>
+<span class="cm-qualifier">.cr-wrap</span> {
+  <span class="cm-def">@extend</span> %<span class="cm-tag">center</span>;
+  <span class="cm-property">width</span>: <span class="cm-number">25px</span>;
+  <span class="cm-property">height</span>: <span class="cm-number">25px</span>;
+  <span class="cm-property">border-radius</span>: <span class="cm-number">50%</span>;
+  <span class="cm-property">background</span>: <span class="cm-atom">transparent</span>;
+  <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+  <span class="cm-property">right</span>: <span class="cm-number">-1px</span>;
+  <span class="cm-comment">// top: 2px;</span>
+
+}
+<span class="cm-qualifier">.cr-w-fb</span> {
+  &amp;:<span class="cm-variable-3">before</span> {
+    <span class="cm-property">content</span>: <span class="cm-string">''</span>;
+    <span class="cm-property">border-radius</span>: <span class="cm-number">50%</span>;
+    <span class="cm-property">background</span>: <span class="cm-variable-2">$colFb</span>;
+    <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+    <span class="cm-property">z-index</span>: <span class="cm-number">1</span>;
+    <span class="cm-property">width</span>: <span class="cm-number">10px</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">10px</span>;
+    <span class="cm-property">opacity</span>: <span class="cm-number">1</span>;
+    <span class="cm-property">animation</span>: <span class="cm-variable">feedback</span> <span class="cm-number">699ms</span> <span class="cm-atom">ease-out</span> <span class="cm-atom">forwards</span>;
+  }
+}
+
+<span class="cm-def">@keyframes</span> <span class="cm-variable">feedback</span> {
+  <span class="cm-number">0%</span> {
+    <span class="cm-property">width</span>: <span class="cm-number">10px</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">10px</span>;
+    <span class="cm-property">opacity</span>: <span class="cm-number">1</span>;
+  }
+  <span class="cm-number">30%</span> {
+    <span class="cm-property">opacity</span>: <span class="cm-number">1</span>;
+  }
+  <span class="cm-number">80%</span> {
+
+    <span class="cm-property">opacity</span>: <span class="cm-number">0</span>;
+  }
+  <span class="cm-number">100%</span> {
+    <span class="cm-property">opacity</span>: <span class="cm-number">0</span>;
+    <span class="cm-property">width</span>: <span class="cm-number">10px</span>*<span class="cm-number">5</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">10px</span>*<span class="cm-number">5</span>;
+  }
+}</code></pre>
+<a href="https://codepen.io/anon/embed/abOBJJB?height=500&amp;theme-id=1&amp;slug-hash=abOBJJB&amp;default-tab=result#0" id="view-css-compiled-button" class="action-button bottom right view-compiled-button" data-type="css">
+View Compiled
+</a>
+</div>
+<div id="js-box" class="code-wrap code-box box " role="region" aria-label="JS">
+<pre tabindex="0"><code data-lang="javascript" id="actual-js-code" class=" cm-s-default"><span class="cm-comment">// ICONS CALLBACK</span>
+<span class="cm-variable">feather</span>.<span class="cm-property">replace</span>();
+
+<span class="cm-comment">// SVGs</span>
+<span class="cm-variable">$</span>(<span class="cm-string">'#svgDribbble'</span>).<span class="cm-property">load</span>(<span class="cm-string">'https://s3-us-west-2.amazonaws.com/s.cdpn.io/373860/references.html #dribbble'</span>);
+<span class="cm-variable">$</span>(<span class="cm-string">'#svgTwitter'</span>).<span class="cm-property">load</span>(<span class="cm-string">'https://s3-us-west-2.amazonaws.com/s.cdpn.io/373860/references.html #twitter'</span>);
+<span class="cm-variable">$</span>(<span class="cm-string">"#svgHicon"</span>).<span class="cm-property">load</span>(<span class="cm-string">"https://s3-us-west-2.amazonaws.com/s.cdpn.io/373860/references.html #hicon"</span>);
+
+<span class="cm-comment">/*</span>
+
+<span class="cm-comment">https://dribbble.com/shots/4214518-Radio-button</span>
+
+<span class="cm-comment">ADD NEW ICONS</span>
+<span class="cm-comment">Take it from</span>
+<span class="cm-comment">https://feathericons.com/</span>
+
+<span class="cm-comment">And then replace the icon name in data-father.</span>
+<span class="cm-comment">&lt;i data-feather="circle"&gt;&lt;/i&gt;</span>
+
+<span class="cm-comment">*/</span>
+
+<span class="cm-comment">// NEW CODE HERE</span>
+<span class="cm-keyword">var</span> <span class="cm-def">cr1</span> <span class="cm-operator">=</span> <span class="cm-atom">true</span>;
+<span class="cm-keyword">var</span> <span class="cm-def">cr2</span> <span class="cm-operator">=</span> <span class="cm-atom">false</span>;
+<span class="cm-keyword">var</span> <span class="cm-def">cr3</span> <span class="cm-operator">=</span> <span class="cm-atom">false</span>;
+
+<span class="cm-keyword">var</span> <span class="cm-def">crx1</span> <span class="cm-operator">=</span> <span class="cm-variable">$</span>(<span class="cm-string">'.crx-1'</span>);
+<span class="cm-keyword">var</span> <span class="cm-def">crx2</span> <span class="cm-operator">=</span> <span class="cm-variable">$</span>(<span class="cm-string">'.crx-2'</span>);
+<span class="cm-keyword">var</span> <span class="cm-def">crx3</span> <span class="cm-operator">=</span> <span class="cm-variable">$</span>(<span class="cm-string">'.crx-3'</span>);
+
+
+<span class="cm-comment">// Default</span>
+<span class="cm-keyword">if</span> (<span class="cm-variable">cr1</span> <span class="cm-operator">==</span> <span class="cm-atom">false</span>) {
+  <span class="cm-variable">crx1</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'crx-top-in'</span>);
+} <span class="cm-keyword">else</span> <span class="cm-keyword">if</span> (<span class="cm-variable">cr1</span> <span class="cm-operator">==</span> <span class="cm-atom">true</span>) {
+  <span class="cm-variable">setTimeout</span>(<span class="cm-keyword">function</span>() {
+    <span class="cm-variable">crx1</span>.<span class="cm-property">addClass</span>(<span class="cm-string">'crx-top-in'</span>);
+  }, <span class="cm-number">1000</span>);
+}
+
+<span class="cm-keyword">if</span> (<span class="cm-variable">cr2</span> <span class="cm-operator">==</span> <span class="cm-atom">false</span>) {
+  <span class="cm-variable">crx2</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'crx-top-in'</span>);
+}
+
+<span class="cm-keyword">if</span> (<span class="cm-variable">cr3</span> <span class="cm-operator">==</span> <span class="cm-atom">false</span>) {
+  <span class="cm-variable">crx3</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'crx-top-in'</span>);
+}
+
+
+
+<span class="cm-comment">// INTERACTIONS</span>
+
+<span class="cm-comment">// Dot</span>
+<span class="cm-comment">// One</span>
+<span class="cm-variable">$</span>(<span class="cm-string">'#one'</span>).<span class="cm-property">on</span>(<span class="cm-string">'click'</span>, <span class="cm-keyword">function</span>() {
+  <span class="cm-variable">cr1</span> <span class="cm-operator">=</span> <span class="cm-atom">true</span>;
+
+
+  <span class="cm-keyword">if</span> (<span class="cm-variable">cr2</span> <span class="cm-operator">==</span> <span class="cm-atom">false</span> <span class="cm-operator">&amp;&amp;</span> <span class="cm-variable">cr3</span> <span class="cm-operator">==</span> <span class="cm-atom">false</span>) {
+    <span class="cm-variable">crx1</span>.<span class="cm-property">addClass</span>(<span class="cm-string">'crx-top-in'</span>);
+
+    <span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-string">'CR1 ON'</span>)
+  } <span class="cm-keyword">else</span> <span class="cm-keyword">if</span> (<span class="cm-variable">cr2</span> <span class="cm-operator">==</span> <span class="cm-atom">true</span> <span class="cm-operator">&amp;&amp;</span> <span class="cm-variable">cr3</span> <span class="cm-operator">==</span> <span class="cm-atom">false</span>) {
+    <span class="cm-variable">crx2</span>.<span class="cm-property">addClass</span>(<span class="cm-string">'crx-top-out'</span>);
+    <span class="cm-variable">crx1</span>.<span class="cm-property">addClass</span>(<span class="cm-string">'crx-bottom-in'</span>);
+
+    <span class="cm-comment">// Feedback</span>
+    <span class="cm-variable">$</span>(<span class="cm-string">'.cr-w-1'</span>).<span class="cm-property">addClass</span>(<span class="cm-string">'cr-w-fb'</span>);
+    <span class="cm-variable">setTimeout</span>(<span class="cm-keyword">function</span>() {
+      <span class="cm-variable">$</span>(<span class="cm-string">'.cr-w-1'</span>).<span class="cm-property">removeClass</span>(<span class="cm-string">'cr-w-fb'</span>);
+    },<span class="cm-number">799</span>);
+
+    <span class="cm-variable">setTimeout</span>(<span class="cm-keyword">function</span>() {
+      <span class="cm-variable">crx2</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'crx-top-in'</span>);
+      <span class="cm-variable">crx2</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'crx-bottom-in'</span>);
+      <span class="cm-variable">crx2</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'crx-bottom-out'</span>);
+      <span class="cm-comment">// crx2.removeClass('crx-top-out');</span>
+    }, <span class="cm-number">0</span>);
+
+    <span class="cm-variable">cr2</span> <span class="cm-operator">=</span> <span class="cm-atom">false</span>;
+    <span class="cm-variable">cr3</span> <span class="cm-operator">=</span> <span class="cm-atom">false</span>;
+
+  } <span class="cm-keyword">else</span> <span class="cm-keyword">if</span> (<span class="cm-variable">cr2</span> <span class="cm-operator">==</span> <span class="cm-atom">false</span> <span class="cm-operator">&amp;&amp;</span> <span class="cm-variable">cr3</span> <span class="cm-operator">==</span> <span class="cm-atom">true</span>) {
+    <span class="cm-variable">crx3</span>.<span class="cm-property">addClass</span>(<span class="cm-string">'crx-top-out'</span>);
+    <span class="cm-variable">crx1</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'crx-bottom-out'</span>);
+    <span class="cm-variable">crx1</span>.<span class="cm-property">addClass</span>(<span class="cm-string">'crx-bottom-in'</span>);
+
+    <span class="cm-comment">// Feedback</span>
+    <span class="cm-variable">$</span>(<span class="cm-string">'.cr-w-1'</span>).<span class="cm-property">addClass</span>(<span class="cm-string">'cr-w-fb'</span>);
+    <span class="cm-variable">setTimeout</span>(<span class="cm-keyword">function</span>() {
+      <span class="cm-variable">$</span>(<span class="cm-string">'.cr-w-1'</span>).<span class="cm-property">removeClass</span>(<span class="cm-string">'cr-w-fb'</span>);
+    },<span class="cm-number">799</span>);
+
+    <span class="cm-variable">setTimeout</span>(<span class="cm-keyword">function</span>() {
+      <span class="cm-variable">crx3</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'crx-top-in'</span>);
+      <span class="cm-variable">crx3</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'crx-top-out'</span>);
+      <span class="cm-variable">crx2</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'crx-bottom-out'</span>);
+    }, <span class="cm-number">399</span>);
+
+    <span class="cm-variable">cr2</span> <span class="cm-operator">=</span> <span class="cm-atom">false</span>;
+    <span class="cm-variable">cr3</span> <span class="cm-operator">=</span> <span class="cm-atom">false</span>;
+
+  } <span class="cm-keyword">else</span> {
+    <span class="cm-variable">crx1</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'crx-top-in'</span>);
+    <span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-string">'CR1 OFF'</span>)
+  }
+  <span class="cm-keyword">return</span> <span class="cm-variable">cr2</span>;
+});
+
+<span class="cm-comment">// Two</span>
+<span class="cm-variable">$</span>(<span class="cm-string">'#two'</span>).<span class="cm-property">on</span>(<span class="cm-string">'click'</span>, <span class="cm-keyword">function</span>() {
+  <span class="cm-variable">cr2</span> <span class="cm-operator">=</span> <span class="cm-atom">true</span>;
+
+
+  <span class="cm-keyword">if</span> (<span class="cm-variable">cr1</span> <span class="cm-operator">==</span> <span class="cm-atom">false</span> <span class="cm-operator">&amp;&amp;</span> <span class="cm-variable">cr3</span> <span class="cm-operator">==</span> <span class="cm-atom">false</span>) {
+    <span class="cm-variable">crx2</span>.<span class="cm-property">addClass</span>(<span class="cm-string">'crx-top-in'</span>);
+
+    <span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-string">'CR2 ON'</span>)
+  } <span class="cm-keyword">else</span> <span class="cm-keyword">if</span> (<span class="cm-variable">cr1</span> <span class="cm-operator">==</span> <span class="cm-atom">true</span> <span class="cm-operator">&amp;&amp;</span> <span class="cm-variable">cr3</span> <span class="cm-operator">==</span> <span class="cm-atom">false</span>) {
+    <span class="cm-variable">crx2</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'crx-top-out'</span>);
+    <span class="cm-variable">crx1</span>.<span class="cm-property">addClass</span>(<span class="cm-string">'crx-bottom-out'</span>);
+    <span class="cm-variable">crx2</span>.<span class="cm-property">addClass</span>(<span class="cm-string">'crx-top-in'</span>);
+
+    <span class="cm-comment">// Feedback</span>
+    <span class="cm-variable">$</span>(<span class="cm-string">'.cr-w-2'</span>).<span class="cm-property">addClass</span>(<span class="cm-string">'cr-w-fb'</span>);
+    <span class="cm-variable">setTimeout</span>(<span class="cm-keyword">function</span>() {
+      <span class="cm-variable">$</span>(<span class="cm-string">'.cr-w-2'</span>).<span class="cm-property">removeClass</span>(<span class="cm-string">'cr-w-fb'</span>);
+    },<span class="cm-number">799</span>);
+
+    <span class="cm-variable">setTimeout</span>(<span class="cm-keyword">function</span>() {
+      <span class="cm-variable">crx1</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'crx-top-in'</span>);
+      <span class="cm-variable">crx1</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'crx-bottom-in'</span>);
+      <span class="cm-comment">// crx1.removeClass('crx-bottom-out');</span>
+    }, <span class="cm-number">0</span>);
+
+    <span class="cm-variable">cr1</span> <span class="cm-operator">=</span> <span class="cm-atom">false</span>;
+    <span class="cm-variable">cr3</span> <span class="cm-operator">=</span> <span class="cm-atom">false</span>;
+
+  } <span class="cm-keyword">else</span> <span class="cm-keyword">if</span> (<span class="cm-variable">cr1</span> <span class="cm-operator">==</span> <span class="cm-atom">false</span> <span class="cm-operator">&amp;&amp;</span> <span class="cm-variable">cr3</span> <span class="cm-operator">==</span> <span class="cm-atom">true</span>) {
+    <span class="cm-variable">crx3</span>.<span class="cm-property">addClass</span>(<span class="cm-string">'crx-top-out'</span>);
+    <span class="cm-variable">crx2</span>.<span class="cm-property">addClass</span>(<span class="cm-string">'crx-bottom-in'</span>);
+
+    <span class="cm-comment">// Feedback</span>
+    <span class="cm-variable">$</span>(<span class="cm-string">'.cr-w-2'</span>).<span class="cm-property">addClass</span>(<span class="cm-string">'cr-w-fb'</span>);
+    <span class="cm-variable">setTimeout</span>(<span class="cm-keyword">function</span>() {
+      <span class="cm-variable">$</span>(<span class="cm-string">'.cr-w-2'</span>).<span class="cm-property">removeClass</span>(<span class="cm-string">'cr-w-fb'</span>);
+    },<span class="cm-number">799</span>);
+
+    <span class="cm-variable">setTimeout</span>(<span class="cm-keyword">function</span>() {
+      <span class="cm-variable">crx3</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'crx-top-in'</span>)
+      <span class="cm-variable">crx3</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'crx-top-out'</span>)
+      <span class="cm-variable">crx2</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'crx-bottom-out'</span>);
+      <span class="cm-variable">crx1</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'crx-bottom-out'</span>);
+    }, <span class="cm-number">399</span>);
+
+    <span class="cm-variable">cr1</span> <span class="cm-operator">=</span> <span class="cm-atom">false</span>;
+    <span class="cm-variable">cr3</span> <span class="cm-operator">=</span> <span class="cm-atom">false</span>;
+
+  } <span class="cm-keyword">else</span> {
+    <span class="cm-variable">crx2</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'crx-top-in'</span>);
+    <span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-string">'CR2 OFF'</span>)
+  }
+  <span class="cm-keyword">return</span> <span class="cm-variable">cr2</span>;
+});
+
+<span class="cm-comment">// Three</span>
+<span class="cm-variable">$</span>(<span class="cm-string">'#three'</span>).<span class="cm-property">on</span>(<span class="cm-string">'click'</span>, <span class="cm-keyword">function</span>() {
+  <span class="cm-variable">cr3</span> <span class="cm-operator">=</span> <span class="cm-atom">true</span>;
+
+
+  <span class="cm-keyword">if</span> (<span class="cm-variable">cr1</span> <span class="cm-operator">==</span> <span class="cm-atom">false</span> <span class="cm-operator">&amp;&amp;</span> <span class="cm-variable">cr2</span> <span class="cm-operator">==</span> <span class="cm-atom">false</span>) {
+    <span class="cm-variable">crx1</span>.<span class="cm-property">addClass</span>(<span class="cm-string">'crx-top-in'</span>);
+
+    <span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-string">'CR1 ON'</span>)
+  } <span class="cm-keyword">else</span> <span class="cm-keyword">if</span> (<span class="cm-variable">cr2</span> <span class="cm-operator">==</span> <span class="cm-atom">true</span> <span class="cm-operator">&amp;&amp;</span> <span class="cm-variable">cr1</span> <span class="cm-operator">==</span> <span class="cm-atom">false</span>) {
+    <span class="cm-variable">crx2</span>.<span class="cm-property">addClass</span>(<span class="cm-string">'crx-bottom-out'</span>);
+    <span class="cm-variable">crx3</span>.<span class="cm-property">addClass</span>(<span class="cm-string">'crx-top-in'</span>);
+
+    <span class="cm-comment">// Feedback</span>
+    <span class="cm-variable">$</span>(<span class="cm-string">'.cr-w-3'</span>).<span class="cm-property">addClass</span>(<span class="cm-string">'cr-w-fb'</span>);
+    <span class="cm-variable">setTimeout</span>(<span class="cm-keyword">function</span>() {
+      <span class="cm-variable">$</span>(<span class="cm-string">'.cr-w-3'</span>).<span class="cm-property">removeClass</span>(<span class="cm-string">'cr-w-fb'</span>);
+    },<span class="cm-number">799</span>);
+
+    <span class="cm-variable">setTimeout</span>(<span class="cm-keyword">function</span>() {
+      <span class="cm-variable">crx2</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'crx-top-in'</span>);
+      <span class="cm-variable">crx2</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'crx-bottom-in'</span>);
+      <span class="cm-variable">crx2</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'crx-top-out'</span>);
+      <span class="cm-variable">crx1</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'crx-bottom-out'</span>);
+    }, <span class="cm-number">0</span>);
+
+    <span class="cm-variable">cr1</span> <span class="cm-operator">=</span> <span class="cm-atom">false</span>;
+    <span class="cm-variable">cr2</span> <span class="cm-operator">=</span> <span class="cm-atom">false</span>;
+
+  } <span class="cm-keyword">else</span> <span class="cm-keyword">if</span> (<span class="cm-variable">cr2</span> <span class="cm-operator">==</span> <span class="cm-atom">false</span> <span class="cm-operator">&amp;&amp;</span> <span class="cm-variable">cr1</span> <span class="cm-operator">==</span> <span class="cm-atom">true</span>) {
+    <span class="cm-variable">crx1</span>.<span class="cm-property">addClass</span>(<span class="cm-string">'crx-bottom-out'</span>);
+    <span class="cm-variable">crx3</span>.<span class="cm-property">addClass</span>(<span class="cm-string">'crx-top-in'</span>);
+
+    <span class="cm-comment">// Feedback</span>
+    <span class="cm-variable">$</span>(<span class="cm-string">'.cr-w-3'</span>).<span class="cm-property">addClass</span>(<span class="cm-string">'cr-w-fb'</span>);
+    <span class="cm-variable">setTimeout</span>(<span class="cm-keyword">function</span>() {
+      <span class="cm-variable">$</span>(<span class="cm-string">'.cr-w-3'</span>).<span class="cm-property">removeClass</span>(<span class="cm-string">'cr-w-fb'</span>);
+    },<span class="cm-number">799</span>);
+
+    <span class="cm-variable">setTimeout</span>(<span class="cm-keyword">function</span>() {
+      <span class="cm-variable">crx1</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'crx-top-in'</span>);
+      <span class="cm-variable">crx1</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'crx-bottom-in'</span>);
+      <span class="cm-comment">// crx1.removeClass('crx-bottom-out');</span>
+    }, <span class="cm-number">0</span>);
+
+    <span class="cm-variable">cr1</span> <span class="cm-operator">=</span> <span class="cm-atom">false</span>;
+    <span class="cm-variable">cr2</span> <span class="cm-operator">=</span> <span class="cm-atom">false</span>;
+
+  } <span class="cm-keyword">else</span> {
+    <span class="cm-variable">crx1</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'crx-top-in'</span>);
+    <span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-string">'CR1 OFF'</span>)
+  }
+  <span class="cm-keyword">return</span> <span class="cm-variable">cr2</span>;
+});
+
+</code></pre>
+</div>
+<div id="result-box" class="code-box active zoom-1" role="region" aria-label="Result">
+<iframe allow="accelerometer; camera; encrypted-media; display-capture; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write; web-share" allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="result-iframe  " frameborder="0" id="result-iframe" loading="lazy" name="CodePen Preview for UI // Radio Button" sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-downloads allow-presentation" scrolling="yes" title="CodePen Preview for UI // Radio Button" data-src="https://cdpn.io/coswise/fullembedgrid/abOBJJB?animations=run&amp;type=embed" src="./abOBJJB(1).html">
+  </iframe>
+</div>
+<div id="about-box">
+<div class="about-container">
+<div class="about-user">
+<a href="https://codepen.io/coswise" target="_blank" rel="noopener"><img src="./default(15).png" loading="lazy" alt="" class="about-image"></a>
+<div class="about-user-info">
+<p>
+This Pen is owned by <a href="https://codepen.io/coswise" target="_blank" rel="noopener">Cosimo Scarpa</a> on <a href="https://codepen.io/" target="_blank" rel="noopener">CodePen</a>.
+</p>
+<p>
+<a href="https://codepen.io/coswise" target="_blank" rel="noopener" class="about-user-more">
+See more by @coswise on CodePen
+</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="resources-box" class="resources-box">
+<h3>External CSS</h3>
+<p>
+This Pen doesn't use any external CSS resources.
+</p>
+<h3>External JavaScript</h3>
+<ol class="list-of-resources">
+<li>
+<a href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" target="_blank">https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js</a>
+</li>
+</ol>
+</div>
+</div>
+<footer class="embed-footer" id="embed-footer">
+<button id="resources-link" class="resources-link action-button bottom left" href="#resources-box" aria-pressed="false" role="button">
+Resources
+</button>
+<ul class="scaling-choices bottom right">
+<li><button class="action-button" id="zoom-button-1">1×</button></li>
+<li><button class="action-button" id="zoom-button-05">0.5×</button></li>
+<li><button class="action-button" id="zoom-button-025">0.25×</button></li>
+</ul>
+<button id="rerun-button" class="action-button rerun-button bottom right">
+Rerun
+</button>
+</footer>
+<script nonce="">
+    __processedPen = {"html":"&lt;div class=&#39;container&#39;&gt;\n  &lt;div class=&#39;ul&#39;&gt;\n    &lt;div class=&#39;li l1-1&#39; id=&#39;one&#39;&gt;\n      &lt;p class=&#39;text&#39;&gt;One&lt;/p&gt;\n      &lt;div class=&#39;cr-wrap cr-w-1&#39;&gt;\n        &lt;div class=&#39;cr&#39;&gt;\n          &lt;div class=&#39;crx crx-1&#39;&gt;&lt;/div&gt;\n        &lt;/div&gt;     \n      &lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div class=&#39;li l1-2&#39; id=&#39;two&#39;&gt;\n      &lt;p class=&#39;text&#39;&gt;Two&lt;/p&gt;\n      &lt;div class=&#39;cr-wrap cr-w-2&#39;&gt;\n        &lt;div class=&#39;cr&#39;&gt;\n          &lt;div class=&#39;crx crx-2&#39;&gt;&lt;/div&gt;\n        &lt;/div&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div class=&#39;li l1-3&#39; id=&#39;three&#39;&gt;\n      &lt;p class=&#39;text&#39;&gt;Three&lt;/p&gt;\n      &lt;div class=&#39;cr-wrap cr-w-3&#39;&gt;\n        &lt;div class=&#39;cr&#39;&gt;\n          &lt;div class=&#39;crx crx-3&#39;&gt;&lt;/div&gt;\n        &lt;/div&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n&lt;!-- References Dribbble / Twitter --&gt;\n&lt;div class=&#39;cs-ref&#39;&gt;\n  &lt;a class=&quot;cs-dribbble&quot; href=&quot;https://dribbble.com/shots/10344240-UI-Radio-Button&quot; target=&quot;_blank&quot;&gt;\n    &lt;div id=&#39;svgDribbble&#39;&gt;&lt;/div&gt;\n  &lt;/a&gt;\n  &lt;a class=&quot;cs-twitter&quot; target=&quot;_blank&quot; href=&quot;https://twitter.com/CosWiSe&quot;&gt;\n    &lt;div id=&#39;svgTwitter&#39;&gt;&lt;/div&gt;\n  &lt;/a&gt;\n   &lt;a class=&#39;cs-hicon&#39; target=&#39;_blank&#39; href=&#39;https://hicon.me/&#39;&gt;\n    &lt;div id=&#39;svgHicon&#39;&gt;&lt;/div&gt;\n  &lt;/a&gt;\n&lt;/div&gt;","css":"@import url(&quot;https://fonts.googleapis.com/css?family=Muli:300,400,700,900&quot;);\nhtml &gt; * {\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n}\n\nhtml {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background: #f1f3f9;\n  height: 100vh;\n  font-family: &quot;Muli&quot;, Arial, sans-serif;\n}\n#dribbble {\n  position: fixed;\n  display: block;\n  right: 70px;\n  bottom: 16px;\n}\n#dribbble svg {\n  display: block;\n  width: 76px;\n  height: 24px;\n  fill: rgba(146, 156, 208, 0.8);\n}\n\n#twitter {\n  position: fixed;\n  display: block;\n  right: 25px;\n  bottom: 11px;\n}\n#twitter svg {\n  width: 24px;\n  height: 24px;\n  fill: rgba(146, 156, 208, 0.8);\n}\n\n#hicon {\n  position: fixed;\n  display: block;\n  left: 25px;\n  bottom: -42px;\n}\n#hicon svg {\n  width: 78px;\n  height: 78px;\n  fill: rgba(146, 156, 208, 0.8);\n}\n\n.cr-wrap, .cr, .ul, .container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.container {\n  width: auto;\n  height: auto;\n  box-sizing: border-box;\n  padding: 30px 20px;\n  background: #fff;\n  box-shadow: 0 8px 22px -6px rgba(213, 219, 237, 0.9);\n  border-radius: 12px;\n}\n\n.ul {\n  flex-direction: column;\n  width: 125px;\n  height: auto;\n  padding: 0;\n}\n.ul &gt; .li:nth-child(2) {\n  margin: 20px 0;\n}\n\n.li {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  width: 111.1111111111px;\n  height: 30px;\n  cursor: pointer;\n  position: relative;\n}\n.li .text {\n  font-size: 1.1em;\n}\n\n.cr {\n  width: 19px;\n  height: 19px;\n  border-radius: 50%;\n  background: #fff;\n  border: 2px solid rgba(20, 98, 255, 0.8);\n  overflow: hidden;\n  position: relative;\n  z-index: 3;\n}\n\n.crx {\n  width: 12px;\n  height: 12px;\n  border-radius: 50%;\n  background: rgba(20, 98, 255, 0.8);\n  transform: translatex(-19px);\n}\n\n.crx-top-in {\n  animation: fromTopIn 479ms linear forwards 129ms;\n}\n\n.crx-top-out {\n  animation: fromTopOut 99ms linear forwards;\n}\n\n.crx-bottom-out {\n  animation: fromBottomOut 99ms linear forwards;\n}\n\n.crx-bottom-in {\n  animation: fromBottomIn 479ms linear forwards 129ms;\n}\n\n@keyframes fromTopIn {\n  0% {\n    transform: translatey(-14px) scale(1.5, 0.6);\n  }\n  33.2% {\n    transform: translatey(-5px) scale(1.4, 0.8);\n  }\n  49.8% {\n    transform: translatey(0px) scale(0.9, 1.2);\n  }\n  66.4% {\n    transform: translatey(6px) scale(1.4, 0.7);\n  }\n  73% {\n    transform: translatey(6px) scale(1.4, 0.7);\n  }\n  83% {\n    transform: translatey(-1px) scale(0.9, 1.1);\n  }\n  100% {\n    transform: translatey(0) scale(1, 1);\n  }\n}\n@keyframes fromTopOut {\n  0% {\n    transform: translatey(0) scale(1, 1);\n  }\n  25% {\n    transform: translatey(1px) scale(0.9, 1.1);\n  }\n  50% {\n    transform: translatey(-6px) scale(1.4, 0.7);\n  }\n  75% {\n    transform: translatey(-7px) scale(1.6, 0.4);\n  }\n  100% {\n    transform: translatey(-14px) scale(1.6, 0.4);\n  }\n}\n@keyframes fromBottomIn {\n  0% {\n    transform: translatey(14px) scale(1.5, 0.6);\n  }\n  33.2% {\n    transform: translatey(5px) scale(1.4, 0.8);\n  }\n  49.8% {\n    transform: translatey(0px) scale(0.9, 1.2);\n  }\n  66.4% {\n    transform: translatey(-6px) scale(1.4, 0.7);\n  }\n  73% {\n    transform: translatey(-6px) scale(1.4, 0.7);\n  }\n  83% {\n    transform: translatey(1px) scale(0.9, 1.1);\n  }\n  100% {\n    transform: translatey(0) scale(1, 1);\n  }\n}\n@keyframes fromBottomOut {\n  0% {\n    transform: translatey(0) scale(1, 1);\n  }\n  25% {\n    transform: translatey(-1px) scale(0.9, 1.1);\n  }\n  50% {\n    transform: translatey(6px) scale(1.4, 0.7);\n  }\n  75% {\n    transform: translatey(7px) scale(1.6, 0.4);\n  }\n  100% {\n    transform: translatey(14px) scale(1.6, 0.4);\n  }\n}\n.cr-wrap {\n  width: 25px;\n  height: 25px;\n  border-radius: 50%;\n  background: transparent;\n  position: absolute;\n  right: -1px;\n}\n\n.cr-w-fb:before {\n  content: &quot;&quot;;\n  border-radius: 50%;\n  background: #4fa7ff;\n  position: absolute;\n  z-index: 1;\n  width: 10px;\n  height: 10px;\n  opacity: 1;\n  animation: feedback 699ms ease-out forwards;\n}\n\n@keyframes feedback {\n  0% {\n    width: 10px;\n    height: 10px;\n    opacity: 1;\n  }\n  30% {\n    opacity: 1;\n  }\n  80% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 0;\n    width: 50px;\n    height: 50px;\n  }\n}","js":"// ICONS CALLBACK\nfeather.replace();\n\n// SVGs\n$(&#39;#svgDribbble&#39;).load(&#39;https://s3-us-west-2.amazonaws.com/s.cdpn.io/373860/references.html #dribbble&#39;);\n$(&#39;#svgTwitter&#39;).load(&#39;https://s3-us-west-2.amazonaws.com/s.cdpn.io/373860/references.html #twitter&#39;);\n$(&quot;#svgHicon&quot;).load(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/373860/references.html #hicon&quot;);\n\n/*\n\nhttps://dribbble.com/shots/4214518-Radio-button\n\nADD NEW ICONS\nTake it from\nhttps://feathericons.com/\n\nAnd then replace the icon name in data-father.\n&lt;i data-feather=&quot;circle&quot;&gt;&lt;/i&gt;\n\n*/\n\n// NEW CODE HERE\nvar cr1 = true;\nvar cr2 = false;\nvar cr3 = false;\n\nvar crx1 = $(&#39;.crx-1&#39;);\nvar crx2 = $(&#39;.crx-2&#39;);\nvar crx3 = $(&#39;.crx-3&#39;);\n\n\n// Default\nif (cr1 == false) {\n  crx1.removeClass(&#39;crx-top-in&#39;);\n} else if (cr1 == true) {\n  setTimeout(function () {\n    crx1.addClass(&#39;crx-top-in&#39;);\n  }, 1000);\n}\n\nif (cr2 == false) {\n  crx2.removeClass(&#39;crx-top-in&#39;);\n}\n\nif (cr3 == false) {\n  crx3.removeClass(&#39;crx-top-in&#39;);\n}\n\n\n\n// INTERACTIONS\n\n// Dot\n// One\n$(&#39;#one&#39;).on(&#39;click&#39;, function () {\n  cr1 = true;\n\n\n  if (cr2 == false &amp;&amp; cr3 == false) {\n    crx1.addClass(&#39;crx-top-in&#39;);\n\n    console.log(&#39;CR1 ON&#39;);\n  } else if (cr2 == true &amp;&amp; cr3 == false) {\n    crx2.addClass(&#39;crx-top-out&#39;);\n    crx1.addClass(&#39;crx-bottom-in&#39;);\n\n    // Feedback\n    $(&#39;.cr-w-1&#39;).addClass(&#39;cr-w-fb&#39;);\n    setTimeout(function () {\n      $(&#39;.cr-w-1&#39;).removeClass(&#39;cr-w-fb&#39;);\n    }, 799);\n\n    setTimeout(function () {\n      crx2.removeClass(&#39;crx-top-in&#39;);\n      crx2.removeClass(&#39;crx-bottom-in&#39;);\n      crx2.removeClass(&#39;crx-bottom-out&#39;);\n      // crx2.removeClass(&#39;crx-top-out&#39;);\n    }, 0);\n\n    cr2 = false;\n    cr3 = false;\n\n  } else if (cr2 == false &amp;&amp; cr3 == true) {\n    crx3.addClass(&#39;crx-top-out&#39;);\n    crx1.removeClass(&#39;crx-bottom-out&#39;);\n    crx1.addClass(&#39;crx-bottom-in&#39;);\n\n    // Feedback\n    $(&#39;.cr-w-1&#39;).addClass(&#39;cr-w-fb&#39;);\n    setTimeout(function () {\n      $(&#39;.cr-w-1&#39;).removeClass(&#39;cr-w-fb&#39;);\n    }, 799);\n\n    setTimeout(function () {\n      crx3.removeClass(&#39;crx-top-in&#39;);\n      crx3.removeClass(&#39;crx-top-out&#39;);\n      crx2.removeClass(&#39;crx-bottom-out&#39;);\n    }, 399);\n\n    cr2 = false;\n    cr3 = false;\n\n  } else {\n    crx1.removeClass(&#39;crx-top-in&#39;);\n    console.log(&#39;CR1 OFF&#39;);\n  }\n  return cr2;\n});\n\n// Two\n$(&#39;#two&#39;).on(&#39;click&#39;, function () {\n  cr2 = true;\n\n\n  if (cr1 == false &amp;&amp; cr3 == false) {\n    crx2.addClass(&#39;crx-top-in&#39;);\n\n    console.log(&#39;CR2 ON&#39;);\n  } else if (cr1 == true &amp;&amp; cr3 == false) {\n    crx2.removeClass(&#39;crx-top-out&#39;);\n    crx1.addClass(&#39;crx-bottom-out&#39;);\n    crx2.addClass(&#39;crx-top-in&#39;);\n\n    // Feedback\n    $(&#39;.cr-w-2&#39;).addClass(&#39;cr-w-fb&#39;);\n    setTimeout(function () {\n      $(&#39;.cr-w-2&#39;).removeClass(&#39;cr-w-fb&#39;);\n    }, 799);\n\n    setTimeout(function () {\n      crx1.removeClass(&#39;crx-top-in&#39;);\n      crx1.removeClass(&#39;crx-bottom-in&#39;);\n      // crx1.removeClass(&#39;crx-bottom-out&#39;);\n    }, 0);\n\n    cr1 = false;\n    cr3 = false;\n\n  } else if (cr1 == false &amp;&amp; cr3 == true) {\n    crx3.addClass(&#39;crx-top-out&#39;);\n    crx2.addClass(&#39;crx-bottom-in&#39;);\n\n    // Feedback\n    $(&#39;.cr-w-2&#39;).addClass(&#39;cr-w-fb&#39;);\n    setTimeout(function () {\n      $(&#39;.cr-w-2&#39;).removeClass(&#39;cr-w-fb&#39;);\n    }, 799);\n\n    setTimeout(function () {\n      crx3.removeClass(&#39;crx-top-in&#39;);\n      crx3.removeClass(&#39;crx-top-out&#39;);\n      crx2.removeClass(&#39;crx-bottom-out&#39;);\n      crx1.removeClass(&#39;crx-bottom-out&#39;);\n    }, 399);\n\n    cr1 = false;\n    cr3 = false;\n\n  } else {\n    crx2.removeClass(&#39;crx-top-in&#39;);\n    console.log(&#39;CR2 OFF&#39;);\n  }\n  return cr2;\n});\n\n// Three\n$(&#39;#three&#39;).on(&#39;click&#39;, function () {\n  cr3 = true;\n\n\n  if (cr1 == false &amp;&amp; cr2 == false) {\n    crx1.addClass(&#39;crx-top-in&#39;);\n\n    console.log(&#39;CR1 ON&#39;);\n  } else if (cr2 == true &amp;&amp; cr1 == false) {\n    crx2.addClass(&#39;crx-bottom-out&#39;);\n    crx3.addClass(&#39;crx-top-in&#39;);\n\n    // Feedback\n    $(&#39;.cr-w-3&#39;).addClass(&#39;cr-w-fb&#39;);\n    setTimeout(function () {\n      $(&#39;.cr-w-3&#39;).removeClass(&#39;cr-w-fb&#39;);\n    }, 799);\n\n    setTimeout(function () {\n      crx2.removeClass(&#39;crx-top-in&#39;);\n      crx2.removeClass(&#39;crx-bottom-in&#39;);\n      crx2.removeClass(&#39;crx-top-out&#39;);\n      crx1.removeClass(&#39;crx-bottom-out&#39;);\n    }, 0);\n\n    cr1 = false;\n    cr2 = false;\n\n  } else if (cr2 == false &amp;&amp; cr1 == true) {\n    crx1.addClass(&#39;crx-bottom-out&#39;);\n    crx3.addClass(&#39;crx-top-in&#39;);\n\n    // Feedback\n    $(&#39;.cr-w-3&#39;).addClass(&#39;cr-w-fb&#39;);\n    setTimeout(function () {\n      $(&#39;.cr-w-3&#39;).removeClass(&#39;cr-w-fb&#39;);\n    }, 799);\n\n    setTimeout(function () {\n      crx1.removeClass(&#39;crx-top-in&#39;);\n      crx1.removeClass(&#39;crx-bottom-in&#39;);\n      // crx1.removeClass(&#39;crx-bottom-out&#39;);\n    }, 0);\n\n    cr1 = false;\n    cr2 = false;\n\n  } else {\n    crx1.removeClass(&#39;crx-top-in&#39;);\n    console.log(&#39;CR1 OFF&#39;);\n  }\n  return cr2;\n});"};
+    __preprocessors = {
+      "html": "none",
+      "css": "scss",
+      "js": "none"
+    };
+    __preprocessorNames = {
+      "html": "HTML",
+      "css": "SCSS",
+      "js": "JS"
+    };
+    __editable = false;
+    __embed_prefill = false;
+  </script>
+<script src="./embed-59842fbf0495f2c0b079a7f4ce7544fb0912f3535856bf4dc5c205acbb621c54.js.download"></script>
+<script nonce="">(function(){var js = "window['__CF$cv$params']={r:'793419d2f9e51d3d',m:'YuTx4O9lmkMyc_imzREvpN5N_AgMLjd2iUrBxESNbpc-1675353220-0-ATFFhHX+NeaTyrWNMHRjmoL18qzJ2ePt7clQme9dO3IYaX6Gvgdj8pmle7trtBMfeCOR6CnH0j0wbo9RigJEtWIFIbEUJTe+PebjFrV7q753u25PzYB9CDim7AomhbTyDhL2HnBNw7FwhUF77r+HFj6mVUQCS4UA8Ze6gNGxh0DnTyErYGwy0K0Kkf6BoMDQWsjtQTKJjJlb6O0fxhQSAT8=',s:[0x53b51af9bd,0xc1402a1f79],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='S/o8pq9/cBg=',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = 'S/o8pq9/cBg=';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./saved_resource(17).html"></iframe>
+
+</body></html>

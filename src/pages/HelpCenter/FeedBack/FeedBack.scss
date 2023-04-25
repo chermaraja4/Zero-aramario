@@ -1,0 +1,65 @@
+.feedback-container {
+    margin-bottom: 100px;
+
+    h4 {
+        font-size: 23px;
+    }
+
+    h2 {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .form-label {
+        color: black;
+    }
+
+    .form-control {
+        border-radius: 0;
+        // border-top: none;
+        // border-left: none;
+        // border-right: none;
+        border: 2px solid black;
+        padding: 10px 0 10px 10px;
+        // margin: 40px 0;
+    }
+    textarea.form-control {
+        min-height: calc(6.5em + 0.75rem + 2px);
+    }
+    .switch-btn {
+        outline: none;
+        background: black;
+        border: none;
+        border-radius: 0;
+        padding: 15px 0;
+        width: 50%;
+        text-transform: inherit;
+    }
+    .submit-btn {
+        outline: none;
+        background: black;
+        border: none;
+        border-radius: 0;
+        padding: 12px 0;
+        width: 30%;
+        margin: 0 auto;
+        display: block;
+        text-transform: inherit;
+    }
+    .return-points {
+        li {
+            list-style: disc;
+            margin: 20px 15px;
+        }
+    }
+    .cnt-bold-and-small {
+        p {
+            font-weight: bold;
+        }
+
+        span {
+            color: #495967;
+            font-size: 12px;
+        }
+    }
+}

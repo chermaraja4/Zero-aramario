@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!-- saved from url=(0093)https://codepen.io/anon/embed/KKEpbv?default-tab=result&height=500&slug-hash=nigEq&theme-id=1 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width">
+<title>CodePen Embed - Awesome Toggle Button</title>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="vtYkRWDZrmIKmT8QPVQ24+t+j07VTp+9093nJGkuSHZ1Abqf3YYtx3MtVqL2wCT/oPY5qsy3G6u5w2LckbS4FQ==">
+<link rel="stylesheet" media="all" href="./embed-5c9d0df4194479e72f3f4195cb70bfc2217587bcd5b1acda570c7aadbea18f9c.css">
+<style>
+    .hide {
+      display: none !important;
+    }
+
+    #result-box {
+      background: #28282a;
+      color: #ffffff;
+    }
+    .embed-footer,
+    .embed-nav {
+      background: #28282a;
+      
+    }
+    .embed-nav .code-types a,
+    .embed-nav .result-button-list a,
+    .action-button {
+      color: #ffffff;
+      background-color: #424242;
+    }
+    .embed-nav .code-types a.active,
+    .embed-nav .result-button-list a.active,
+    .action-button.active {
+      background: #212121;
+      color: #ffffff;
+      box-shadow: inset 0px 3px #ff8a00;
+    }
+    .embed-nav .logo-wrap .edit-on-codepen {
+      color: #a9a9a9;
+    }
+
+    .embed-nav svg {
+      stroke: #a9a9a9 !important;
+    }
+  </style>
+<link rel="stylesheet" media="all" href="./highcontrast-dark-c9f58c52f642f276610867eb0652eb22d9d88af6dddef0874efd8d911a7938ff.css">
+<link rel="stylesheet" href="./maVRwd.css">
+<meta name="monetization" content="$ilp.uphold.com/biyqg2MkQKbe">
+</head>
+<body id="the-body" style="border: 1px solid #39231b; --borderWidth: 1px;" class="codepen-embed-body static results-active">
+<nav class="embed-nav group" id="embed-nav">
+<ul class="code-types">
+<li class="code-type">
+<a id="html-link" href="https://codepen.io/anon/embed/KKEpbv?default-tab=result&amp;height=500&amp;slug-hash=nigEq&amp;theme-id=1#html-box" role="button" aria-pressed="false">
+HTML
+</a>
+</li>
+<li class="code-type">
+<a id="css-link" href="https://codepen.io/anon/embed/KKEpbv?default-tab=result&amp;height=500&amp;slug-hash=nigEq&amp;theme-id=1#css-box" role="button" aria-pressed="false">
+CSS
+</a>
+</li>
+<li class="code-type">
+<a id="js-link" href="https://codepen.io/anon/embed/KKEpbv?default-tab=result&amp;height=500&amp;slug-hash=nigEq&amp;theme-id=1#js-box" role="button" aria-pressed="false">
+JS
+</a>
+</li>
+</ul>
+<ul class="result-button-list">
+<li class="results results-type">
+<a id="result-link" href="https://codepen.io/anon/embed/KKEpbv?default-tab=result&amp;height=500&amp;slug-hash=nigEq&amp;theme-id=1#result-box" class="active" aria-pressed="true" role="button">
+Result
+</a>
+</li>
+<li>
+<a href="https://codepen.io/anon/embed/KKEpbv?default-tab=result&amp;height=500&amp;slug-hash=nigEq&amp;theme-id=1#resources-link" id="skip-results-iframe-link">Skip Results Iframe</a>
+</li>
+</ul>
+<div class="logo-wrap" id="edit-area">
+<a class="edit-on-codepen" target="_blank" rel="noopener" href="https://codepen.io/theawesomecoder61/pen/KKEpbv" title="Edit on CodePen">
+<div class="large-logo">
+<span id="edit-on-text" class="open-on">EDIT ON</span>
+<svg id="embed-codepen-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 26" fill="none" stroke="#000" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="CodePen">
+<path d="M80 6h-9v14h9m34-14h-9v14h9m-3-7h-6m-28 0h-6m51 7V6l11 14V6M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24m55-10h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-6v14M15 8c-1.3-1.3-3-2-5-2-4 0-7 3-7 7s3 7 7 7c2 0 3.7-.8 5-2m49-5c0 4-3 7-7 7h-5V6h5c4 0 7 3 7 7z"></path>
+</svg>
+</div>
+<div class="box-logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 0 26 26" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" role="img" aria-label="Edit on CodePen">
+<path id="icon-codepen-box" d="M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24"></path>
+</svg>
+</div>
+</a>
+</div>
+</nav>
+<div id="output" data-border-style="thin" data-header="true">
+<div id="html-box" class="code-wrap code-box box " role="region" aria-label="HTML">
+<pre tabindex="0"><code data-lang="htmlmixed" id="actual-html-code" class=" cm-s-default"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"toggle-radio"</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">input</span> <span class="cm-attribute">type</span>=<span class="cm-string">"radio"</span> <span class="cm-attribute">name</span>=<span class="cm-string">"rdo"</span> <span class="cm-attribute">id</span>=<span class="cm-string">"yes"</span> <span class="cm-attribute">checked</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">input</span> <span class="cm-attribute">type</span>=<span class="cm-string">"radio"</span> <span class="cm-attribute">name</span>=<span class="cm-string">"rdo"</span> <span class="cm-attribute">id</span>=<span class="cm-string">"no"</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"switch"</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">label</span> <span class="cm-attribute">for</span>=<span class="cm-string">"yes"</span><span class="cm-tag cm-bracket">&gt;</span>Yes<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">label</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">label</span> <span class="cm-attribute">for</span>=<span class="cm-string">"no"</span><span class="cm-tag cm-bracket">&gt;</span>No<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">label</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></code></pre>
+</div>
+<div id="css-box" class="code-wrap code-box box " role="region" aria-label="CSS">
+<pre tabindex="0"><code data-lang="css" id="actual-css-code" class=" cm-s-default"><span class="cm-tag">body</span> {
+    <span class="cm-property">font-family</span>: <span class="cm-atom">sans-serif</span>;
+    <span class="cm-property">font-weight</span>: <span class="cm-number">800</span>;
+    <span class="cm-property">background</span>: <span class="cm-atom">#eee</span>;
+  }
+  <span class="cm-qualifier">.switch</span> {
+    <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+    <span class="cm-property">top</span>: <span class="cm-number">50%</span>;
+    <span class="cm-property">left</span>: <span class="cm-number">50%</span>;
+    <span class="cm-property">width</span>: <span class="cm-number">150px</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">50px</span>;
+    <span class="cm-property">text-align</span>: <span class="cm-atom">center</span>;
+    <span class="cm-property">margin</span>: <span class="cm-number">-30px</span> <span class="cm-number">0</span> <span class="cm-number">0</span> <span class="cm-number">-75px</span>;
+    <span class="cm-property">background</span>: <span class="cm-atom">#00bc9c</span>;
+    <span class="cm-property">transition</span>: <span class="cm-atom">all</span> <span class="cm-number">0.2s</span> <span class="cm-atom">ease</span>;
+    <span class="cm-property">border-radius</span>: <span class="cm-number">25px</span>;
+  }
+  <span class="cm-qualifier">.switch</span> <span class="cm-tag">span</span> {
+    <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+    <span class="cm-property">width</span>: <span class="cm-number">20px</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">4px</span>;
+    <span class="cm-property">top</span>: <span class="cm-number">50%</span>;
+    <span class="cm-property">left</span>: <span class="cm-number">50%</span>;
+    <span class="cm-property">margin</span>: <span class="cm-number">-2px</span> <span class="cm-number">0px</span> <span class="cm-number">0px</span> <span class="cm-number">-4px</span>;
+    <span class="cm-property">background</span>: <span class="cm-atom">#fff</span>;
+    <span class="cm-property">display</span>: <span class="cm-atom">block</span>;
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">rotate</span>(<span class="cm-number">-45deg</span>);
+    <span class="cm-property">transition</span>: <span class="cm-atom">all</span> <span class="cm-number">0.2s</span> <span class="cm-atom">ease</span>;
+  }
+  <span class="cm-qualifier">.switch</span> <span class="cm-tag">span</span>:<span class="cm-variable-3">after</span> {
+    <span class="cm-property">content</span>: <span class="cm-string">""</span>;
+    <span class="cm-property">display</span>: <span class="cm-atom">block</span>;
+    <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+    <span class="cm-property">width</span>: <span class="cm-number">4px</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">12px</span>;
+    <span class="cm-property">margin-top</span>: <span class="cm-number">-8px</span>;
+    <span class="cm-property">background</span>: <span class="cm-atom">#fff</span>;
+    <span class="cm-property">transition</span>: <span class="cm-atom">all</span> <span class="cm-number">0.2s</span> <span class="cm-atom">ease</span>;
+  }
+  <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-tag">radio</span>] {
+    <span class="cm-property">display</span>: <span class="cm-atom">none</span>;
+  }
+  <span class="cm-qualifier">.switch</span> <span class="cm-tag">label</span> {
+    <span class="cm-property">cursor</span>: <span class="cm-atom">pointer</span>;
+    <span class="cm-property">color</span>: <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">0</span>,<span class="cm-number">0</span>,<span class="cm-number">0</span>,<span class="cm-number">0.2</span>);
+    <span class="cm-property">width</span>: <span class="cm-number">60px</span>;
+    <span class="cm-property">line-height</span>: <span class="cm-number">50px</span>;
+    <span class="cm-property">transition</span>: <span class="cm-atom">all</span> <span class="cm-number">0.2s</span> <span class="cm-atom">ease</span>;
+  }
+  <span class="cm-tag">label</span>[<span class="cm-tag">for</span>=<span class="cm-tag">yes</span>] {
+    <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+    <span class="cm-property">left</span>: <span class="cm-number">0px</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">20px</span>;
+  }
+  <span class="cm-tag">label</span>[<span class="cm-tag">for</span>=<span class="cm-tag">no</span>] {
+    <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+    <span class="cm-property">right</span>: <span class="cm-number">0px</span>;
+  }
+  <span class="cm-builtin">#no</span>:<span class="cm-variable-3">checked</span> ~ <span class="cm-qualifier">.switch</span> {
+    <span class="cm-property">background</span>: <span class="cm-atom">#eb4f37</span>;
+  }
+  <span class="cm-builtin">#no</span>:<span class="cm-variable-3">checked</span> ~ <span class="cm-qualifier">.switch</span> <span class="cm-tag">span</span> {
+    <span class="cm-property">background</span>: <span class="cm-atom">#fff</span>;
+    <span class="cm-property">margin-left</span>: <span class="cm-number">-8px</span>;
+  }
+  <span class="cm-builtin">#no</span>:<span class="cm-variable-3">checked</span> ~ <span class="cm-qualifier">.switch</span> <span class="cm-tag">span</span>:<span class="cm-variable-3">after</span> {
+    <span class="cm-property">background</span>: <span class="cm-atom">#fff</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">20px</span>;
+    <span class="cm-property">margin-top</span>: <span class="cm-number">-8px</span>;
+    <span class="cm-property">margin-left</span>: <span class="cm-number">8px</span>;
+  }
+  <span class="cm-builtin">#yes</span>:<span class="cm-variable-3">checked</span> ~ <span class="cm-qualifier">.switch</span> <span class="cm-tag">label</span>[<span class="cm-tag">for</span>=<span class="cm-tag">yes</span>] {
+    <span class="cm-property">color</span>: <span class="cm-atom">#fff</span>;
+  }
+  <span class="cm-builtin">#no</span>:<span class="cm-variable-3">checked</span> ~ <span class="cm-qualifier">.switch</span> <span class="cm-tag">label</span>[<span class="cm-tag">for</span>=<span class="cm-tag">no</span>] {
+    <span class="cm-property">color</span>: <span class="cm-atom">#fff</span>;
+  }</code></pre>
+</div>
+<div id="js-box" class="code-wrap code-box box " role="region" aria-label="JS">
+<pre tabindex="0"><code data-lang="javascript" id="actual-js-code" class=" cm-s-default"><span class="cm-comment">/*</span>
+
+<span class="cm-comment">The code was originally in Stylus, so I compiled it to CSS.</span>
+
+<span class="cm-comment">The original code can be found here: https://cssdeck.com/labs/radio-button</span>
+
+<span class="cm-comment">*/</span></code></pre>
+</div>
+<div id="result-box" class="code-box active zoom-1" role="region" aria-label="Result">
+<iframe allow="accelerometer; camera; encrypted-media; display-capture; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write; web-share" allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="result-iframe  " frameborder="0" id="result-iframe" loading="lazy" name="CodePen Preview for Awesome Toggle Button" sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-downloads allow-presentation" scrolling="yes" title="CodePen Preview for Awesome Toggle Button" data-src="https://cdpn.io/theawesomecoder61/fullembedgrid/KKEpbv?animations=run&amp;type=embed" src="./KKEpbv.html">
+  </iframe>
+</div>
+<div id="about-box">
+<div class="about-container">
+<div class="about-user">
+<a href="https://codepen.io/theawesomecoder61" target="_blank" rel="noopener"><img src="./default(26).png" loading="lazy" alt="" class="about-image"></a>
+<div class="about-user-info">
+<p>
+This Pen is owned by <a href="https://codepen.io/theawesomecoder61" target="_blank" rel="noopener">Andrew</a> on <a href="https://codepen.io/" target="_blank" rel="noopener">CodePen</a>.
+</p>
+<p>
+<a href="https://codepen.io/theawesomecoder61" target="_blank" rel="noopener" class="about-user-more">
+See more by @theawesomecoder61 on CodePen
+</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="resources-box" class="resources-box">
+<h3>External CSS</h3>
+<p>
+This Pen doesn't use any external CSS resources.
+</p>
+<h3>External JavaScript</h3>
+<p>
+This Pen doesn't use any external JavaScript resources.
+</p>
+</div>
+</div>
+<footer class="embed-footer" id="embed-footer">
+<button id="resources-link" class="resources-link action-button bottom left" href="#resources-box" aria-pressed="false" role="button">
+Resources
+</button>
+<ul class="scaling-choices bottom right">
+<li><button class="action-button" id="zoom-button-1">1×</button></li>
+<li><button class="action-button" id="zoom-button-05">0.5×</button></li>
+<li><button class="action-button" id="zoom-button-025">0.25×</button></li>
+</ul>
+<button id="rerun-button" class="action-button rerun-button bottom right">
+Rerun
+</button>
+</footer>
+<script nonce="">
+    __processedPen = {"html":"&lt;div class=&quot;toggle-radio&quot;&gt;\n  &lt;input type=&quot;radio&quot; name=&quot;rdo&quot; id=&quot;yes&quot; checked&gt;\n  &lt;input type=&quot;radio&quot; name=&quot;rdo&quot; id=&quot;no&quot;&gt;\n  &lt;div class=&quot;switch&quot;&gt;\n    &lt;label for=&quot;yes&quot;&gt;Yes&lt;/label&gt;\n    &lt;label for=&quot;no&quot;&gt;No&lt;/label&gt;\n    &lt;span&gt;&lt;/span&gt;\n  &lt;/div&gt;\n&lt;/div&gt;","css":"body {\n    font-family: sans-serif;\n    font-weight: 800;\n    background: #eee;\n  }\n  .switch {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    width: 150px;\n    height: 50px;\n    text-align: center;\n    margin: -30px 0 0 -75px;\n    background: #00bc9c;\n    transition: all 0.2s ease;\n    border-radius: 25px;\n  }\n  .switch span {\n    position: absolute;\n    width: 20px;\n    height: 4px;\n    top: 50%;\n    left: 50%;\n    margin: -2px 0px 0px -4px;\n    background: #fff;\n    display: block;\n    transform: rotate(-45deg);\n    transition: all 0.2s ease;\n  }\n  .switch span:after {\n    content: &quot;&quot;;\n    display: block;\n    position: absolute;\n    width: 4px;\n    height: 12px;\n    margin-top: -8px;\n    background: #fff;\n    transition: all 0.2s ease;\n  }\n  input[type=radio] {\n    display: none;\n  }\n  .switch label {\n    cursor: pointer;\n    color: rgba(0,0,0,0.2);\n    width: 60px;\n    line-height: 50px;\n    transition: all 0.2s ease;\n  }\n  label[for=yes] {\n    position: absolute;\n    left: 0px;\n    height: 20px;\n  }\n  label[for=no] {\n    position: absolute;\n    right: 0px;\n  }\n  #no:checked ~ .switch {\n    background: #eb4f37;\n  }\n  #no:checked ~ .switch span {\n    background: #fff;\n    margin-left: -8px;\n  }\n  #no:checked ~ .switch span:after {\n    background: #fff;\n    height: 20px;\n    margin-top: -8px;\n    margin-left: 8px;\n  }\n  #yes:checked ~ .switch label[for=yes] {\n    color: #fff;\n  }\n  #no:checked ~ .switch label[for=no] {\n    color: #fff;\n  }","js":"/*\n\nThe code was originally in Stylus, so I compiled it to CSS.\n\nThe original code can be found here: https://cssdeck.com/labs/radio-button\n\n*/"};
+    __preprocessors = {
+      "html": "none",
+      "css": "none",
+      "js": "none"
+    };
+    __preprocessorNames = {
+      "html": "HTML",
+      "css": "CSS",
+      "js": "JS"
+    };
+    __editable = false;
+    __embed_prefill = false;
+  </script>
+<script src="./embed-59842fbf0495f2c0b079a7f4ce7544fb0912f3535856bf4dc5c205acbb621c54.js.download"></script>
+<script nonce="">(function(){var js = "window['__CF$cv$params']={r:'793419d84efb1d3d',m:'mjOX.mSf5uV16W_IVn0d3mVW_zWj1nHe5.6FR2GsQes-1675353221-0-ATFpBVn1HPWLQMPW1G9QXlbC70acqqXT63qkiHNuqP7GjQMlMMP4gphHGqY424+QGslx0//Sw6Ycg1LzJB0iWYEfMWMVeuFHcmNbjnA2a7HNwOd9C0kuGcxUZqSEtrdZ7fhm7Y15Cbw1OaOXfgVsGV0zFWqGU4aSnU2bXkkWsn7nuBqUcZfyEVXo2yWPO9qlcisdCJ+q5jJ4fscRwhZb7X4=',s:[0xb76f445cf7,0x53424d9568],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='cHpl4M0Uqqc=',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = 'cHpl4M0Uqqc=';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./saved_resource(29).html"></iframe>
+
+</body></html>

@@ -1,0 +1,36 @@
+.products-main-container{
+    .list_side_sorting{font-size: 14px!important;}
+    .desktop-recommended-btn{
+        font-size: 11px;
+        width: max-content;
+        padding: 8px 30px;
+        margin-bottom: -1px;
+    }
+    button{
+        svg{
+            width: 10px;
+            position: relative;
+            right: -15px;
+        }
+        &:hover svg{
+            fill: #fff;
+        }
+    }
+    .accordion{
+        border-right: 2px solid #888383!important;
+    }    
+    .pagination{
+        span {
+            padding: 0 15px;
+            border-bottom: 2px solid #aa9f9f;        
+        }
+        span.active{
+            border-bottom: 2px solid #000;
+        }
+    }
+    @media(max-width:991px){
+        .accordion{
+            border-right: none!important;
+        }
+    }
+}

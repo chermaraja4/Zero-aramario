@@ -1,0 +1,427 @@
+  @import url("https://use.typekit.net/bza3vcv.css");
+  @import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: "proxima-nova", sans-serif;
+  }
+
+  .font-face-pn {
+    font-family: "Proxima Nova Light", sans-serif;
+  }
+
+  .font-face-pnb {
+    font-family: "Proxima Nova", sans-serif;
+  }
+
+  body {
+    font-family: "Proxima Nova Light", sans-serif;
+  }
+
+  // reused css start
+  .bookmark-icon {
+    font-size: 22px !important;
+  }
+
+  .text-grey {
+    color: #A9A9A9 !important;
+  }
+
+  .text-underline {
+    text-decoration: underline !important;
+  }
+
+  .fw-bold-x {
+    font-weight: bold !important;
+  }
+
+  .mb30 {
+    margin-bottom: 30px !important;
+  }
+
+  .title-with-border-block {
+    border-bottom: 2px solid black;
+
+    .title {
+      font-weight: bolder;
+      margin-bottom: 10px;
+    }
+  }
+
+  .pl-0 {
+    padding-left: 0 !important;
+  }
+
+  .logout-link {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+
+  // resued css ends
+  .products-main-container,
+  .bestproduct {
+    .mobile-bookmark-outer {
+      position: absolute;
+      right: 23px;
+      top: 14px;
+      background: white;
+      padding: 6px;
+      border-radius: 5px;
+    }
+  }
+
+
+  // produclist and wishliast css
+  .products-main-container {
+    padding-bottom: 50px;
+
+    .round-neck {
+      font-weight: bold;
+    }
+
+    .btn-outline-secondary {
+      border: 3px solid black;
+      border-radius: none !important;
+      color: black;
+      float: right;
+    }
+
+    .btn-outline-secondary:hover {
+      background: black;
+      color: white;
+    }
+
+    .list_side_sorting {
+      font-size: 13px;
+    }
+
+    .filter-container {
+      .accordion {
+        border-right: 2px solid black;
+        padding-right: 20px;
+      }
+
+      .accordion-button:not(.collapsed) {
+        color: black;
+        box-shadow: none;
+        padding-left: 0px;
+      }
+
+      .accordion-button.collapsed {
+        padding-left: 0px;
+      }
+
+      .accordion-item {
+        border: none;
+
+        .accordion-header {
+          border: none;
+          padding-bottom: 0;
+        }
+
+        .accordion-header .accordion-button {
+          background: transparent;
+          font-size: 15px;
+        }
+
+        .accordion-header .accordion-button:focus {
+          box-shadow: none;
+        }
+      }
+    }
+
+    .product_list_container .card {
+      padding: 0px !important;
+      border: none !important;
+    }
+
+    .add-to-cart-button {
+      background: #000;
+      color: white;
+      position: relative;
+      margin: 0 10px 0 10px;
+      top: -21px;
+      padding: 10px 0;
+    }
+
+    .delete-icon-wishlist-outer {
+      background: lightgray;
+      position: absolute;
+      right: 23px;
+      top: 14px;
+      padding: 6px;
+      border-radius: 5px;
+      opacity: .5;
+
+      .deleteIcon {
+        color: red;
+      }
+
+      &:hover {
+        background: #ffffff;
+        opacity: .7;
+      }
+    }
+  }
+
+
+  .global-form-container {
+    .form-label {
+      color: grey;
+    }
+
+    .form-check-input[type=checkbox] {
+      border-radius: 0px;
+      border: 1px solid black;
+    }
+
+    .form-control {
+      border-radius: 0;
+      border: 2px solid black;
+    }
+
+    .form-check-label {
+      a {
+        text-decoration: underline;
+        color: blue;
+      }
+    }
+  }
+
+  // above 770px
+  @media only screen and (min-width: 770px) {
+
+    .signin-mobile,
+    .mobile-login,
+    .my-orders-container .orders-mobile,.mobileSwitchWidgetContainer {
+      display: none;
+    }
+    .return-policy-container,.feedback-container {
+      .switch-block {
+        display: none;
+      }
+    }
+    .products-main-container,
+    .bestproduct {
+      .bookmark-icon.mobile-bookmark,
+      .mobile-bookmark-outer,
+      .filter-mobile-btn {
+        display: none;
+      }
+    }
+  }
+
+  // below 770px -> Ipad device
+  @media only screen and (max-width: 770px) {
+
+    .terms-condtions-container h1 {
+      font-size: 20px;
+    }
+    .feedback-container {
+      .switch-btn {
+        width: 80% !important;
+        margin: 0 auto 0 0;
+        float: right;
+        padding: 5px 0px !important;
+      }
+    }
+
+    .return-policy-container {
+      h2 {
+        // display: none;
+      }
+
+      .accordion-block {
+        .accordion-header {
+          border-bottom: none;
+          font-size: 13px;
+        }
+        .accordion-button {
+          margin: 0 0 0 0;
+          padding-bottom: 0;
+          padding-right: 0;
+        }
+      }
+      .desktop-title-left {
+        display: none;
+      }
+      .switch-btn {
+        width: 80% !important;
+        margin: 0 auto 0 0;
+        float: right;
+        padding: 5px 0px !important;
+      }
+      .return-btn {
+        width: 100% !important;
+      }
+
+    }
+
+    .feedback-container {
+      .submit-btn {
+        width: 100% !important;
+      }
+    }
+
+    .signin-desktop,
+    .desktop-login,
+    .sideNavWidgetContainer,
+    .logout-link,
+    .my-orders-container .orders-desktop {
+      display: none;
+    }
+
+    .products-main-container,
+    .bestproduct {
+      .filter-container {
+        .accordion {
+          border: none !important;
+          padding: 0 !important;
+        }
+
+        .accordion .accordion-button:not(.collapsed),
+        .accordion .accordion-button.collapsed {
+          padding-left: 20px !important;
+        }
+      }
+
+      .bookmark-icon.desktop-bookmark,
+      .desktop-recommended-btn,
+      .list_side_sorting,
+      .filter-container .im-looking-for {
+        display: none;
+      }
+    }
+
+    .bestproduct {
+      .bestproduct-btn {
+        width: 50%;
+      }
+    }
+
+    .carousel-container {
+      .carousel-text h1 {
+        font: normal normal bold 40px/61px "proxima-nova";
+        font-family: "proxima-nova", sans-serif;
+        letter-spacing: 1px;
+        color: #ffffff;
+      }
+
+      .carousel .carousel-indicators {
+        justify-content: center;
+        margin-right: 0%;
+        margin-left: 0;
+      }
+    }
+
+    .pack button.btn-1 {
+      padding: 10px 14px;
+    }
+
+    .pack button.btn-2 {
+      font-size: 12px;
+      padding: 5px 17px;
+    }
+
+    .pack h4 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    .sale-container {
+      padding-right: 30px;
+      padding-left: 30px;
+      padding-top: 50px;
+      padding-bottom: 100px;
+
+      .products-btn {
+        margin: 30px 0 0 0;
+      }
+    }
+
+    .surf-more-products-section {
+      display: none;
+    }
+  }
+
+  // below 570px -> mobile devices
+  @media only screen and (max-width: 570px) {
+    .my-orders-container {
+      .product-title {
+        font-size: 3.8vw;
+      }
+
+      .orders-mobile {
+        .size,
+        .price {
+          font-size: 3.6vw;
+        }
+      }
+    }
+
+    .products-main-container,
+    .bestproduct {
+      .round-neck {
+        font-size: 15px;
+      }
+
+      .mobile-bookmark-outer,
+      .delete-icon-wishlist-outer {
+        right: 15px;
+        top: 9px;
+        padding: 2px;
+      }
+
+    }
+
+    .bestproduct {
+      .bestproduct-btn {
+        width: 90%;
+      }
+    }
+
+    .carousel-container {
+      .carousel-text {
+        top: 42%;
+      }
+
+      .carousel-text P {
+        font: normal normal normal 15px/30px "proxima-nova";
+        font-family: "proxima-nova", sans-serif;
+        letter-spacing: 1px;
+        color: #ffffff;
+      }
+
+      .carousel-text h1 {
+        font: normal normal bold 21px/20px "proxima-nova";
+        font-family: "proxima-nova", sans-serif;
+        letter-spacing: 1px;
+        color: #ffffff;
+      }
+    }
+
+    .sale-container {
+      h1 {
+        font-size: 28px;
+      }
+    }
+  }
+
+  // extra small mobile devices
+  @media only screen and (max-width: 360px) {
+
+    .products-main-container,
+    .bestproduct {
+
+      .mobile-bookmark-outer,
+      .delete-icon-wishlist-outer {
+        right: 11px;
+        top: 7px;
+        padding: 1px;
+      }
+    }
+  }
