@@ -135,7 +135,7 @@ function ProductList() {
   return (
     <section>
       <NavBar />
-      <Container fluid="sm | xs" className="container-fluid products-main-container mt-5 pt-5">
+      <Container fluid="sm | xs" className="container-fluid products-main-container mt-4 pt-5">
         <div className="row mx-0 px-1 mt-5">
           <p className="list_side_sorting"><b>Home / Men /</b> Round neck here</p>
           <div className="col-xl-2 col-lg-3 col-md-12 col-sm-12 col-12 pt-3 filter-container">
@@ -166,7 +166,7 @@ function ProductList() {
           <div className="col-xl-10 col-lg-9 col-md-12 col-sm-12 col-12">
             <Row className="mx-0 align-items-center">
               <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
-                <h3 className="round-neck mt-4">Round neck tees</h3>
+                <h3 className="round-neck mt-3">Round neck tees</h3>
               </div>
               <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 text-right">
                 <Button variant="outline-secondary" className="desktop-recommended-btn">
@@ -180,7 +180,7 @@ function ProductList() {
               <Row className="row mt-3 mx-0">
                 {products.map(item => {
                     return (
-                      <Col xxl={3} xl={3} lg={4} md={6} sm={6} xs={6} className="" id="product">
+                      <Col xxl={3} xl={3} lg={4} md={6} sm={6} xs={12} className="" id="product">
                         <Card>
                           <a href="/product-detail">
                             <div className="mobile-bookmark-outer">

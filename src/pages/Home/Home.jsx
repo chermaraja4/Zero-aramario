@@ -1,6 +1,6 @@
-import React, {useEffect, useState}from "react";
+import React, { useEffect, useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
-import { useNavigate  } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import "./home.scss";
 import { Carousel, Card, Container, Row, Col, Button } from "react-bootstrap";
@@ -24,13 +24,13 @@ function Home() {
   const [localvalueStore, setLocalvalueStore] = useState(localValue)
   const authSucess = useSelector(loginSuccess);
   const createCategory = useSelector(createcategorySuccess)
-  const datasss = useSelector((state)=>state)
+  const datasss = useSelector((state) => state)
 
- 
+
   // const count = useSelector(state => state.counter.count);
   // const categoryCreated = useSelector()
   const dispatch = useDispatch();
-  const navigate = useNavigate ();
+  const navigate = useNavigate();
 
   const [isNotify, setIsNotify] = useState(true);
   const [isAdmin, setIsAdmin] = useState(authSucess.payload.message)
@@ -42,26 +42,41 @@ function Home() {
     //     setIsNotify(false);
     // }
 
-    if(authSucess.payload.message && isNotify)
-    {
-        // notify();
-        // setIsNotify(false);
-        dispatch(loginSuccess({...authSucess.payload, message:"" }))
+    if (authSucess.payload.message && isNotify) {
+      // notify();
+      // setIsNotify(false);
+      dispatch(loginSuccess({ ...authSucess.payload, message: "" }))
     }
     // const isLogged = localStorage.getItem("localtoken")
     // if(!isLogged)
     // {
     //     navigate('/login');
     // }
-  },[]);
+  }, []);
   // const notify = () => toast('Login Sucesfully');
-// const notifyFor = () => toast("created successfully");
+  // const notifyFor = () => toast("created successfully");z
+
+
+  const exploreList = [
+    { label: 'Henley shirts', routerLink: "productlists/Henley shirts/Henley shirts", imgurl: "/assets/images/png/products/4.png" },
+    { label: 'Plain wear', routerLink: "productlists/Plain wear/Plain wear", imgurl: "/assets/images/png/products/3.png" },
+    { label: 'Sweatshirts', routerLink: "productlists/Sweat shirts/Sweat shirts", imgurl: "/assets/images/png/products/5.png" },
+    { label: 'Couple wears', routerLink: "productlists/Couple wears/Couple wears", imgurl: "/assets/images/png/products/1.png" },
+    { label: 'Hoodies', routerLink: "productlists/Hoddies/Hoddies", imgurl: "/assets/images/png/products/6.png" },
+    { label: 'Covid 19', routerLink: "'", imgurl: "/assets/images/png/products/2.png" }];
+
+  const categoriesList = [{ label: 'Women', routerLink: "productlists/Women/Women", imgurl: "/assets/images/png/categories/women.png" },
+  { label: 'Men', routerLink: "productlists/Men/Men", imgurl: "/assets/images/png/categories/men.png" },
+  { label: 'Children', routerLink: "productlists/Children/Children", imgurl: "/assets/images/png/categories/children.png" },
+  { label: 'Home', routerLink: "productlists/Home/Home", imgurl: "/assets/images/png/categories/stationary.png" }];
+
+  const saleList = ['T-shirt', 'Hoodie', 'Inner wear', 'Shorts', "Pyjama's Kids", 'Ankle Socks', 'Joggers']
   return (
     <>
       <div className="notification">Get 50% off on selected products, not availble on COD</div>
       <NavBar />
-      
-       
+
+
       <section className="carousel-container">
         <Carousel
           id="carouselExampleIndicators"
@@ -74,7 +89,7 @@ function Home() {
               src="/assets/images/png/header.png"
               alt="First slide"
             />
-            <Carousel.Caption className="carousel-text">              
+            <Carousel.Caption className="carousel-text">
               <h1><p>Upto</p>50% off on everything</h1>
             </Carousel.Caption>
           </Carousel.Item>
@@ -84,7 +99,7 @@ function Home() {
               src="/assets/images/png/header.png"
               alt="Second slide"
             />
-            <Carousel.Caption className="carousel-text">              
+            <Carousel.Caption className="carousel-text">
               <h1><p>Upto</p>50% off on everything</h1>
             </Carousel.Caption>
           </Carousel.Item>
@@ -116,57 +131,20 @@ function Home() {
           <h3>Explore Products</h3>
           <hr className="line" />
           <Row className="explore-view">
-            <div
-              className="explore-product-item"
-              routerLink="productlists/Henley shirts/Henley shirts"
-            >
-              <img src="/assets/images/png/products/4.png" alt="" />
-              <p>
-                <i>Henley shirts</i>
-              </p>
-            </div>
-            <div
-              className="explore-product-item"
-              routerLink="productlists/Plain wear/Plain wear"
-            >
-              <img src="/assets/images/png/products/3.png" alt="" />
-              <p>
-                <i>Plain wear</i>
-              </p>
-            </div>
-            <div
-              className="explore-product-item"
-              routerLink="productlists/Sweat shirts/Sweat shirts"
-            >
-              <img src="/assets/images/png/products/5.png" alt="" />
-              <p>
-                <i>Sweatshirts</i>
-              </p>
-            </div>
-            <div
-              className="explore-product-item"
-              routerLink="productlists/Couple wears/Couple wears"
-            >
-              <img src="/assets/images/png/products/1.png" alt="" />
-              <p>
-                <i>Couple wears</i>
-              </p>
-            </div>
-            <div
-              className="explore-product-item"
-              routerLink="productlists/Hoddies/Hoddies"
-            >
-              <img src="/assets/images/png/products/6.png" alt="" />
-              <p>
-                <i>Hoodies</i>
-              </p>
-            </div>
-            <div className="explore-product-item">
-              <img src="/assets/images/png/products/2.png" alt="" />
-              <p>
-                <i>Covid 19</i>
-              </p>
-            </div>
+            {exploreList.map((list) => {
+              return (
+                <div
+                  className="explore-product-item"
+                  routerLink={list.routerLink}
+                  onClick={() => { navigate('/product-list') }}
+                >
+                  <img src={list.imgurl} alt="" />
+                  <p>
+                    <i>{list.label}</i>
+                  </p>
+                </div>
+              )
+            })}
           </Row>
         </Container>
       </section>
@@ -180,34 +158,17 @@ function Home() {
           </p>
           <hr className="line" />
           <Row className="handpicked-img grid" style={{ marginTop: "50px" }}>
-            <Col className=""
-              routerLink="productlists/Women/Women"
-              style={{ marginBottom: "30px", position: "relative" }}
-            ><a href="/product-list">
-              <img src="/assets/images/png/categories/women.png" alt="" />
-              <h4>Women</h4></a>
-            </Col>
-            <Col className=""
-              routerLink="productlists/Men/Men"
-              style={{ marginBottom: "30px", position: "relative" }}
-            ><a href="/product-list">
-              <img src="/assets/images/png/categories/men.png" alt="" />
-              <h4>Men</h4></a>
-            </Col>
-            <Col className=""
-              routerLink="productlists/Children/Children"
-              style={{ marginBottom: "30px", position: "relative" }}
-            ><a href="/product-list">
-              <img src="/assets/images/png/categories/children.png" alt="" />
-              <h4>Children</h4></a>
-            </Col>
-            <Col className=""
-              routerLink="productlists/Home/Home"
-              style={{ marginBottom: "30px", position: "relative" }}
-            ><a href="/product-list">
-              <img src="/assets/images/png/categories/stationary.png" alt="" />
-              <h4>Home</h4></a>
-            </Col>
+            {categoriesList.map((list) => {
+              return (
+                <Col className="" onClick={() => { navigate('/product-list') }}
+                  routerLink={list.routerLink}
+                  style={{ marginBottom: "30px", position: "relative" }}
+                >
+                  <img src={list.imgurl} alt="" />
+                  <h4>{list.label}</h4>
+                </Col>
+              )
+            })}
           </Row>
         </Container>
       </section>
@@ -219,27 +180,14 @@ function Home() {
               <p className="mb-2">Explore our handpicked products of top selling </p>
               <p className="">Products from Zero Armario </p>
             </Col>
-            <Col  xxl={3} xl={3} lg={3} md={4} sm={4} xs={12} className="text-center">
-              <Button size="md" className="products-btn" variant="">T-shirt</Button>{' '}
-            </Col>
-            <Col  xxl={3} xl={3} lg={3} md={4} sm={4} xs={12} className="text-center">
-              <Button size="md" className="products-btn" variant="">Hoodie</Button>{' '}
-            </Col>
-            <Col  xxl={3} xl={3} lg={3} md={4} sm={4} xs={12} className="text-center">
-              <Button size="md" className="products-btn" variant="">Inner wear</Button>{' '}
-            </Col>
-            <Col  xxl={3} xl={3} lg={3} md={4} sm={4} xs={12} className="text-center">
-              <Button size="md" className="products-btn" variant="">Shorts</Button>{' '}
-            </Col>
-            <Col  xxl={3} xl={3} lg={3} md={4} sm={4} xs={12} className="text-center">
-              <Button size="md" className="products-btn" variant="">Pyjama's Kids</Button>{' '}
-            </Col>
-            <Col  xxl={3} xl={3} lg={3} md={4} sm={4} xs={12} className="text-center">
-              <Button size="md" className="products-btn" variant="">Ankle Socks</Button>{' '}
-            </Col>
-            <Col  xxl={3} xl={3} lg={3} md={4} sm={4} xs={12} className="text-center">
-              <Button size="md" className="products-btn" variant="">Joggers</Button>{' '}
-            </Col>
+            {saleList.map((list) => {
+              return (
+                <Col xxl={3} xl={3} lg={3} md={4} sm={4} xs={12} className="text-center" onClick={() => { navigate('/product-list') }}>
+                  <Button size="md" className="products-btn" variant="">{list}</Button>{' '}
+                </Col>
+              )
+            })}
+
             {/* <Col  xxl={3} xl={3} lg={3} md={4} sm={4} xs={12} className="text-center">
             {localvalueStore?<CategoryAdd />:""}
             </Col>
@@ -435,64 +383,64 @@ function Home() {
             </Row> */}
             <div className="best-grid">
               <Card>
-                  <div className="mobile-bookmark-outer">
-                    <FiBookmark className="bookmark-icon mobile-bookmark" />
-                  </div>
-                  <Card.Img variant="top" src="/assets/images/png/product_listing/6.png" />
-                  <Card.Body>
-                    <Card.Title>
-                      Two toned cotton
-                      <FiBookmark className="bookmark-icon desktop-bookmark" />
-                    </Card.Title>
-                    <Card.Text>
-                      Rs.580
-                    </Card.Text>
-                  </Card.Body>
+                <div className="mobile-bookmark-outer">
+                  <FiBookmark className="bookmark-icon mobile-bookmark" />
+                </div>
+                <Card.Img variant="top" src="/assets/images/png/product_listing/6.png" />
+                <Card.Body>
+                  <Card.Title>
+                    Two toned cotton
+                    <FiBookmark className="bookmark-icon desktop-bookmark" />
+                  </Card.Title>
+                  <Card.Text>
+                    Rs.580
+                  </Card.Text>
+                </Card.Body>
               </Card>
               <Card>
-                  <div className="mobile-bookmark-outer">
-                    <FiBookmark className="bookmark-icon mobile-bookmark" />
-                  </div>
-                  <Card.Img variant="top" src="/assets/images/png/product_listing/2.png" />
-                  <Card.Body>
-                    <Card.Title>
-                      Two toned cotton
-                      <FiBookmark className="bookmark-icon desktop-bookmark" />
-                    </Card.Title>
-                    <Card.Text>
-                      Rs.580
-                    </Card.Text>
-                  </Card.Body>
+                <div className="mobile-bookmark-outer">
+                  <FiBookmark className="bookmark-icon mobile-bookmark" />
+                </div>
+                <Card.Img variant="top" src="/assets/images/png/product_listing/2.png" />
+                <Card.Body>
+                  <Card.Title>
+                    Two toned cotton
+                    <FiBookmark className="bookmark-icon desktop-bookmark" />
+                  </Card.Title>
+                  <Card.Text>
+                    Rs.580
+                  </Card.Text>
+                </Card.Body>
               </Card>
               <Card>
-                  <div className="mobile-bookmark-outer">
-                    <FiBookmark className="bookmark-icon mobile-bookmark" />
-                  </div>
-                  <Card.Img variant="top" src="/assets/images/png/product_listing/3.png" />
-                  <Card.Body>
-                    <Card.Title>
-                      Two toned cotton
-                      <FiBookmark className="bookmark-icon desktop-bookmark" />
-                    </Card.Title>
-                    <Card.Text>
-                      Rs.580
-                    </Card.Text>
-                  </Card.Body>
+                <div className="mobile-bookmark-outer">
+                  <FiBookmark className="bookmark-icon mobile-bookmark" />
+                </div>
+                <Card.Img variant="top" src="/assets/images/png/product_listing/3.png" />
+                <Card.Body>
+                  <Card.Title>
+                    Two toned cotton
+                    <FiBookmark className="bookmark-icon desktop-bookmark" />
+                  </Card.Title>
+                  <Card.Text>
+                    Rs.580
+                  </Card.Text>
+                </Card.Body>
               </Card>
               <Card>
-                  <div className="mobile-bookmark-outer">
-                    <FiBookmark className="bookmark-icon mobile-bookmark" />
-                  </div>
-                  <Card.Img variant="top" src="/assets/images/png/product_listing/5.png" />
-                  <Card.Body>
-                    <Card.Title>
-                      Two toned cotton
-                      <FiBookmark className="bookmark-icon desktop-bookmark" />
-                    </Card.Title>
-                    <Card.Text>
-                      Rs.580
-                    </Card.Text>
-                  </Card.Body>
+                <div className="mobile-bookmark-outer">
+                  <FiBookmark className="bookmark-icon mobile-bookmark" />
+                </div>
+                <Card.Img variant="top" src="/assets/images/png/product_listing/5.png" />
+                <Card.Body>
+                  <Card.Title>
+                    Two toned cotton
+                    <FiBookmark className="bookmark-icon desktop-bookmark" />
+                  </Card.Title>
+                  <Card.Text>
+                    Rs.580
+                  </Card.Text>
+                </Card.Body>
               </Card>
             </div>
           </div>
@@ -500,7 +448,7 @@ function Home() {
             routerLink="productlists/NULL/All Products">
             <a href="/product-list" style={{ fontSize: "12px" }}>
               VIEW ALL PRODUCTS
-            </a>{" "} 
+            </a>{" "}
             <BsArrowRight style={{ marginLeft: "20px" }} />
             <span
               style={{ marginLeft: "12px" }}
