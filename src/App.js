@@ -23,6 +23,7 @@ import CreateProduct from "./pages/CreateProduct/CreateProduct";
 import Myorderslist from "./pages/Myaccountnew/Myorderslist/Myorderslist";
 import Filladdress from "./pages/Myaccountnew/Filladdress/Filladdress";
 import Checkout from "./pages/Myaccountnew/Checkout/Checkout";
+import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 function App() {
   return (
     <AuthProvider>
@@ -49,6 +50,7 @@ function App() {
         <Route path="/myorders-list" element={<Myorderslist />}/>
         <Route path="/fill-address" element={<Filladdress />}/>
         <Route path="/Checkout" element={<Checkout />}/>
+        <Route path="/privacy-policy" element={<PrivacyPolicy />}/>
       </Routes>
         </AuthProvider>
 

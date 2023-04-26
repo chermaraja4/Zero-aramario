@@ -23,7 +23,7 @@ export default function TermsConditions() {
                         </li>
                         <li>
                             As used in this document, the following terms shall have the following respective meanings:
-                            <p>a). “Agreement” shall be interpreted to mean the terms and conditions as detailed herein including all schedules, appendices, annexures, privacy policy, and will include the references to this agreement as amended, negated, supplemented, varied or replaced from time to time. </p>
+                            <p className="mt-2">a). “Agreement” shall be interpreted to mean the terms and conditions as detailed herein including all schedules, appendices, annexures, privacy policy, and will include the references to this agreement as amended, negated, supplemented, varied or replaced from time to time. </p>
                             <p>b). “We” / “Us” / “Our” / “zeroarmario.com” / “ZEROARMARIO” / “website” means the online shopping platform and the services provided by it, owned and operated by Olive Clothiers Private Limited and its affiliates which provides a venue / platform to the Users of Zeroarmario to buy the products listed on www.Zeroarmario.com </p>
                             <p>c). “Product/Products” means and includes any goods / merchandise /products /services /offers /display items that are uploaded/ showcased/ displayed on huetrap.com and the related description, information, procedure, processes, warranties, delivery schedule, etc. </p>
                             <p>d). “Customer” / “buyer” shall mean the person or any legal entity who accepts the offer for sale on huetrap.com by placing an order for and purchases any product offered for sale on the platform of ZEROARMARIO. </p>
