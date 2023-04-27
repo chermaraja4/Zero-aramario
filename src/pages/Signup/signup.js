@@ -1,40 +1,40 @@
 import "./signup.scss";
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { Col, Row, Form, Button, Container } from "react-bootstrap";
 import { FiEye } from "react-icons/fi";
 import { useDispatch } from "react-redux";
 
-import {UserRegister} from '../../redux-tool/RegisterRedux';
+import { UserRegister } from '../../redux-tool/RegisterRedux';
 
 function SignUp() {
     const dispatch = useDispatch();
     const [emailError, setEmailError] = useState('');
     const [userRegister, setUserRegister] = useState({
-          firstName:"",
-          lastName:"",
-          phoneNumber:"",
-          email:"",
-          password:"",
+        firstName: "",
+        lastName: "",
+        phoneNumber: "",
+        email: "",
+        password: "",
     })
-    const {firstName, lastName,phoneNumber, email, password} = userRegister 
-    const onChange = (e) =>{
-        setUserRegister({...userRegister,[e.target.name]:e.target.value})
+    const { firstName, lastName, phoneNumber, email, password } = userRegister
+    const onChange = (e) => {
+        setUserRegister({ ...userRegister, [e.target.name]: e.target.value })
     }
-    const sumbitForm =(e)=>{
+    const sumbitForm = (e) => {
         e.preventDefault()
         dispatch(UserRegister(userRegister));
     }
     return (
         <section className="">
-            <section className="signin-desktop">
+            <section className="signin-desktop mt-5">
                 <Row className="h-100 align-items-center mx-0">
                     <Col className="login-left-image" xxl={5} xl={5} lg={6} md={12}>
-                        <img className="w-100" src="/assets/images/login-sample.jpg" />
+                        <img className="w-100 img-height" src="/assets/images/login-sample.jpg" />
                     </Col>
                     <Col xxl={6} xl={6} lg={6} md={12} className="">
-                        <Row className="justify-content-center w-100">
+                        <Row className="justify-content-center w-100  rightSide">
                             <Col className="" xxl={8} xl={8} lg={11} md={12}>
-                                <h2>WELCOME TO OUR ALL NEW</h2>
+                                <h2 className="">WELCOME TO OUR ALL NEW</h2>
                                 <h2>MINIMAL FASHION</h2>
                                 <p>join us for exclusive discounts, top-secret-content</p>
                                 <Form className="global-form-container mt-5 mb-5">
@@ -42,58 +42,58 @@ function SignUp() {
                                         <Col>
                                             <Form.Group className="mb-3" controlId="formBasicEmail">
                                                 <Form.Label>First Name</Form.Label>
-                                                <Form.Control 
-                                                    type="text" 
-                                                    placeholder="First Name" 
+                                                <Form.Control
+                                                    type="text"
+                                                    placeholder="First Name"
                                                     name="firstName"
                                                     value={firstName}
-                                                    onChange={(e)=>onChange(e)}
-                                                    />
+                                                    onChange={(e) => onChange(e)}
+                                                />
                                             </Form.Group>
                                         </Col>
                                         <Col>
                                             <Form.Group className="mb-3" controlId="formBasicEmail">
                                                 <Form.Label>Last Name</Form.Label>
-                                                <Form.Control 
-                                                    type="text" 
-                                                    placeholder="Last Name" 
+                                                <Form.Control
+                                                    type="text"
+                                                    placeholder="Last Name"
                                                     name="lastName"
                                                     value={lastName}
-                                                    onChange={(e)=>onChange(e)}
+                                                    onChange={(e) => onChange(e)}
                                                 />
                                             </Form.Group>
                                         </Col>
                                     </Row>
                                     <Form.Group className="mb-3" controlId="formBasicEmail">
                                         <Form.Label>Phone Number</Form.Label>
-                                        <Form.Control 
-                                            type="phoneNumber" 
-                                            placeholder="phoneNumber" 
+                                        <Form.Control
+                                            type="phoneNumber"
+                                            placeholder="phoneNumber"
                                             name="phoneNumber"
                                             value={phoneNumber}
-                                            onChange={(e)=>onChange(e)}
+                                            onChange={(e) => onChange(e)}
                                         />
                                     </Form.Group>
                                     <Form.Group className="mb-3" controlId="formBasicEmail">
                                         <Form.Label>Email address</Form.Label>
-                                        <Form.Control 
-                                            type="email" 
-                                            placeholder="email" 
+                                        <Form.Control
+                                            type="email"
+                                            placeholder="email"
                                             name="email"
                                             value={email}
-                                            onChange={(e)=>onChange(e)}
+                                            onChange={(e) => onChange(e)}
                                         />
                                     </Form.Group>
 
                                     <Form.Group className="mb-3 passwordInput" controlId="formBasicPassword">
                                         <Form.Label>Password</Form.Label>
-                                        <Form.Control 
+                                        <Form.Control
                                             type="password"
                                             placeholder="Password"
                                             name="password"
                                             value={password}
-                                            onChange={(e)=>onChange(e)}
-                                             />
+                                            onChange={(e) => onChange(e)}
+                                        />
                                         <FiEye className="eyeIcon" />
                                     </Form.Group>
                                     <Row className="mt-5">
@@ -120,11 +120,11 @@ function SignUp() {
                                             </div>
                                         </Col>
                                     </Row>
-                                    <Button 
-                                    className="create-account-button" 
-                                    variant="primary" 
-                                    type="submit"
-                                    onClick={(e) => sumbitForm(e)}
+                                    <Button
+                                        className="create-account-button w-100"
+                                        variant="primary"
+                                        type="submit"
+                                        onClick={(e) => sumbitForm(e)}
                                     >
                                         Create a new Account
                                     </Button>

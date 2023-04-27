@@ -6,7 +6,7 @@ import "./PrivacyPolicy.scss";
 export default function PrivacyPolicy() {
     return (
         <section className="mt-5">
-            <section className="terms-condtions-container ">
+            <section className="terms-condtions-container">
 
                 <Container className="w-75">
                     <h1 className="text-uppercase">PRIVACY POLICY</h1>
