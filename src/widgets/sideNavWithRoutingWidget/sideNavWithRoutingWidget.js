@@ -11,10 +11,12 @@ function SideNavWithRoutingWidget(props) {
 
     const navigate = useNavigate();
 
-    function routingData(index, url) {
+    function routingData(index, url,title) {
         count = index;
         setCurrIndex(index);
-        navigate(url);
+        // navigate(url);
+        props.currentIndex(index)
+        
     }
 
     useEffect(() => {
@@ -23,13 +25,15 @@ function SideNavWithRoutingWidget(props) {
         }
         setLeftmenuItems(leftMenuItems);
     }, [currIndex]);
+
+
     return (
         <section className="sideNavWidgetContainer">
             <ul className="" style={{ marginLeft: "20px" }}>
                 {
                     leftMenuItems.map((data, index) => {
                         return (
-                            <li className={currIndex == index ? "active" : "non-active"} key={data.id} onClick={() => routingData(index, data.url)}>
+                            <li className={currIndex == index ? "active" : "non-active"} key={data.id} onClick={() => routingData(index, data.url,data.title)}>
                                 {data.title}
                             </li>
                         )

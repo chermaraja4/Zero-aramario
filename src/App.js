@@ -7,9 +7,6 @@ import ProductDetail1 from "./pages/products/productDetails/ProductDetail1";
 import WishList from "./pages/wishList/wishList";
 import Login from "./pages/Login/Login";
 import SignUp from "./pages/Signup/signup";
-import ChangePassword from "./pages/Myaccountnew/ChangePassword/ChangePassword";
-import AccountInformation from "./pages/Myaccountnew/Accountinformation/Accountinformation";
-import Myorders from "./pages/Myaccountnew/Myorders/Myorders";
 import TermsConditions from "./pages/TermsCondtions/TermsCondtions";
 import ReturnPolicy from "./pages/HelpCenter/ReturnPolicy/ReturnPolicy";
 import RefundForm from "./pages/HelpCenter/RefundForm/RefundForm";
@@ -24,6 +21,7 @@ import Myorderslist from "./pages/Myaccountnew/Myorderslist/Myorderslist";
 import Filladdress from "./pages/Myaccountnew/Filladdress/Filladdress";
 import Checkout from "./pages/Myaccountnew/Checkout/Checkout";
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
+import PersonalAccount from "./pages/Myaccountnew/PersonalAccount/PersonalAccount";
 function App() {
   return (
     <AuthProvider>
@@ -36,10 +34,9 @@ function App() {
         <Route path="/product-list" element={<ProductList />} />
         <Route path="/product-detail" element={<ProductDetail1 />} />
         <Route path="/wish-list" element={<WishList />} />
-        <Route path="/sign-up" element={<SignUp />} />
-        <Route path="/change-password" element={<ChangePassword/>} />
-        <Route path="/account-information" element={<AccountInformation/>} />
-        <Route path="/my-orders" element={<Myorders/>} />
+        <Route path="/sign-up" element={<SignUp />} />     
+        <Route path="/account-information" element={<PersonalAccount/>} />
+        {/* <Route path="/my-orders" element={<Myorders/>} /> */}
         <Route path="/terms-conditions" element={<TermsConditions/>} />
         <Route path="/return-policy" element={<ReturnPolicy />}/>
         <Route path="/refund-form" element={<RefundForm />}/>
@@ -51,7 +48,7 @@ function App() {
         <Route path="/fill-address" element={<Filladdress />}/>
         <Route path="/Checkout" element={<Checkout />}/>
         <Route path="/privacy-policy" element={<PrivacyPolicy />}/>
-      </Routes>
+             </Routes>
         </AuthProvider>
 
   );
