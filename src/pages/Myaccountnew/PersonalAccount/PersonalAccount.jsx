@@ -50,11 +50,11 @@ const PersonalAccount=()=>{
 
                 <h6 className="logout-link">Log out</h6>
             </Col>
-            <Col xxl={7} xl={7} lg={7} md={12} sm={12} xs={12}>
+            <>
              {currIndex === 0  && <AccountInformation/>} 
              {currIndex === 1 && <ChangePassword/>} 
              {currIndex === 2 && <Myorders/>} 
-            </Col>
+            </>
         </Row>
     </Container>
     )
