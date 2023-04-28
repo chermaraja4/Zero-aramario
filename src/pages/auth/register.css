@@ -371,9 +371,9 @@ legend {
     top: 15px;
   }
 
-  input[type="radio"] {
+  /* input[type="radio"] {
     visibility: hidden;
-  }
+  } */
 
   input[type="radio"] + label::before {
     border: 2px solid rgb(0, 0, 0);

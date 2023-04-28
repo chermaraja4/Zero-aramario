@@ -4,22 +4,84 @@
         font-weight: bold;
         margin-bottom: 30px;
     }
+
     .contact-info {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
         p:last-child {
             text-decoration: underline;
         }
     }
+
     .details {
         color: #A9A9A9;
     }
 
     .title-with-border {
         border-bottom: 2px solid #A9A9A9;
+
         h5 {
             font-weight: bold;
         }
     }
 }
+
+.switch-btn {
+    background: #E5E5E5;
+    border-radius: 3px;
+    font: normal normal normal 12px/15px Proxima Nova;
+    letter-spacing: 0px;
+    color: #000000;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.first-column {
+    width: 1%;
+}
+
+.dashed-border {
+    border: 3px dashed #707070;
+
+}
+
+.header {
+    font: normal normal bold 18px/22px Proxima Nova;
+    letter-spacing: 0px;
+    color: #313131;
+    opacity: 1;
+}
+
+.card-bg {
+    background: #393939;
+}
+
+.custom-button {
+    border: 2px solid #000000;
+    background: #000000;
+    border-radius: 0px;
+    height: 35px;
+}
+
+.border-btn {
+    background: transparent;
+    border: 2px solid #000000;
+    font: normal normal normal 12px/15px Proxima Nova;
+    letter-spacing: 0px;
+    color: #000000;
+    border-radius: 0px;
+    height: 35px;
+}
+
+// @media only screen and (min-width: 992px) {
+//     .shipping-container {
+//         width: 50%;
+//     }
+
+// }

@@ -41,16 +41,16 @@ const PersonalAccount=()=>{
         setCurrIndex(index)
     }
     return (
-        <Container fluid="md | sm | xs" className="pt-5 account-information-container">
+        <Container  className="pt-5 account-information-container">
         <p>Home / Account</p>
         <Row className="mt-5">
-            <Col xxl={3} xl={3} lg={4}>
+            <Col xxl={3} xl={3} lg={4} md={12} sm={12} xs={12}>
                 <h2 className="text-uppercase">My Account</h2>
                 <SideNavWithRoutingWidget menuData={menuItems} currentIndex={(e)=>currentTab(e)}/>
 
                 <h6 className="logout-link">Log out</h6>
             </Col>
-            <Col xxl={7} xl={9} lg={8} md={12} sm={12} xs={12}>
+            <Col xxl={7} xl={7} lg={7} md={12} sm={12} xs={12}>
              {currIndex === 0  && <AccountInformation/>} 
              {currIndex === 1 && <ChangePassword/>} 
              {currIndex === 2 && <Myorders/>} 

@@ -35,8 +35,7 @@ function App() {
         <Route path="/product-detail" element={<ProductDetail1 />} />
         <Route path="/wish-list" element={<WishList />} />
         <Route path="/sign-up" element={<SignUp />} />     
-        <Route path="/account-information" element={<PersonalAccount/>} />
-        {/* <Route path="/my-orders" element={<Myorders/>} /> */}
+        <Route path="/account-information" element={<PersonalAccount/>} />        
         <Route path="/terms-conditions" element={<TermsConditions/>} />
         <Route path="/return-policy" element={<ReturnPolicy />}/>
         <Route path="/refund-form" element={<RefundForm />}/>
