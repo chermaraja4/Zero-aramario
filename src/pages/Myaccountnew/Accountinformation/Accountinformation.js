@@ -30,40 +30,38 @@ export default function AccountInformation() {
     return (
         < >
 
-            {currentStep === '' && <>
+            {currentStep === '' &&
+                <Col xxl={7} xl={7} lg={7} md={12} sm={12} xs={12}>
+                    <h2>HELLO,</h2>
+                    <p className="text-grey fw-bold-x">From your dashboard you have the ability to do the Sneak Peak of your recent account activity and update your ccount information, Select a link below to view or edit information.</p>
 
-                <h2>HELLO,</h2>
-                <p className="text-grey fw-bold-x">From your dashboard you have the ability to do the Sneak Peak of your recent account activity and update your ccount information, Select a link below to view or edit information.</p>
+                    <Row className="mt-5">
+                        <Col xxl={6} xl={6} lg={6} md={12}>
+                            <div className="title-with-border">
+                                <h5 className="text-uppercase">Account Information</h5>
+                            </div>
+                            <div className="contact-info mt-3">
+                                <p className="fw-bold-x">Contact information</p>
+                                <p className="fw-bold-x" onClick={() => { setCurrentStep('editAddress') }}>Edit</p>
+                            </div>
+                            <div className="details">
+                                <p><span>Name</span> : <span>Space studio</span></p>
+                                <p><span>Contact no</span> : <span>9876543201</span></p>
+                                <p><span>Email</span> : <span>spacedesign@gmail.com</span></p>
+                            </div>
+                            <div className="title-with-border mt-5">
+                                <h5 className="text-uppercase">Address book</h5>
+                            </div>
+                            <p className="fw-bold-x text-underline mt-3" onClick={() => { setCurrentStep('shippingAddress') }}>Manage addresses</p>
 
-                <Row className="mt-5">
-                    <Col xxl={6} xl={6} lg={6} md={12}>
-                        <div className="title-with-border">
-                            <h5 className="text-uppercase">Account Information</h5>
-                        </div>
-                        <div className="contact-info mt-3">
-                            <p className="fw-bold-x">Contact information</p>
-                            <p className="fw-bold-x" onClick={() => { setCurrentStep('editAddress') }}>Edit</p>
-                        </div>
-                        <div className="details">
-                            <p><span>Name</span> : <span>Space studio</span></p>
-                            <p><span>Contact no</span> : <span>9876543201</span></p>
-                            <p><span>Email</span> : <span>spacedesign@gmail.com</span></p>
-                        </div>
-                        <div className="title-with-border mt-5">
-                            <h5 className="text-uppercase">Address book</h5>
-                        </div>
-                        <p className="fw-bold-x text-underline mt-3" onClick={() => { setCurrentStep('shippingAddress') }}>Manage addresses</p>
-
-                    </Col>
-                </Row>
-            </>
+                        </Col>
+                    </Row>
+                </Col>
 
             }
             {currentStep === 'editAddress' &&
-
-                <>
+                <Col xxl={7} xl={7} lg={7} md={12} sm={12} xs={12}>
                     <h4 className="fw-bold-x mb30">Contact Information</h4>
-
                     <Form className="global-form-container ">
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Control placeholder="First name" className="custom-input border-0" />
@@ -81,10 +79,10 @@ export default function AccountInformation() {
                             Save
                         </Button>
                     </Form>
-                </>
+                </Col>
             }
             {currentStep === 'shippingAddress' &&
-                <>
+                  <Col  lg={5} md={11} sm={12} xs={12}>
                     <h4>Shipping address</h4>
                     <Form className="shipping-container mt-5 mb-5 ">
                         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -105,7 +103,6 @@ export default function AccountInformation() {
                                 onChange={(e) => onChange(e)}
                             />
                         </Form.Group>
-
                         <Form.Group className="mb-3 passwordInput" controlId="formBasicPassword">
                             <Form.Control
                                 className="input-height inputbox-border"
@@ -115,8 +112,6 @@ export default function AccountInformation() {
                                 onChange={(e) => onChange(e)}
                             />
                         </Form.Group>
-
-
                         <Form.Group className="mb-3 passwordInput" controlId="formBasicPassword">
                             <Form.Control
                                 className="input-height inputbox-border"
@@ -136,9 +131,7 @@ export default function AccountInformation() {
                                 onChange={(e) => onChange(e)}
                             />
                         </Form.Group>
-
                         <p className="fw-bold-x">Would you like to Label your address</p>
-
                         <Row className="w-75">
                             <Col>
                                 <div className="switch-btn">
@@ -162,18 +155,12 @@ export default function AccountInformation() {
                             Save address
                         </Button>
                     </Form>
-                </>
-
-
+                    </Col>
             }
 
             {currentStep === 'selectAddresses' &&
-                <>
-
-
-
+               <Col xl={6} lg={8} md={11} sm={12} xs={12}>
                     <div className="header">Select addresses</div>
-
                     <Row className="mt-3 gap-2">
                         <Col lg={1} md={1} sm={1} xs={1} className=" first-column d-flex align-items-center">
                             <div class="form-check">
@@ -183,7 +170,7 @@ export default function AccountInformation() {
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
                         </div> */}
                         </Col>
-                        <Col lg={7} md={7} sm={11} xs={11} className="p-0">
+                        <Col lg={7} md={11} sm={11} xs={11} className="p-0">
                             <div class="card card-bg text-white w-100 p-3">
                                 <div class="d-flex justify-content-around">
                                     <div className="w-50"> 368 Kingston road Wimbledon chase London SW20 8LN</div>
@@ -192,15 +179,15 @@ export default function AccountInformation() {
                             </div>
                         </Col>
                         <Col lg={4} md={12} sm={12} className="mt-md-0 mt-sm-2 mt-xs-2 mt-2">
-                        <Row>
-                                <Col md={6} sm={6} xs={6}>
+                            <Row>
+                                <Col lg={12} md={6} sm={6} xs={6}>
                                     <Button
                                         className="custom-button"
                                     >
                                         Edit your address
                                     </Button>
                                 </Col>
-                                <Col md={6} sm={6} xs={6}>
+                                <Col lg={12} md={6} sm={6} xs={6}>
                                     <Button
                                         className="mt-md-2 border-btn">
                                         Delete this address
@@ -210,8 +197,8 @@ export default function AccountInformation() {
                         </Col>
                     </Row>
 
-                    <Row className="mt-3 gap-3 mt-sm-4">
-                        <Col md={1} xs={1} className="first-column d-flex align-items-center">
+                    <Row className="mt-3 gap-2 md-mt-2">
+                        <Col lg={1} md={1} sm={1} xs={1} className=" first-column d-flex align-items-center">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked />
                             </div>
@@ -219,26 +206,26 @@ export default function AccountInformation() {
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
                         </div> */}
                         </Col>
-                        <Col md={6} xs={11} className="p-0">
-                            <div class="card dashed-border w-100 p-3 ">
+                        <Col lg={7} md={11} sm={11} xs={11} className="p-0">
+                            <div class="card dashed-border  w-100 p-3">
                                 <div class="d-flex justify-content-around">
                                     <div className="w-50"> 368 Kingston road Wimbledon chase London SW20 8LN</div>
                                     <div> one</div>
                                 </div>
                             </div>
                         </Col>
-                        <Col md={3} className="mt-md-0 mt-sm-2 mt-xs-2 mt-2">
+                        <Col lg={4} md={12} sm={12} className="mt-md-0 mt-sm-2 mt-xs-2 mt-2">
                             <Row>
-                                <Col md={12} xs={6}>
+                                <Col lg={12} md={6} sm={6} xs={6}>
                                     <Button
                                         className="custom-button"
                                     >
                                         Edit your address
                                     </Button>
                                 </Col>
-                                <Col md={12} xs={6}>
+                                <Col lg={12} md={6} sm={6} xs={6}>
                                     <Button
-                                        className=" mt-md-2 border-btn">
+                                        className="mt-md-2 border-btn">
                                         Delete this address
                                     </Button>
                                 </Col>
@@ -246,11 +233,10 @@ export default function AccountInformation() {
                         </Col>
                     </Row>
                     <Button
-                        className="w-25 mt-5 custom-button "
-                    >
+                        className="w-25 mt-5 custom-button "                    >
                         Add new address
                     </Button>
-                </>
+                    </Col>
             }
         </>
     )
